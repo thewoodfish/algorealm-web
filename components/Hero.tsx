@@ -49,11 +49,6 @@ function RadarCanvas() {
       ctx.beginPath(); ctx.moveTo(cx - R * 0.707, cy - R * 0.707); ctx.lineTo(cx + R * 0.707, cy + R * 0.707); ctx.stroke();
       ctx.beginPath(); ctx.moveTo(cx + R * 0.707, cy - R * 0.707); ctx.lineTo(cx - R * 0.707, cy + R * 0.707); ctx.stroke();
 
-      // sweep gradient trail
-      const trail = ctx.createConicalGradient
-        ? null
-        : null;
-
       // draw sweep arc (trailing glow)
       for (let i = 0; i < 60; i++) {
         const a = angle - (i * Math.PI) / 90;
@@ -134,7 +129,7 @@ function RadarCanvas() {
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 28 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] },
+  transition: { duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] },
 });
 
 export function Hero() {
