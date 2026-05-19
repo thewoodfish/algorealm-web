@@ -35,7 +35,7 @@ export function Nav() {
       }}
     >
       {/* Logo */}
-      <a href="#" style={{ display: "flex", alignItems: "center", textDecoration: "none", marginLeft: 24 }}>
+      <a href="#" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/logo-cropped.svg" alt="Algorealm" style={{ height: 36, width: "auto" }} />
       </a>

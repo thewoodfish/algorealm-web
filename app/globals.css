@@ -79,6 +79,7 @@ body::before {
   .four-col     { grid-template-columns: 1fr 1fr !important; }
   .nav-links    { display: none; }
   .nav-inner    { padding: 0 20px; }
+  nav           { padding: 0 20px !important; }
   .hero-pad     { padding: 100px 20px 60px; }
   .numbers-grid { grid-template-columns: 1fr !important; }
   .contact-name-org { grid-template-columns: 1fr !important; }
