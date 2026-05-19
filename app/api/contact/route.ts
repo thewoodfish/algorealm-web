@@ -8,7 +8,7 @@ export async function POST(req: NextRequest) {
 
   const { error } = await resend.emails.send({
     from: "Samaritan <onboarding@resend.dev>",
-    to: "hello@algorealm.tech",
+    to: "jasonholt2002@gmail.com",
     replyTo: email,
     subject: `Demo Request — ${name} (${org})`,
     html: `
