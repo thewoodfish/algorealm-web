@@ -254,18 +254,6 @@ export function Hero() {
       <div style={{ position: "relative", zIndex: 4, textAlign: "center", maxWidth: 860 }}>
 
 
-        {/* eyebrow */}
-        <motion.div {...fadeUp(0.15)} style={{ marginBottom: 24 }}>
-          <span style={{
-            fontFamily: "var(--font-mono)",
-            fontSize: 11,
-            letterSpacing: ".22em",
-            textTransform: "uppercase",
-            color: "var(--gold)",
-          }}>
-            — Samaritan —
-          </span>
-        </motion.div>
 
         {/* headline */}
         <TypewriterHeadline />
