@@ -6,7 +6,7 @@ import Image from "next/image";
 const LINES = [
   { text: "Intelligence before contact.", gold: false },
   { text: "Decisions before crisis.",     gold: false },
-  { text: "Introducing Samaritan.",        gold: true  },
+  { text: "Samaritan.",                    gold: true  },
 ];
 
 function TypewriterHeadline() {
@@ -44,7 +44,16 @@ function TypewriterHeadline() {
         const visible  = isPast ? line.text : isActive ? line.text.slice(0, charIndex) : "";
         if (!visible && !isActive) return null;
         return (
-          <span key={i} style={{ display: "block", color: line.gold ? "var(--gold)" : "#fff" }}>
+          <span key={i} style={{
+            display: "block",
+            color: line.gold ? "var(--gold)" : "#fff",
+            ...(line.gold ? {
+              fontSize: "1.35em",
+              letterSpacing: ".18em",
+              textTransform: "uppercase",
+              textShadow: "0 0 24px rgba(201,168,76,.6), 0 0 60px rgba(201,168,76,.25)",
+            } : {}),
+          }}>
             {visible}
             {isActive && !done && (
               <span style={{
@@ -253,7 +262,7 @@ export function Hero() {
             textTransform: "uppercase",
             color: "var(--gold)",
           }}>
-            — Introducing Samaritan —
+            — Samaritan —
           </span>
         </motion.div>
 
