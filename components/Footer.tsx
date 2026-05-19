@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer style={{
+    <footer className="footer-inner" style={{
       padding: "32px 48px",
       borderTop: ".5px solid var(--border)",
       display: "flex",

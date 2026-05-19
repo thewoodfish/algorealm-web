@@ -115,12 +115,11 @@ function MapVisual() {
 
 export function What() {
   return (
-    <section id="what" style={{ padding: "120px 48px" }}>
-      <div style={{
+    <section id="what" className="section-pad" style={{}}>
+
+      <div className="two-col" style={{
         maxWidth: 1200,
         margin: "0 auto",
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
         gap: 80,
         alignItems: "center",
       }}>

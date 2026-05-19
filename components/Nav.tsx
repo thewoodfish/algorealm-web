@@ -26,6 +26,7 @@ export function Nav() {
         display: "flex",
         alignItems: "center",
         padding: "0 48px",
+        boxSizing: "border-box",
         background: scrolled ? "rgba(9,12,18,.92)" : "transparent",
         backdropFilter: scrolled ? "blur(20px)" : "none",
         borderBottom: scrolled ? ".5px solid var(--border)" : ".5px solid transparent",
@@ -40,7 +41,7 @@ export function Nav() {
       </a>
 
       {/* Links */}
-      <ul style={{ display: "flex", alignItems: "center", gap: 2, marginLeft: "auto", listStyle: "none" }}>
+      <ul className="nav-links" style={{ alignItems: "center", gap: 2, marginLeft: "auto", listStyle: "none" }}>
         {links.map((l) => (
           <li key={l.href}>
             <a

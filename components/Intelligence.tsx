@@ -50,18 +50,16 @@ export function Intelligence() {
   return (
     <section
       id="intelligence"
+      className="section-pad"
       style={{
-        padding: "120px 48px",
         background: "var(--surface)",
         borderTop: ".5px solid var(--border)",
         borderBottom: ".5px solid var(--border)",
       }}
     >
-      <div style={{
+      <div className="two-col" style={{
         maxWidth: 1200,
         margin: "0 auto",
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
         gap: 80,
         alignItems: "start",
       }}>

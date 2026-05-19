@@ -21,10 +21,10 @@ const pillars = [
 
 export function Company() {
   return (
-    <section id="company" style={{ padding: "120px 48px" }}>
+    <section id="company" className="section-pad" style={{}}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80 }}>
+        <div className="two-col" style={{ gap: 80 }}>
           {/* left */}
           <Reveal>
             <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--gold)", letterSpacing: ".14em", textTransform: "uppercase", marginBottom: 16 }}>
@@ -140,9 +140,7 @@ export function Company() {
               </div>
 
               {/* metrics strip */}
-              <div style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(3, 1fr)",
+              <div className="three-col" style={{
                 gap: 1,
                 background: "var(--border)",
                 marginTop: 8,

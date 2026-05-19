@@ -39,8 +39,8 @@ export function How() {
   return (
     <section
       id="how"
+      className="section-pad"
       style={{
-        padding: "120px 48px",
         background: "var(--surface)",
         borderTop: ".5px solid var(--border)",
         borderBottom: ".5px solid var(--border)",
@@ -63,7 +63,7 @@ export function How() {
           </h2>
         </Reveal>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 1, background: "var(--border)" }}>
+        <div className="three-col" style={{ gap: 1, background: "var(--border)" }}>
           {steps.map((s, i) => (
             <Reveal key={s.num} delay={i * 0.1}>
               <div style={{

@@ -24,9 +24,8 @@ const stats = [
 export function Numbers() {
   return (
     <div
+      className="numbers-grid three-col"
       style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(3, 1fr)",
         borderTop: ".5px solid var(--border)",
         borderBottom: ".5px solid var(--border)",
       }}

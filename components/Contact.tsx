@@ -66,13 +66,13 @@ export function Contact() {
   return (
     <section
       id="contact"
+      className="section-pad"
       style={{
-        padding: "120px 48px",
         background: "var(--surface)",
         borderTop: ".5px solid var(--border)",
       }}
     >
-      <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80 }}>
+      <div className="two-col" style={{ maxWidth: 1200, margin: "0 auto", gap: 80 }}>
 
         {/* form */}
         <Reveal>
@@ -107,7 +107,7 @@ export function Contact() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+              <div className="contact-name-org two-col" style={{ gap: 16 }}>
                 <div>
                   <label style={labelStyle}>Full name</label>
                   <input ref={nameRef} style={inputStyle} type="text" placeholder="Aminu Bello" required />

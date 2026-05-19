@@ -139,7 +139,7 @@ export function Solutions() {
   const sol = solutions[active];
 
   return (
-    <section id="solutions" style={{ padding: "120px 48px" }}>
+    <section id="solutions" className="section-pad" style={{}}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
 
         {/* header */}
@@ -193,9 +193,8 @@ export function Solutions() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+            className="two-col"
             style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
               gap: 64,
               alignItems: "start",
             }}
@@ -237,7 +236,7 @@ export function Solutions() {
               </ul>
 
               {/* stats */}
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 1, background: "var(--border)" }}>
+              <div className="solutions-stats four-col" style={{ gap: 1, background: "var(--border)" }}>
                 {sol.stats.map((s) => (
                   <div key={s.label} style={{
                     background: "var(--surface)",

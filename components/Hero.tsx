@@ -217,6 +217,7 @@ export function Hero() {
         justifyContent: "center",
         overflow: "hidden",
         padding: "120px 48px 80px",
+        boxSizing: "border-box",
       }}
     >
       {/* video background */}
