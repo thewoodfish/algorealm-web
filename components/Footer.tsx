@@ -17,7 +17,7 @@ export function Footer() {
       </span>
 
       <span style={{ fontFamily: "var(--font-body)", fontSize: 12, color: "var(--text-3)" }}>
-        © 2025 Algorealm Technologies
+        © 2026 Algorealm, Inc.
       </span>
     </footer>
   );
