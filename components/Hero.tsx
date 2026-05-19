@@ -1,7 +1,70 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+
+const LINES = [
+  { text: "Intelligence before contact.", gold: false },
+  { text: "Decisions before crisis.",     gold: false },
+  { text: "Introducing Samaritan.",        gold: true  },
+];
+
+function TypewriterHeadline() {
+  const [lineIndex, setLineIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [done, setDone] = useState(false);
+
+  useEffect(() => {
+    if (done) return;
+    const current = LINES[lineIndex];
+    if (charIndex < current.text.length) {
+      const t = setTimeout(() => setCharIndex(c => c + 1), 38);
+      return () => clearTimeout(t);
+    }
+    if (lineIndex < LINES.length - 1) {
+      const t = setTimeout(() => { setLineIndex(l => l + 1); setCharIndex(0); }, 320);
+      return () => clearTimeout(t);
+    }
+    setDone(true);
+  }, [charIndex, lineIndex, done]);
+
+  return (
+    <h1 style={{
+      fontFamily: "var(--font-mono)",
+      fontSize: "clamp(28px, 4vw, 58px)",
+      fontWeight: 400,
+      letterSpacing: ".04em",
+      lineHeight: 1.25,
+      marginBottom: 28,
+      textAlign: "center",
+    }}>
+      {LINES.map((line, i) => {
+        const isActive = i === lineIndex;
+        const isPast   = i < lineIndex;
+        const visible  = isPast ? line.text : isActive ? line.text.slice(0, charIndex) : "";
+        if (!visible && !isActive) return null;
+        return (
+          <span key={i} style={{ display: "block", color: line.gold ? "var(--gold)" : "#fff" }}>
+            {visible}
+            {isActive && !done && (
+              <span style={{
+                display: "inline-block",
+                width: "0.6em",
+                height: "2px",
+                background: "var(--gold)",
+                verticalAlign: "baseline",
+                marginLeft: "2px",
+                marginBottom: "4px",
+                animation: "blink .6s step-end infinite",
+              }} />
+            )}
+          </span>
+        );
+      })}
+      <style>{`@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }`}</style>
+    </h1>
+  );
+}
 
 function RadarCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -161,7 +224,7 @@ export function Hero() {
           opacity: 1,
         }}
       >
-        <source src="/videos/vid-1.mp4" type="video/mp4" />
+        <source src="/videos/vid-1.mp4?v=2" type="video/mp4" />
       </video>
 
 
@@ -180,57 +243,22 @@ export function Hero() {
       {/* content */}
       <div style={{ position: "relative", zIndex: 4, textAlign: "center", maxWidth: 860 }}>
 
+
         {/* eyebrow */}
-        <motion.div {...fadeUp(0.2)} style={{ display: "inline-flex", alignItems: "center", gap: 8, marginBottom: 36 }}>
-          <div style={{
-            border: ".5px solid var(--border-2)",
-            background: "rgba(255,255,255,.04)",
-            padding: "6px 16px 6px 10px",
-            borderRadius: 3,
-            display: "flex",
-            alignItems: "center",
-            gap: 12,
+        <motion.div {...fadeUp(0.15)} style={{ marginBottom: 24 }}>
+          <span style={{
+            fontFamily: "var(--font-mono)",
+            fontSize: 11,
+            letterSpacing: ".22em",
+            textTransform: "uppercase",
+            color: "var(--gold)",
           }}>
-            <Image src="/logo-icon.png" alt="Algorealm" width={24} height={24} style={{ height: 22, width: "auto", objectFit: "contain" }} />
-            <div style={{ width: ".5px", height: 16, background: "var(--border-2)" }} />
-            <span style={{
-              fontFamily: "var(--font-mono)",
-              fontSize: 10,
-              color: "var(--text-2)",
-              letterSpacing: ".12em",
-              textTransform: "uppercase",
-            }}>
-              Samaritan Platform
-            </span>
-            <div style={{ display: "flex", alignItems: "center", gap: 5 }}>
-              <span style={{
-                width: 5, height: 5,
-                borderRadius: "50%",
-                background: "var(--green)",
-                display: "inline-block",
-                animation: "pulse 2s infinite",
-              }} />
-              <span style={{ fontFamily: "var(--font-mono)", fontSize: 9, color: "var(--green)", letterSpacing: ".1em" }}>LIVE</span>
-            </div>
-          </div>
+            — Introducing Samaritan —
+          </span>
         </motion.div>
 
         {/* headline */}
-        <motion.h1
-          {...fadeUp(0.35)}
-          style={{
-            fontFamily: "var(--font-display)",
-            fontSize: "clamp(44px, 6.5vw, 84px)",
-            fontWeight: 800,
-            letterSpacing: "-.03em",
-            lineHeight: 1.0,
-            marginBottom: 28,
-          }}
-        >
-          <span style={{ color: "#fff", display: "block" }}>You find out</span>
-          <span style={{ color: "#fff", display: "block" }}>after it happens.</span>
-          <span style={{ color: "var(--gold)", display: "block" }}>Samaritan changes that.</span>
-        </motion.h1>
+        <TypewriterHeadline />
 
         {/* sub */}
         <motion.p
