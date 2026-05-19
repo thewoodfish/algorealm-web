@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Reveal } from "./ui/Reveal";
 
 const sectors = ["Military / Security ISR", "Pipeline & Infrastructure", "Telecoms Tower Protection", "Agricultural Security", "Other"];
@@ -7,10 +7,37 @@ const sectors = ["Military / Security ISR", "Pipeline & Infrastructure", "Teleco
 export function Contact() {
   const [sector, setSector] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  function handleSubmit(e: React.FormEvent) {
+  const nameRef    = useRef<HTMLInputElement>(null);
+  const orgRef     = useRef<HTMLInputElement>(null);
+  const emailRef   = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
+
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name:    nameRef.current?.value,
+          org:     orgRef.current?.value,
+          email:   emailRef.current?.value,
+          interest: sector,
+          message: messageRef.current?.value,
+        }),
+      });
+      if (!res.ok) throw new Error("Failed to send");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Email us directly at hello@algorealm.tech");
+    } finally {
+      setLoading(false);
+    }
   }
 
   const inputStyle: React.CSSProperties = {
@@ -83,19 +110,17 @@ export function Contact() {
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                 <div>
                   <label style={labelStyle}>Full name</label>
-                  <input style={inputStyle} type="text" placeholder="Aminu Bello" required
-                    onFocus={e => (e.target.style.borderColor = "var(--border-2)")}
-                  />
+                  <input ref={nameRef} style={inputStyle} type="text" placeholder="Aminu Bello" required />
                 </div>
                 <div>
                   <label style={labelStyle}>Organisation</label>
-                  <input style={inputStyle} type="text" placeholder="Nigerian Army" required />
+                  <input ref={orgRef} style={inputStyle} type="text" placeholder="Nigerian Army" required />
                 </div>
               </div>
 
               <div>
                 <label style={labelStyle}>Email</label>
-                <input style={inputStyle} type="email" placeholder="a.bello@example.ng" required />
+                <input ref={emailRef} style={inputStyle} type="email" placeholder="a.bello@example.ng" required />
               </div>
 
               <div>
@@ -114,13 +139,18 @@ export function Contact() {
               <div>
                 <label style={labelStyle}>Operational challenge (optional)</label>
                 <textarea
+                  ref={messageRef}
                   style={{ ...inputStyle, resize: "vertical", minHeight: 96 }}
                   placeholder="Describe the area, infrastructure, or threat you need to cover..."
                 />
               </div>
 
+              {error && (
+                <p style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--red)", letterSpacing: ".04em" }}>{error}</p>
+              )}
               <button
                 type="submit"
+                disabled={loading}
                 style={{
                   background: "var(--gold)",
                   color: "#0a0c12",
@@ -130,15 +160,16 @@ export function Contact() {
                   padding: "12px 28px",
                   borderRadius: 4,
                   border: "none",
-                  cursor: "pointer",
+                  cursor: loading ? "not-allowed" : "pointer",
                   letterSpacing: ".04em",
                   transition: "background .2s",
                   alignSelf: "flex-start",
+                  opacity: loading ? 0.6 : 1,
                 }}
-                onMouseEnter={e => (e.currentTarget.style.background = "var(--gold-2)")}
+                onMouseEnter={e => { if (!loading) e.currentTarget.style.background = "var(--gold-2)"; }}
                 onMouseLeave={e => (e.currentTarget.style.background = "var(--gold)")}
               >
-                Send request
+                {loading ? "Sending…" : "Send request"}
               </button>
             </form>
           )}
