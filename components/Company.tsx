@@ -35,7 +35,7 @@ export function Company() {
               fontSize: "clamp(36px, 5vw, 64px)",
               fontWeight: 800,
               letterSpacing: "-.03em",
-              color: "var(--gold)",
+              color: "#ffffff",
               lineHeight: 1,
               marginBottom: 48,
             }}>
@@ -176,6 +176,49 @@ export function Company() {
                     </div>
                   </div>
                 ))}
+              </div>
+
+              {/* founder bio */}
+              <div style={{
+                marginTop: 48,
+                padding: 28,
+                border: ".5px solid var(--border)",
+                borderRadius: 8,
+                background: "var(--surface)",
+              }}>
+                <div style={{
+                  fontFamily: "var(--font-mono)",
+                  fontSize: 9,
+                  color: "var(--text-3)",
+                  letterSpacing: ".12em",
+                  textTransform: "uppercase",
+                  marginBottom: 8,
+                }}>
+                  Founder
+                </div>
+                <div style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: 22,
+                  fontWeight: 700,
+                  color: "#ffffff",
+                  marginBottom: 10,
+                  letterSpacing: "-.01em",
+                }}>
+                  Deji
+                </div>
+                <p style={{
+                  fontFamily: "var(--font-body)",
+                  fontSize: 14,
+                  color: "var(--text-2)",
+                  lineHeight: 1.7,
+                  fontWeight: 300,
+                }}>
+                  Started his first company at 16. Eight years of software
+                  development. Four writing professional Rust. Civil engineering
+                  background. Built SwarmNL — an open-source distributed
+                  networking library the Web3 Foundation paid $48,000 to sponsor.
+                  Built Samaritan alone. Nigerian. 23 years old.
+                </p>
               </div>
             </div>
           </Reveal>

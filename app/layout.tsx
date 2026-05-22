@@ -23,7 +23,22 @@ const shareTechMono = Share_Tech_Mono({
 export const metadata: Metadata = {
   title: "Samaritan — Algorealm",
   description:
-    "AI-powered security that monitors large areas, learns threat patterns, and tells you what is coming before it arrives.",
+    "Samaritan by Algorealm — AI-powered surveillance intelligence platform deploying autonomous aircraft to protect Nigerian critical infrastructure. Pipeline security, military ISR, tower protection. Built in Nigeria. Data never leaves the country.",
+  openGraph: {
+    title: "Samaritan — Algorealm",
+    description:
+      "Nigeria loses $8.3B annually to preventable threats. Samaritan is the intelligence layer that changes that. Built in Nigeria. Data never leaves the country.",
+    images: ["https://www.algorealm.tech/images/nigeria-threat-map.png"],
+    url: "https://www.algorealm.ng",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Samaritan — Algorealm",
+    description:
+      "Nigeria loses $8.3B annually to preventable threats. Samaritan is the intelligence layer that changes that.",
+    images: ["https://www.algorealm.tech/images/nigeria-threat-map.png"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

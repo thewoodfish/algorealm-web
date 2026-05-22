@@ -1,12 +1,11 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const LINES = [
-  { text: "Intelligence before contact.", gold: false },
-  { text: "Decisions before crisis.",     gold: false },
-  { text: "Samaritan.",                    gold: true  },
+  { text: "Nigeria is losing billions",           gold: false },
+  { text: "to threats with detectable patterns.", gold: false },
+  { text: "Nobody was watching. Until now.",      gold: true  },
 ];
 
 function TypewriterHeadline() {
@@ -75,129 +74,6 @@ function TypewriterHeadline() {
   );
 }
 
-function RadarCanvas() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d")!;
-    let angle = 0;
-    let raf: number;
-
-    const dots: { x: number; y: number; alpha: number; decay: number }[] = [];
-
-    // seed some static contact blips
-    const contacts = [
-      { r: 0.48, a: 0.8 },
-      { r: 0.62, a: 2.1 },
-      { r: 0.31, a: 3.9 },
-      { r: 0.72, a: 5.2 },
-    ];
-
-    function draw() {
-      const W = canvas!.width;
-      const H = canvas!.height;
-      const cx = W / 2;
-      const cy = H / 2;
-      const R = Math.min(W, H) / 2 - 4;
-
-      ctx.clearRect(0, 0, W, H);
-
-      // rings
-      [0.25, 0.5, 0.75, 1].forEach((f) => {
-        ctx.beginPath();
-        ctx.arc(cx, cy, R * f, 0, Math.PI * 2);
-        ctx.strokeStyle = "rgba(201,168,76,.12)";
-        ctx.lineWidth = 0.5;
-        ctx.stroke();
-      });
-
-      // crosshairs
-      ctx.strokeStyle = "rgba(201,168,76,.08)";
-      ctx.lineWidth = 0.5;
-      ctx.beginPath(); ctx.moveTo(cx, cy - R); ctx.lineTo(cx, cy + R); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(cx - R, cy); ctx.lineTo(cx + R, cy); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(cx - R * 0.707, cy - R * 0.707); ctx.lineTo(cx + R * 0.707, cy + R * 0.707); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(cx + R * 0.707, cy - R * 0.707); ctx.lineTo(cx - R * 0.707, cy + R * 0.707); ctx.stroke();
-
-      // draw sweep arc (trailing glow)
-      for (let i = 0; i < 60; i++) {
-        const a = angle - (i * Math.PI) / 90;
-        const alpha = (1 - i / 60) * 0.18;
-        ctx.beginPath();
-        ctx.moveTo(cx, cy);
-        ctx.arc(cx, cy, R, a - Math.PI / 90, a);
-        ctx.closePath();
-        ctx.fillStyle = `rgba(201,168,76,${alpha})`;
-        ctx.fill();
-      }
-
-      // sweep line
-      ctx.beginPath();
-      ctx.moveTo(cx, cy);
-      ctx.lineTo(cx + Math.cos(angle) * R, cy + Math.sin(angle) * R);
-      ctx.strokeStyle = "rgba(201,168,76,.7)";
-      ctx.lineWidth = 1;
-      ctx.stroke();
-
-      // light up blips as sweep passes
-      contacts.forEach((c) => {
-        const diff = ((angle - c.a) % (Math.PI * 2) + Math.PI * 2) % (Math.PI * 2);
-        if (diff < 0.15) {
-          dots.push({
-            x: cx + Math.cos(c.a) * R * c.r,
-            y: cy + Math.sin(c.a) * R * c.r,
-            alpha: 1,
-            decay: 0.012,
-          });
-        }
-      });
-
-      // render + decay blips
-      for (let i = dots.length - 1; i >= 0; i--) {
-        const d = dots[i];
-        ctx.beginPath();
-        ctx.arc(d.x, d.y, 3, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(239,68,68,${d.alpha})`;
-        ctx.fill();
-        // outer ring
-        ctx.beginPath();
-        ctx.arc(d.x, d.y, 7, 0, Math.PI * 2);
-        ctx.strokeStyle = `rgba(239,68,68,${d.alpha * 0.4})`;
-        ctx.lineWidth = 0.8;
-        ctx.stroke();
-        d.alpha -= d.decay;
-        if (d.alpha <= 0) dots.splice(i, 1);
-      }
-
-      angle += 0.008;
-      raf = requestAnimationFrame(draw);
-    }
-
-    draw();
-    return () => cancelAnimationFrame(raf);
-  }, []);
-
-  return (
-    <canvas
-      ref={canvasRef}
-      width={640}
-      height={640}
-      style={{
-        position: "absolute",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%, -50%)",
-        width: 640,
-        height: 640,
-        opacity: 0.22,
-        pointerEvents: "none",
-      }}
-    />
-  );
-}
-
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 28 },
   animate: { opacity: 1, y: 0 },
@@ -218,42 +94,31 @@ export function Hero() {
         overflow: "hidden",
         padding: "120px 48px 80px",
         boxSizing: "border-box",
+        backgroundImage: "url('/images/nigeria-threat-map.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
-      {/* video background */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        style={{
-          position: "absolute", inset: 0,
-          width: "100%", height: "100%",
-          objectFit: "cover",
-          zIndex: 0,
-          opacity: 1,
-        }}
-      >
-        <source src="/videos/vid-1.mp4?v=2" type="video/mp4" />
-      </video>
-
-
       {/* dark overlay */}
       <div style={{
         position: "absolute", inset: 0,
-        background: "rgba(0,0,0,.55)",
+        background: "rgba(6, 8, 12, 0.55)",
         zIndex: 1,
       }} />
 
-      {/* radar */}
-      <div style={{ position: "absolute", inset: 0, zIndex: 3, pointerEvents: "none" }}>
-        <RadarCanvas />
-      </div>
+      {/* grid */}
+      <div style={{
+        position: "absolute", inset: 0,
+        backgroundImage: "linear-gradient(rgba(26,37,53,.35) 1px, transparent 1px), linear-gradient(90deg, rgba(26,37,53,.35) 1px, transparent 1px)",
+        backgroundSize: "60px 60px",
+        opacity: 0.4,
+        pointerEvents: "none",
+        zIndex: 2,
+      }} />
 
       {/* content */}
-      <div style={{ position: "relative", zIndex: 4, textAlign: "center", maxWidth: 860 }}>
-
-
+      <div style={{ position: "relative", zIndex: 3, textAlign: "center", maxWidth: 860 }}>
 
         {/* headline */}
         <TypewriterHeadline />
@@ -271,9 +136,10 @@ export function Hero() {
             fontWeight: 300,
           }}
         >
-          An AI-powered security system that monitors large areas and critical
-          infrastructure, learns the pattern of threats, and tells you what is
-          coming before it arrives.
+          Samaritan is an AI-powered surveillance intelligence platform
+          that deploys autonomous aircraft to monitor large areas, learn
+          threat patterns, and tell operators what is coming
+          before it arrives.
         </motion.p>
 
         {/* CTAs */}
@@ -340,7 +206,7 @@ export function Hero() {
           flexDirection: "column",
           alignItems: "center",
           gap: 8,
-          zIndex: 4,
+          zIndex: 3,
         }}
       >
         <span style={{ fontFamily: "var(--font-mono)", fontSize: 9, color: "var(--text-3)", letterSpacing: ".14em", textTransform: "uppercase" }}>
@@ -352,8 +218,6 @@ export function Hero() {
           background: "linear-gradient(var(--border-2), transparent)",
         }} />
       </motion.div>
-
-      <style>{`@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }`}</style>
     </section>
   );
 }
