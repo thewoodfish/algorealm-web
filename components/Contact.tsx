@@ -187,12 +187,12 @@ export function Contact() {
               marginBottom: 16,
               lineHeight: 1.3,
             }}>
-              Let us show you what persistent intelligence looks like on your ground.
+              We'll show you what it looks like on your actual ground.
             </h3>
             <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 36 }}>
-              We offer a 20-minute briefing tailored to your sector, including a live
-              demonstration using a scenario based on your specific operational challenge.
-              No generic slides. No vague claims. Working software.
+              Twenty minutes. Your terrain, your threat profile, live software.
+              We don&apos;t do generic slides — we run the demo against a scenario
+              from your specific operational area. If it fits, we talk next steps.
             </p>
 
             {/* channels */}
@@ -212,8 +212,8 @@ export function Contact() {
                 },
                 {
                   icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>,
-                  label: "Headquarters",
-                  value: "Lagos, Nigeria",
+                  label: "Launch Base",
+                  value: "Maimalari Cantonment · Maiduguri, Nigeria",
                   href: "#",
                 },
               ].map((c) => (
