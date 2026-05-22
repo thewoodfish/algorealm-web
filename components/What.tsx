@@ -1,117 +1,6 @@
 "use client";
+import Image from "next/image";
 import { Reveal } from "./ui/Reveal";
-
-function MapVisual() {
-  return (
-    <div style={{
-      position: "relative",
-      background: "var(--surface)",
-      border: ".5px solid var(--border)",
-      borderRadius: 4,
-      overflow: "hidden",
-      aspectRatio: "1 / 1",
-      maxWidth: 460,
-    }}>
-      {/* grid */}
-      <div style={{
-        position: "absolute", inset: 0,
-        backgroundImage: "linear-gradient(rgba(26,37,53,.35) 1px, transparent 1px), linear-gradient(90deg, rgba(26,37,53,.35) 1px, transparent 1px)",
-        backgroundSize: "40px 40px",
-      }} />
-
-      <svg viewBox="0 0 480 480" fill="none" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
-        <defs>
-          <radialGradient id="heat-nw" cx="20%" cy="20%" r="50%">
-            <stop offset="0%" stopColor="#ef4444" stopOpacity=".2" />
-            <stop offset="100%" stopColor="#ef4444" stopOpacity="0" />
-          </radialGradient>
-          <filter id="glow-g">
-            <feGaussianBlur stdDeviation="2.5" result="b" />
-            <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
-          </filter>
-        </defs>
-
-        {/* terrain blobs */}
-        <ellipse cx="80" cy="320" rx="140" ry="80" fill="#040a12" opacity=".7" />
-        <ellipse cx="380" cy="120" rx="100" ry="70" fill="#040a12" opacity=".6" />
-
-        {/* heat overlay */}
-        <rect width="480" height="480" fill="url(#heat-nw)" />
-
-        {/* perimeter zone */}
-        <polygon points="200,160 310,144 348,230 302,296 196,282 172,210"
-          fill="rgba(201,168,76,.05)" stroke="#c9a84c" strokeWidth="1"
-          strokeDasharray="4,5" opacity=".6" />
-
-        {/* patrol envelope */}
-        <polygon points="164,130 332,112 378,244 314,330 158,316 124,206"
-          fill="none" stroke="#3b82f6" strokeWidth=".5"
-          strokeDasharray="2,6" opacity=".3" />
-
-        {/* track line */}
-        <line x1="370" y1="96" x2="302" y2="234" stroke="#a78bfa"
-          strokeWidth=".75" strokeDasharray="3,3" opacity=".7" />
-
-        {/* contact blip */}
-        <circle cx="302" cy="234" r="14" fill="#ef444406" stroke="#ef4444" strokeWidth=".8" filter="url(#glow-g)" opacity=".8" />
-        <circle cx="302" cy="234" r="5" fill="#ef444422" stroke="#ef4444" strokeWidth="1.5" />
-        <circle cx="302" cy="234" r="2.5" fill="#ef4444" />
-
-        {/* aircraft */}
-        <g transform="translate(148,104) rotate(220)">
-          <path d="M0,-6 L1.2,-1.2 L6,.6 L6,2 L1.2,1.2 L.6,4.5 L2,5.5 L2,6 L0,5.5 L-2,6 L-2,5.5 L-.6,4.5 L-1.2,1.2 L-6,2 L-6,.6 L-1.2,-1.2 Z"
-            fill="#4ade80" filter="url(#glow-g)" />
-        </g>
-        <g transform="translate(368,96) rotate(135)">
-          <path d="M0,-6 L1.2,-1.2 L6,.6 L6,2 L1.2,1.2 L.6,4.5 L2,5.5 L2,6 L0,5.5 L-2,6 L-2,5.5 L-.6,4.5 L-1.2,1.2 L-6,2 L-6,.6 L-1.2,-1.2 Z"
-            fill="#4ade80" filter="url(#glow-g)" />
-        </g>
-        <g transform="translate(408,266) rotate(45)">
-          <path d="M0,-6 L1.2,-1.2 L6,.6 L6,2 L1.2,1.2 L.6,4.5 L2,5.5 L2,6 L0,5.5 L-2,6 L-2,5.5 L-.6,4.5 L-1.2,1.2 L-6,2 L-6,.6 L-1.2,-1.2 Z"
-            fill="#4ade80" filter="url(#glow-g)" />
-        </g>
-        <g transform="translate(370,96) rotate(170)">
-          <path d="M0,-7 L1.4,-1.4 L7,.8 L7,2.2 L1.4,1.4 L.8,5.5 L2.5,6.5 L2.5,7 L0,6.5 L-2.5,7 L-2.5,6.5 L-.8,5.5 L-1.4,1.4 L-7,2.2 L-7,.8 L-1.4,-1.4 Z"
-            fill="#a78bfa" />
-        </g>
-
-        {/* FOB marker */}
-        <circle cx="240" cy="228" r="5" fill="none" stroke="#c9a84c" strokeWidth="1" opacity=".5" />
-        <circle cx="240" cy="228" r="1.5" fill="#c9a84c" opacity=".7" />
-      </svg>
-
-      {/* vignette */}
-      <div style={{
-        position: "absolute", inset: 0,
-        background: "radial-gradient(ellipse 100% 100% at 50% 50%, transparent 50%, rgba(9,12,18,.6) 100%)",
-        pointerEvents: "none",
-      }} />
-
-      {/* status badge */}
-      <div style={{
-        position: "absolute",
-        bottom: 16, left: 16,
-        fontFamily: "var(--font-mono)",
-        fontSize: 10,
-        color: "var(--gold)",
-        background: "rgba(9,12,18,.85)",
-        border: ".5px solid var(--border)",
-        padding: "5px 10px",
-        borderRadius: 2,
-        letterSpacing: ".08em",
-      }}>
-        Live · 6 aircraft · 2 contacts · 0300 UTC
-      </div>
-
-      {/* scanlines */}
-      <div style={{
-        position: "absolute", inset: 0,
-        background: "repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.04) 2px, rgba(0,0,0,.04) 4px)",
-        pointerEvents: "none",
-      }} />
-    </div>
-  );
-}
 
 export function What() {
   return (
@@ -177,7 +66,21 @@ export function What() {
 
         {/* visual */}
         <Reveal delay={0.15}>
-          <MapVisual />
+          <div style={{
+            position: "relative",
+            border: ".5px solid var(--border)",
+            borderRadius: 4,
+            overflow: "hidden",
+            maxWidth: 460,
+          }}>
+            <Image
+              src="/images/drone_over.png"
+              alt="Drone surveillance overview"
+              width={920}
+              height={920}
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
+          </div>
         </Reveal>
       </div>
     </section>
