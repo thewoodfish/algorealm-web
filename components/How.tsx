@@ -4,7 +4,7 @@ const steps = [
   {
     num: "01",
     title: "Swarm deployment",
-    body: "Multiple autonomous aircraft spread across your entire area simultaneously. They coordinate with each other — sharing what they see, dividing coverage, making collective decisions in real time. One fails: the others close the gap automatically.",
+    body: "Multiple autonomous aircrafts spread across your entire area simultaneously. They coordinate with each other — sharing what they see, dividing coverage, making collective decisions in real time. One fails: the others close the gap automatically.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="4" />

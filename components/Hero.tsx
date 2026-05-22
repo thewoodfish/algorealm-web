@@ -137,7 +137,7 @@ export function Hero() {
           }}
         >
           Samaritan is an AI-powered surveillance intelligence platform
-          that deploys autonomous aircraft to monitor large areas, learn
+          that deploys autonomous aircrafts to monitor large areas, learn
           threat patterns, and tell operators what is coming
           before it arrives.
         </motion.p>
