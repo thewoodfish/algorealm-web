@@ -204,12 +204,12 @@ export function Contact() {
                   value: "hello@algorealm.ng",
                   href: "mailto:hello@algorealm.ng",
                 },
-                /* {
+                {
                   icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>,
                   label: "LinkedIn",
                   value: "linkedin.com/company/algorealm",
-                  href: "https://linkedin.com/company/algorealm",
-                }, */
+                  href: "https://www.linkedin.com/company/algorealm",
+                },
                 {
                   icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>,
                   label: "Headquarters",
