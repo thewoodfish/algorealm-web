@@ -85,7 +85,7 @@ export function Hero() {
       id="hero"
       style={{
         position: "relative",
-        minHeight: "110vh",
+        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
