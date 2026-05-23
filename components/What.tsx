@@ -34,7 +34,7 @@ export function What() {
             and helps you prevent incidents before they happen.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 36 }}>
-            It does this by deploying a swarm of small autonomous aircrafts over the
+            It does this by deploying a swarm of small autonomous aircraft over the
             area you need to protect — spreading out, covering the entire area
             simultaneously, day and night, without a human pilot controlling each one.
           </p>
