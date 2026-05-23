@@ -106,10 +106,14 @@ export function Hero() {
         loop
         playsInline
         style={{
-          position: "absolute", inset: 0,
-          width: "100%", height: "100%",
+          position: "absolute",
+          top: "-20%",
+          left: 0,
+          right: 0,
+          bottom: 0,
+          width: "100%",
           objectFit: "cover",
-          objectPosition: "center top",
+          objectPosition: "center center",
           zIndex: 1,
         }}
       >
