@@ -93,10 +93,6 @@ export function Hero() {
         overflow: "hidden",
         padding: "120px 48px 80px",
         boxSizing: "border-box",
-        backgroundImage: "url('/images/nigeria-threat-map.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
       }}
     >
       {/* hero video */}
