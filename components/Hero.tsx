@@ -100,11 +100,27 @@ export function Hero() {
         backgroundRepeat: "no-repeat",
       }}
     >
+      {/* hero video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        style={{
+          position: "absolute", inset: 0,
+          width: "100%", height: "100%",
+          objectFit: "cover",
+          zIndex: 1,
+        }}
+      >
+        <source src="/videos/hero-vid.mp4" type="video/mp4" />
+      </video>
+
       {/* dark overlay */}
       <div style={{
         position: "absolute", inset: 0,
         background: "rgba(6, 8, 12, 0.55)",
-        zIndex: 1,
+        zIndex: 2,
       }} />
 
       {/* grid */}
@@ -114,11 +130,11 @@ export function Hero() {
         backgroundSize: "60px 60px",
         opacity: 0.4,
         pointerEvents: "none",
-        zIndex: 2,
+        zIndex: 3,
       }} />
 
       {/* content */}
-      <div style={{ position: "relative", zIndex: 3, textAlign: "center", maxWidth: 860 }}>
+      <div style={{ position: "relative", zIndex: 4, textAlign: "center", maxWidth: 860 }}>
 
         {/* headline */}
         <TypewriterHeadline />
@@ -206,7 +222,7 @@ export function Hero() {
           flexDirection: "column",
           alignItems: "center",
           gap: 8,
-          zIndex: 3,
+          zIndex: 4,
         }}
       >
         <span style={{ fontFamily: "var(--font-mono)", fontSize: 9, color: "var(--text-3)", letterSpacing: ".14em", textTransform: "uppercase" }}>
