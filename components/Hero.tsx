@@ -85,13 +85,13 @@ export function Hero() {
       id="hero"
       style={{
         position: "relative",
-        minHeight: "140vh",
+        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
         overflow: "hidden",
-        padding: "120px 48px 140px",
+        padding: "120px 48px 80px",
         boxSizing: "border-box",
         backgroundImage: "url('/images/nigeria-threat-map.png')",
         backgroundSize: "cover",
