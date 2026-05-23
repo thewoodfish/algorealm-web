@@ -85,13 +85,13 @@ export function Hero() {
       id="hero"
       style={{
         position: "relative",
-        minHeight: "100vh",
+        minHeight: "140vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
         overflow: "hidden",
-        padding: "120px 48px 80px",
+        padding: "120px 48px 140px",
         boxSizing: "border-box",
         backgroundImage: "url('/images/nigeria-threat-map.png')",
         backgroundSize: "cover",
@@ -119,6 +119,16 @@ export function Hero() {
       >
         <source src="/videos/hero-vid.mp4" type="video/mp4" />
       </video>
+
+      {/* bottom fade into next section */}
+      <div style={{
+        position: "absolute",
+        bottom: 0, left: 0, right: 0,
+        height: "25%",
+        background: "linear-gradient(to bottom, transparent, #090c12)",
+        zIndex: 5,
+        pointerEvents: "none",
+      }} />
 
       {/* dark overlay */}
       <div style={{
