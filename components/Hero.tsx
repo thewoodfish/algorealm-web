@@ -1,5 +1,77 @@
 "use client";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+
+const LINES = [
+  { text: "Nigeria is losing billions",           gold: false },
+  { text: "to threats with detectable patterns.", gold: false },
+  { text: "Nobody was watching. Until now.",      gold: true  },
+];
+
+function TypewriterHeadline() {
+  const [lineIndex, setLineIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [done, setDone] = useState(false);
+
+  useEffect(() => {
+    if (done) return;
+    const current = LINES[lineIndex];
+    if (charIndex < current.text.length) {
+      const t = setTimeout(() => setCharIndex(c => c + 1), 38);
+      return () => clearTimeout(t);
+    }
+    if (lineIndex < LINES.length - 1) {
+      const t = setTimeout(() => { setLineIndex(l => l + 1); setCharIndex(0); }, 320);
+      return () => clearTimeout(t);
+    }
+    setDone(true);
+  }, [charIndex, lineIndex, done]);
+
+  return (
+    <h1 style={{
+      fontFamily: "var(--font-mono)",
+      fontSize: "clamp(22px, 3.5vw, 52px)",
+      fontWeight: 400,
+      letterSpacing: ".04em",
+      lineHeight: 1.3,
+      marginBottom: 28,
+      textAlign: "center",
+    }}>
+      {LINES.map((line, i) => {
+        const isActive = i === lineIndex;
+        const isPast   = i < lineIndex;
+        const visible  = isPast ? line.text : isActive ? line.text.slice(0, charIndex) : "";
+        if (!visible && !isActive) return null;
+        return (
+          <span key={i} style={{
+            display: "block",
+            color: line.gold ? "var(--gold)" : "#fff",
+            ...(line.gold ? {
+              fontSize: "1.2em",
+              letterSpacing: ".12em",
+              textTransform: "uppercase",
+              textShadow: "0 0 24px rgba(201,168,76,.5), 0 0 60px rgba(201,168,76,.2)",
+            } : {}),
+          }}>
+            {visible}
+            {isActive && !done && (
+              <span style={{
+                display: "inline-block",
+                width: "0.55em",
+                height: "2px",
+                background: "var(--gold)",
+                verticalAlign: "middle",
+                marginLeft: "3px",
+                animation: "blink .6s step-end infinite",
+              }} />
+            )}
+          </span>
+        );
+      })}
+      <style>{`@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }`}</style>
+    </h1>
+  );
+}
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 28 },
@@ -64,18 +136,7 @@ export function Hero() {
       <div style={{ position: "relative", zIndex: 4, textAlign: "center", maxWidth: 860 }}>
 
         {/* headline */}
-        <motion.h1 {...fadeUp(0.2)} style={{
-          fontFamily: "var(--font-display)",
-          fontSize: "clamp(36px, 5.5vw, 72px)",
-          fontWeight: 800,
-          letterSpacing: "-.03em",
-          lineHeight: 1.05,
-          marginBottom: 28,
-          textAlign: "center",
-        }}>
-          <span style={{ display: "block", color: "#fff" }}>Nobody was watching.</span>
-          <span style={{ display: "block", color: "var(--gold)" }}>Until now.</span>
-        </motion.h1>
+        <TypewriterHeadline />
 
         {/* sub */}
         <motion.p
