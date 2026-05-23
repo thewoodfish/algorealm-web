@@ -159,7 +159,7 @@ export function Hero() {
             fontWeight: 300,
           }}
         >
-          AI surveillance intelligence for Nigerian critical infrastructure.
+          Every threat has a pattern. Samaritan finds it before it lands.
         </motion.p>
 
         {/* CTAs */}
