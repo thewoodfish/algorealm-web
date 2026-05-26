@@ -144,22 +144,33 @@ export function Hero() {
       <div style={{ position: "relative", zIndex: 4, textAlign: "center", maxWidth: 860 }}>
 
         {/* headline */}
-        <TypewriterHeadline />
+        <motion.h1 {...fadeUp(0.2)} style={{
+          fontFamily: "var(--font-display)",
+          fontSize: "clamp(36px, 5.5vw, 80px)",
+          fontWeight: 800,
+          letterSpacing: "-.03em",
+          lineHeight: 1.05,
+          marginBottom: 24,
+          textAlign: "center",
+          color: "#fff",
+        }}>
+          Persistent aerial intelligence.
+        </motion.h1>
 
         {/* sub */}
         <motion.p
-          {...fadeUp(0.38)}
+          {...fadeUp(0.35)}
           style={{
             fontFamily: "var(--font-body)",
-            fontSize: 17,
+            fontSize: 18,
             color: "rgba(255,255,255,.75)",
             lineHeight: 1.6,
-            maxWidth: 480,
+            maxWidth: 520,
             margin: "0 auto 40px",
             fontWeight: 300,
           }}
         >
-          Every threat has a pattern. Samaritan finds it before it lands.
+          Detect patterns, monitor vast terrain, and respond to threats before escalation.
         </motion.p>
 
         {/* CTAs */}
