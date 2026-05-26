@@ -2,8 +2,8 @@ import { Reveal } from "./ui/Reveal";
 
 const pillars = [
   {
-    title: "Nigerian technology",
-    body: "Built here. For here. Not a foreign product sold to Nigeria — an indigenous capability developed by a Nigerian team for Nigerian conditions.",
+    title: "African technology",
+    body: "Built here. For here. Not a foreign product sold into Africa — an indigenous capability developed by an African team that understands African conditions.",
   },
   {
     title: "Data sovereignty",
@@ -95,10 +95,11 @@ export function Company() {
               </p>
 
               <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300 }}>
-                Nigeria loses billions annually to threats that could be prevented
-                with persistent, intelligent surveillance. The tools that exist require
-                foreign technicians, send data to foreign servers, and cannot learn from
-                operational history.
+                Africa loses billions annually to threats that could be prevented
+                with persistent, intelligent surveillance. We started in Nigeria — where
+                our relationships are deepest and the urgency is most acute. The tools
+                that exist require foreign technicians, send data to foreign servers,
+                and cannot learn from operational history.
               </p>
 
               <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300 }}>

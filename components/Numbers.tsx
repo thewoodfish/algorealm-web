@@ -4,19 +4,19 @@ const stats = [
   {
     val: "$4.4B",
     label: "Annual pipeline theft",
-    desc: "Stolen from Nigerian pipelines every year. Most of it preventable with persistent surveillance.",
+    desc: "Stolen from African pipelines every year. Most of it preventable with persistent surveillance.",
     tag: "Oil & Gas",
   },
   {
     val: "8,000",
     label: "Lives lost annually",
-    desc: "Nigerians killed by bandits and insurgents each year. Security forces always arrive after the fact.",
+    desc: "Africans killed by insurgents and armed groups each year. Security forces always arrive after the fact.",
     tag: "Military / Security",
   },
   {
     val: "Zero",
     label: "Indigenous ISR systems",
-    desc: "No persistent autonomous swarm surveillance system has been built in Nigeria. Until now.",
+    desc: "No persistent autonomous swarm surveillance system has been built in Africa. Until now.",
     tag: "Market gap",
   },
 ];
