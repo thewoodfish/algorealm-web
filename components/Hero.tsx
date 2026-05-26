@@ -165,7 +165,9 @@ export function Hero() {
         {/* CTAs */}
         <motion.div {...fadeUp(0.62)} style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
           <a
-            href="#demo"
+            href="https://youtu.be/bZSVWyGSxyc"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               display: "inline-flex",
               alignItems: "center",
