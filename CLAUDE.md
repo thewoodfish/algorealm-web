@@ -1,36 +1,144 @@
-# CLAUDE.md
+CHANGE 1 — Meta description
+Current:
+"AI-powered surveillance intelligence platform deploying
+autonomous aircraft to protect Nigerian critical
+infrastructure. Pipeline security, military ISR, tower
+protection. Built in Nigeria. Data never leaves the country."
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Replace with:
+"AI-powered surveillance intelligence platform deploying
+autonomous aircraft to protect African critical
+infrastructure. Pipeline security, military ISR, tower
+protection. Built in Africa. Data never leaves your country."
 
-## Commands
+CHANGE 2 — Meta OG description
+Current:
+"Nigeria loses $8.3B annually to preventable threats.
+Samaritan is the intelligence layer that changes that.
+Built in Nigeria. Data never leaves the country."
 
-```bash
-npm run dev       # start dev server at localhost:3000
-npm run build     # production build
-npm run lint      # run ESLint
-```
+Replace with:
+"Africa loses billions annually to preventable threats.
+Samaritan is the intelligence layer that changes that.
+Data never leaves your country."
 
-No test suite is configured.
+CHANGE 3 — Hero headline
+Current:
+"Every threat has a pattern.
+Samaritan finds it before it lands."
 
-## Architecture
+This is already generic. Keep it exactly as is.
 
-This is a **Next.js 16 (App Router) marketing site** for Algorealm's "Samaritan" AI security platform. It is a single-page site — `app/page.tsx` composes all sections top-to-bottom.
+CHANGE 4 — Numbers strip sector tags
+Current: "Oil & Gas" "Military / Security" "Market gap"
+These are fine. Keep them.
 
-**Section order in `app/page.tsx`:**
-`Nav → Hero → Numbers → What → How → Solutions → Intelligence → Company → Contact → Footer`
+Current number descriptions:
+Cell 1: "Stolen from Nigerian pipelines every year."
+Replace: "Stolen from African pipelines every year."
 
-Each section is its own component in `components/`. All sections are client components (`"use client"`) because they use Framer Motion or browser APIs.
+Cell 2: "Nigerians killed by bandits and insurgents each year."
+Replace: "Africans killed by insurgents and armed groups
+          each year."
 
-**Styling approach:** Tailwind v4 is installed but barely used. Virtually all styles are written as inline `style` objects. Design tokens are CSS custom properties defined in `app/globals.css`:
-- Colors: `--bg`, `--surface`, `--surface-2`, `--border`, `--border-2`, `--gold`, `--gold-2`, `--gold-dim`, `--gold-glow`, `--text`, `--text-2`, `--text-3`, status colors (`--red`, `--green`, `--amber`, `--blue`, `--purple`)
-- Fonts: `--font-display` (Syne), `--font-body` (DM Sans), `--font-mono` (DM Mono)
+Cell 3: "No persistent autonomous swarm surveillance system
+         has been built in Nigeria. Until now."
+Replace: "No persistent autonomous swarm surveillance system
+          has been built in Africa. Until now."
 
-**`components/ui/Reveal.tsx`** — the only shared primitive. A scroll-triggered fade-up wrapper using Framer Motion's `useInView`. Wrap any section content with `<Reveal>` to animate it in on scroll.
+CHANGE 5 — What-is section body copy
+Current:
+"Samaritan is an AI-powered security system that monitors
+large areas and complex terrain and infrastructure..."
 
-**`components/Hero.tsx`** — contains a custom `RadarCanvas` component (vanilla Canvas 2D animation with a rotating sweep, contact blips, and decay). The hero uses a background video (`/videos/vid-1.mp4`) sourced from `public/videos/`.
+This is already generic. Keep it.
 
-**`components/Solutions.tsx`** — tabbed interface (Military / Pipeline / Towers / Agriculture). All data is defined inline as a typed `Record<SolutionId, ...>`. No external data source.
+CHANGE 6 — Intelligence layer feature 4
+Current:
+"Stays in Nigeria
+Every byte of operational data is processed on hardware
+you control, in the country you operate. No foreign servers.
+No data-sharing agreements. No dependency on external networks."
 
-**Fonts** are loaded via `next/font/google` in `layout.tsx` and exposed as CSS variables applied to `<html>`.
+Replace heading and body with:
+"Stays in your country
+Every byte of operational data is processed on hardware
+you control, inside your country. No foreign servers.
+No data-sharing agreements. No dependency on external
+networks that can be switched off."
 
-**`public/videos/`** — served as static assets. The hero video is referenced as `/videos/vid-1.mp4`.
+CHANGE 7 — Company section principle 1
+Current:
+"Nigerian technology
+Built here. For here. Not a foreign product sold to
+Nigeria — an indigenous capability developed by a Nigerian
+team for Nigerian conditions."
+
+Replace with:
+"African technology
+Built here. For here. Not a foreign product sold into
+Africa — an indigenous capability developed by an African
+team that understands African conditions."
+
+CHANGE 8 — Company section body copy
+Current:
+"We are building the security infrastructure Africa needs
+— owned by Africans, operated by Africans, serving
+African conditions."
+Keep this exactly. Already correct.
+
+Current:
+"Nigeria loses billions annually to threats that could
+be prevented with persistent, intelligent surveillance."
+
+Replace with:
+"Africa loses billions annually to threats that could
+be prevented with persistent, intelligent surveillance.
+We started in Nigeria — where our relationships are
+deepest and the urgency is most acute."
+
+CHANGE 9 — Contact section address
+Current:
+"Launch Base — Maimalari Cantonment · Maiduguri, Nigeria"
+
+This needs to go entirely. Listing a Nigerian Army base
+as your business address creates problems before you have
+a formal relationship there.
+
+Replace with:
+"Headquarters — Lagos, Nigeria"
+
+CHANGE 10 — Footer
+Current:
+"© 2026 Algorealm Technologies · Lagos, Nigeria"
+
+Replace with:
+"© 2026 Algorealm Technologies · Lagos · Berlin"
+
+CHANGE 11 — Solutions tab: Military ISR intel query
+Current:
+"The northwest corridor is priority tonight. Activity
+is +340% above baseline. A vehicle matching CTT-002's
+profile has appeared on 4 consecutive Tuesday nights
+between 0130–0300. Tonight is Tuesday."
+
+This is fine — it is a specific demo scenario not a
+general claim. Keep it. Specificity here is credibility.
+
+CHANGE 12 — Intelligence screen demo
+Current pipeline demo references "KP 47" and specific
+Nigeria corridor. Keep these — same reason as above.
+Specific demo scenarios prove the system works.
+They are not limiting the geography claim.
+
+DO NOT CHANGE:
+- The Nigeria threat map image (hero background)
+  Nigeria is the proof of concept. The map stays.
+- Any of the solutions tab specific scenario content
+- The demo alert feed content
+- The numbers ($4.4B, 8,000, Zero) with their
+  sources — these are Nigerian figures used as
+  the specific example, not the universal claim
+- The intelligence conversation demo content
+- The how-it-works three steps
+- All animation behavior
