@@ -4,19 +4,19 @@ const stats = [
   {
     val: "$4.4B",
     label: "Annual pipeline theft",
-    desc: "Stolen from African pipelines every year. Most of it preventable with persistent surveillance.",
+    desc: "Billions are lost every year because threats are discovered after the damage is done. The intelligence required to intervene earlier rarely exists.",
     tag: "Oil & Gas",
   },
   {
-    val: "8,000",
+    val: "8,000+",
     label: "Lives lost annually",
-    desc: "Africans killed by insurgents and armed groups each year. Security forces always arrive after the fact.",
+    desc: "Security forces are often forced to react to events that have already unfolded. The gap is not response capability — it is persistent intelligence.",
     tag: "Military / Security",
   },
   {
     val: "Zero",
-    label: "Indigenous ISR systems",
-    desc: "No persistent autonomous swarm surveillance system has been built in Africa. Until now.",
+    label: "Indigenous ISR Platforms",
+    desc: "Africa depends almost entirely on imported surveillance systems. No indigenous autonomous intelligence platform exists at scale.",
     tag: "Market gap",
   },
 ];

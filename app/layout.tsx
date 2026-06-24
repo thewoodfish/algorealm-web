@@ -21,13 +21,13 @@ const shareTechMono = Share_Tech_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Samaritan — Algorealm",
+  title: "Algorealm — Autonomous Intelligence Infrastructure",
   description:
-    "Samaritan by Algorealm — AI-powered surveillance intelligence platform deploying autonomous aircraft to protect African critical infrastructure. Pipeline security, military ISR, tower protection. Built in Africa. Data never leaves your country.",
+    "Algorealm builds autonomous intelligence infrastructure for critical infrastructure protection, security operations, and sovereign environments. Persistent situational awareness. Early warning before contact. Built in Africa.",
   openGraph: {
-    title: "Samaritan — Algorealm",
+    title: "Algorealm — Autonomous Intelligence Infrastructure",
     description:
-      "Africa loses billions annually to preventable threats. Samaritan is the intelligence layer that changes that. Data never leaves your country.",
+      "Persistent intelligence for critical infrastructure, security operations, and sovereign environments. Autonomous situational awareness that prevents incidents before they occur.",
     images: ["https://www.algorealm.tech/images/nigeria-threat-map.png"],
     url: "https://www.algorealm.ng",
     type: "website",

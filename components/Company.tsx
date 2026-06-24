@@ -89,9 +89,9 @@ export function Company() {
                 lineHeight: 1.4,
                 letterSpacing: "-.02em",
               }}>
-                We are building the security infrastructure{" "}
-                <em style={{ color: "var(--gold)", fontStyle: "normal" }}>Africa needs</em>{" "}
-                — owned by Africans, operated by Africans, serving African conditions.
+                We are building the intelligence infrastructure{" "}
+                <em style={{ color: "var(--gold)", fontStyle: "normal" }}>Africa needs</em>
+                {" "}— owned by Africans, operated by Africans, and designed for the realities of African environments.
               </p>
 
               <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300 }}>

@@ -15,8 +15,8 @@ const steps = [
   },
   {
     num: "02",
-    title: "Sensor intelligence",
-    body: "Thermal cameras see in complete darkness. Acoustic sensors detect vehicles and movement. Zoom cameras identify what has been found. All feeds continuously into the intelligence layer — building a picture of your specific environment over days and weeks.",
+    title: "Environmental understanding",
+    body: "Thermal imaging, acoustic sensing, and optical systems continuously observe the environment. Their combined outputs are fused into a unified understanding of terrain, movement, and activity patterns.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <path d="M1 6l11 7L23 6" /><rect x="1" y="4" width="22" height="16" rx="2" />
@@ -26,7 +26,7 @@ const steps = [
   {
     num: "03",
     title: "Predictive intelligence",
-    body: "Samaritan learns what normal looks like on your ground. Then it notices when something is not normal. Ask it anything — \"what happened overnight?\" or \"has this vehicle been seen before?\" — and it answers from your operational data, not a generic database.",
+    body: "Samaritan learns the normal operating patterns of your environment and identifies deviations the moment they emerge. Operators can ask questions in plain language — What happened overnight? Has this vehicle been seen before? Which routes are repeatedly used? — and receive answers grounded in their own operational data.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />

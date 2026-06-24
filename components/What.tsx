@@ -26,17 +26,24 @@ export function What() {
             marginBottom: 24,
             color: "var(--text)",
           }}>
-            Persistent eyes.<br />Intelligent analysis.<br />Before it happens.
+            Intelligence before contact.<br />Decisions before crisis.
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
-            Samaritan is an AI-powered security system that monitors large areas
-            and complex terrain and infrastructure, learns and analyses threat patterns,
-            and helps you prevent incidents before they happen.
+            Samaritan is an autonomous intelligence platform that continuously
+            observes, understands, and explains activity across large-scale
+            physical environments.
+          </p>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
+            Built for critical infrastructure, security operations, and remote
+            environments, Samaritan transforms streams of sensor data into
+            actionable intelligence — giving operators the awareness needed to
+            prevent incidents before they occur.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 36 }}>
-            It does this by deploying a swarm of small autonomous aircraft over the
-            area you need to protect — spreading out, covering the entire area
-            simultaneously, day and night, without a human pilot controlling each one.
+            To create persistent situational awareness, Samaritan deploys a
+            coordinated swarm of autonomous aircraft that share information,
+            maintain coverage, and operate continuously without requiring a
+            human pilot for every aircraft.
           </p>
           <div style={{ display: "flex", gap: 12 }}>
             {["How it works", "See solutions"].map((label, i) => (
