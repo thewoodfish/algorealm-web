@@ -154,7 +154,7 @@ export function Hero() {
           textAlign: "center",
           color: "#fff",
         }}>
-          Building Autonomous Intelligence Infrastructure
+          Autonomous Intelligence Infrastructure
         </motion.h1>
 
         {/* sub */}
