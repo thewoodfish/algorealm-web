@@ -146,7 +146,7 @@ export function Hero() {
         {/* headline */}
         <motion.h1 {...fadeUp(0.2)} style={{
           fontFamily: "var(--font-display)",
-          fontSize: "clamp(36px, 5.5vw, 80px)",
+          fontSize: "clamp(32px, 5vw, 76px)",
           fontWeight: 800,
           letterSpacing: "-.03em",
           lineHeight: 1.05,
@@ -154,7 +154,7 @@ export function Hero() {
           textAlign: "center",
           color: "#fff",
         }}>
-          Persistent aerial intelligence.
+          Building Autonomous Intelligence Infrastructure
         </motion.h1>
 
         {/* sub */}
@@ -165,20 +165,33 @@ export function Hero() {
             fontSize: 18,
             color: "rgba(255,255,255,.75)",
             lineHeight: 1.6,
-            maxWidth: 520,
-            margin: "0 auto 40px",
+            maxWidth: 560,
+            margin: "0 auto 16px",
             fontWeight: 300,
           }}
         >
-          Detect patterns, monitor vast terrain, and respond to threats before escalation.
+          Persistent intelligence for critical infrastructure, security operations, and sovereign environments.
+        </motion.p>
+
+        {/* tagline */}
+        <motion.p
+          {...fadeUp(0.48)}
+          style={{
+            fontFamily: "var(--font-mono)",
+            fontSize: 13,
+            color: "var(--gold)",
+            letterSpacing: ".1em",
+            textTransform: "uppercase",
+            margin: "0 auto 40px",
+          }}
+        >
+          Built in Africa. For the world&apos;s hardest environments.
         </motion.p>
 
         {/* CTAs */}
         <motion.div {...fadeUp(0.62)} style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
           <a
-            href="https://youtu.be/bZSVWyGSxyc"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -197,16 +210,16 @@ export function Hero() {
             onMouseEnter={e => (e.currentTarget.style.background = "var(--gold-2)")}
             onMouseLeave={e => (e.currentTarget.style.background = "var(--gold)")}
           >
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-              <polygon points="5 3 19 12 5 21 5 3" />
-            </svg>
-            Watch demo
+            Request demo
           </a>
           <a
-            href="#contact"
+            href="https://youtu.be/bZSVWyGSxyc"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               display: "inline-flex",
               alignItems: "center",
+              gap: 8,
               background: "transparent",
               color: "#fff",
               fontFamily: "var(--font-body)",
@@ -222,7 +235,10 @@ export function Hero() {
             onMouseEnter={e => { e.currentTarget.style.borderColor = "#fff"; e.currentTarget.style.color = "var(--gold)"; }}
             onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,.4)"; e.currentTarget.style.color = "#fff"; }}
           >
-            Request briefing
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+            Watch demo
           </a>
         </motion.div>
       </div>
