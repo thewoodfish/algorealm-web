@@ -212,34 +212,6 @@ export function Hero() {
           >
             Request demo
           </a>
-          <a
-            href="https://youtu.be/bZSVWyGSxyc"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 8,
-              background: "transparent",
-              color: "#fff",
-              fontFamily: "var(--font-body)",
-              fontSize: 13,
-              fontWeight: 500,
-              padding: "11px 24px",
-              borderRadius: 4,
-              border: ".5px solid rgba(255,255,255,.4)",
-              textDecoration: "none",
-              letterSpacing: ".04em",
-              transition: "border-color .2s, color .2s",
-            }}
-            onMouseEnter={e => { e.currentTarget.style.borderColor = "#fff"; e.currentTarget.style.color = "var(--gold)"; }}
-            onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,.4)"; e.currentTarget.style.color = "#fff"; }}
-          >
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-              <polygon points="5 3 19 12 5 21 5 3" />
-            </svg>
-            Watch demo
-          </a>
         </motion.div>
       </div>
 
