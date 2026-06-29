@@ -212,6 +212,37 @@ export function Hero() {
           >
             Request demo
           </a>
+          <a
+            href="https://youtu.be/tCKMECph5PE"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              background: "transparent",
+              color: "#fff",
+              fontFamily: "var(--font-body)",
+              fontSize: 13,
+              fontWeight: 600,
+              padding: "11px 24px",
+              borderRadius: 4,
+              textDecoration: "none",
+              letterSpacing: ".04em",
+              border: "1px solid rgba(255,255,255,.25)",
+              transition: "border-color .2s, color .2s",
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.borderColor = "rgba(255,255,255,.6)";
+              e.currentTarget.style.color = "#fff";
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.borderColor = "rgba(255,255,255,.25)";
+              e.currentTarget.style.color = "#fff";
+            }}
+          >
+            ▶ Watch MVP Demo
+          </a>
         </motion.div>
       </div>
 
