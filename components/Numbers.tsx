@@ -2,8 +2,8 @@ import { Reveal } from "./ui/Reveal";
 
 const stats = [
   {
-    val: "$4.4B",
-    label: "Annual pipeline theft",
+    val: "$2-4B",
+    label: "Annual pipeline losses",
     desc: "Billions are lost every year because threats are discovered after the damage is done. The intelligence required to intervene earlier rarely exists.",
     tag: "Oil & Gas",
   },

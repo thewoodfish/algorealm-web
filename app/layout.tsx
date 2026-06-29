@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Samaritan — Algorealm",
     description:
-      "Nigeria loses $8.3B annually to preventable threats. Samaritan is the intelligence layer that changes that.",
+      "Nigeria's security and infrastructure spend already exceeds $20B annually — across pipeline security, national defense, and conflict-affected agriculture.",
     images: ["https://www.algorealm.tech/images/nigeria-threat-map.png"],
   },
 };
