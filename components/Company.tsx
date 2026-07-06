@@ -2,20 +2,20 @@ import { Reveal } from "./ui/Reveal";
 
 const pillars = [
   {
-    title: "African technology",
-    body: "Built here. For here. Not a foreign product sold into Africa — an indigenous capability developed by an African team that understands African conditions.",
+    title: "Engineering-First",
+    body: "We don't buy off-the-shelf software and label it ours. Algorealm builds core, low-level infrastructure from scratch. Our decentralized sharding and replication foundation is fully public and open-source at ://github.com, proving our technical capabilities to your engineering and security teams before we ever step onto your site.",
   },
   {
-    title: "Data sovereignty",
-    body: "Your operational intelligence never leaves the country. No foreign cloud. No data-sharing agreements. No dependency on external networks that can be switched off.",
+    title: "Guaranteed Data Sovereignty",
+    body: "Your high-value geospatial mine maps and vulnerability logs will never live on a foreign cloud network. Samaritan runs entirely on local, ruggedized server hardware deployed directly at your mine site. You maintain 100% physical and digital ownership of your security intelligence, making it completely secure from network cut-offs and corporate espionage.",
   },
   {
-    title: "Platform, not product",
-    body: "One engine. Pit and perimeter defense, convoy escort. Samaritan adapts to the job — the intelligence layer underneath is the same.",
+    title: "Absolute Focus on Avoidance",
+    body: "Traditional surveillance tools are purely reactive — they record footage of an incident while it is happening or after a loss has occurred. Samaritan is designed for avoidance. Our edge AI models convert raw camera pixels into real-time location coordinates and early warning windows, giving your tactical teams the time they need to step in before your perimeters or truck convoys are touched.",
   },
   {
-    title: "Predictive, not reactive",
-    body: "Every existing security system in this market tells you what happened. Samaritan tells you what is about to happen. That is not an incremental improvement. It is a different product entirely.",
+    title: "Local Field Execution",
+    body: "We are headquartered in Lagos, Nigeria, placing our engineering and deployment teams in the same time zones and geographic regions as your remote concessions. We don't troubleshoot your hardware or software bugs from a remote office across the ocean; we manage, service, and deploy our systems directly on your dirt.",
   },
 ];
 

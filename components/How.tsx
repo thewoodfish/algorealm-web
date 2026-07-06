@@ -30,8 +30,8 @@ const steps = [
   },
   {
     num: "03",
-    title: "Drones That Work Together (SwarmNL)",
-    body: "The drones fly as a team and communicate natively with each other via an encrypted, peer-to-peer local radio network. Built on our open-source SwarmNL foundation, if one drone gets damaged or its battery runs low, the remaining drones automatically change their routes to cover the gap without requiring a human pilot.",
+    title: "Drones That Work Together",
+    body: "The drones fly as a team and communicate natively with each other via an encrypted, peer-to-peer local radio network. If one drone gets damaged or its battery runs low, the remaining drones automatically change their routes to cover the gap without requiring a human pilot.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="4" />

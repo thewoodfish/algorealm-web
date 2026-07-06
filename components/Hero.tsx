@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const fadeUp = (delay = 0) => ({
@@ -23,23 +24,17 @@ export function Hero() {
         boxSizing: "border-box",
       }}
     >
-      {/* hero video */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
+      {/* hero image */}
+      <Image
+        src="/agr-hero.webp"
+        alt="Autonomous drone over a mining concession"
+        fill
+        priority
         style={{
-          position: "absolute",
-          inset: 0,
-          width: "100%",
-          height: "100%",
           objectFit: "cover",
           zIndex: 1,
         }}
-      >
-        <source src="/videos/hero-vid.mp4" type="video/mp4" />
-      </video>
+      />
 
       {/* bottom fade into next section */}
       <div style={{
