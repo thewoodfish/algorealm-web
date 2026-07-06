@@ -89,22 +89,22 @@ export function Company() {
                 lineHeight: 1.4,
                 letterSpacing: "-.02em",
               }}>
-                We are building the intelligence infrastructure{" "}
-                <em style={{ color: "var(--gold)", fontStyle: "normal" }}>Africa needs</em>
-                {" "}— owned by Africans, operated by Africans, and designed for the realities of African environments.
+                We build and operate the hardware and software{" "}
+                <em style={{ color: "var(--gold)", fontStyle: "normal" }}>ourselves</em>
+                {" "}— not a reseller putting a local badge on someone else&apos;s drone platform.
               </p>
 
               <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300 }}>
-                Africa loses billions annually to threats that could be prevented
-                with persistent, intelligent surveillance. We started in Nigeria — where
-                our relationships are deepest and the urgency is most acute. The tools
-                that exist require foreign technicians, send data to foreign servers,
-                and cannot learn from operational history.
+                Illegal mining, haulage ambushes, and tailings sabotage cost
+                operators real money every year. We started in Nigeria because
+                that&apos;s where we have the site access and relationships to test
+                Samaritan against real conditions before we take it to other
+                concessions on the continent.
               </p>
 
               <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300 }}>
-                Samaritan is the system that should have existed ten years ago.
-                We are building it now.
+                We&apos;re a small team right now, running pilot deployments and
+                iterating on the hardware directly with the operators using it.
               </p>
 
               {/* quote block */}
