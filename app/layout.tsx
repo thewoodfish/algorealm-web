@@ -21,11 +21,11 @@ const shareTechMono = Share_Tech_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Algorealm — Smart Aerial Security for African Mines",
+  title: "Algorealm — Intelligent Aerial Security for African Mines",
   description:
     "Algorealm deploys autonomous drone swarms to protect remote African mining concessions — perimeter surveillance, convoy escort, and offline threat detection. Built in Africa, for African terrain.",
   openGraph: {
-    title: "Algorealm — Smart Aerial Security for African Mines",
+    title: "Algorealm — Intelligent Aerial Security for African Mines",
     description:
       "Illegal mining and haulage ambushes cost African mining operators billions annually. Samaritan is the aerial intelligence layer that catches it before it happens — completely offline.",
     images: ["https://www.algorealm.tech/images/nigeria-threat-map.png"],
