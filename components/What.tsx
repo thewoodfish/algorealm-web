@@ -26,24 +26,26 @@ export function What() {
             marginBottom: 24,
             color: "var(--text)",
           }}>
-            Intelligence before contact.<br />Decisions before crisis.
+            Warnings before the pit is breached.<br />Not footage after it is.
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
-            Samaritan is an autonomous intelligence platform that continuously
-            observes, understands, and explains activity across large-scale
-            physical environments.
+            Samaritan is an AI-powered security system that monitors large
+            areas and complex terrain and infrastructure — sprawling
+            concessions, waste piles, tailings facilities, and haul roads —
+            continuously and without a human watching every camera feed.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
-            Built for critical infrastructure, security operations, and remote
-            environments, Samaritan transforms streams of sensor data into
-            actionable intelligence — giving operators the awareness needed to
-            prevent incidents before they occur.
+            Built for remote mine sites where cellular and internet coverage
+            cannot be relied on, Samaritan transforms streams of thermal and
+            optical sensor data into actionable intelligence — giving your
+            security team the awareness needed to intervene before illegal
+            extraction or an ambush ever reaches your property.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 36 }}>
-            To create persistent situational awareness, Samaritan deploys a
-            coordinated swarm of autonomous aircraft that share information,
-            maintain coverage, and operate continuously without requiring a
-            human pilot for every aircraft.
+            To create persistent situational awareness over a 100km² lease,
+            Samaritan deploys a coordinated swarm of autonomous aircraft that
+            share information, maintain coverage, and operate continuously
+            without requiring a human pilot for every aircraft.
           </p>
           <div style={{ display: "flex", gap: 12 }}>
             {["How it works", "See solutions"].map((label, i) => (

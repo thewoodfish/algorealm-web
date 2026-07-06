@@ -9,10 +9,10 @@
     --border:     #1a2535;
     --border-2:   #243248;
 
-    --gold:       #c9a84c;
-    --gold-2:     #e8c870;
-    --gold-dim:   rgba(201,168,76,.14);
-    --gold-glow:  rgba(201,168,76,.05);
+    --gold:       #ff6a13;
+    --gold-2:     #ff9142;
+    --gold-dim:   rgba(255,106,19,.16);
+    --gold-glow:  rgba(255,106,19,.06);
 
     --text:       #dce8f5;
     --text-2:     #7a94b0;
@@ -45,8 +45,8 @@
   }
 
   ::selection {
-    background: rgba(201,168,76,.14);
-    color: #e8c870;
+    background: rgba(255,106,19,.16);
+    color: #ff9142;
   }
 
   ::-webkit-scrollbar { width: 4px; }

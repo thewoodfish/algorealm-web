@@ -3,7 +3,7 @@ import { Reveal } from "./ui/Reveal";
 const features = [
   {
     title: "Learns your baseline",
-    body: "After days of watching, Samaritan knows what normal looks like on your specific ground. It builds a model of expected activity — and flags deviations the moment they appear.",
+    body: "After days of watching, Samaritan knows what normal looks like on your specific concession. It builds a model of expected activity across the pit, perimeter, and haul roads — and flags deviations the moment they appear.",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <path d="M12 20h9" /><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
@@ -12,7 +12,7 @@ const features = [
   },
   {
     title: "Finds recurring patterns",
-    body: "A vehicle that appeared three Tuesday nights in a row. An approach vector used in every previous incident. Samaritan surfaces these patterns before they become the next incident.",
+    body: "A vehicle that appeared three Tuesday nights in a row. An approach vector used in every previous ambush attempt. Samaritan surfaces these patterns before they become the next incident.",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
@@ -40,9 +40,9 @@ const features = [
 ];
 
 const chatLines = [
-  { role: "q", text: "What happened overnight at KP 47?" },
-  { role: "a", text: "Three vehicle approaches between 0130–0300. Two were classified as maintenance teams based on registration and time-of-day profile. The third — arriving at 0247 — does not match any known profile. Thermal signature matches the May 15 bunkering crew. It departed without approaching the pipeline. Recommend flag for tonight." },
-  { role: "q", text: "Same truck as last week?" },
+  { role: "q", text: "What happened overnight on the south perimeter?" },
+  { role: "a", text: "Three approaches between 0130–0300. Two were classified as routine patrol crossings based on gait and time-of-day profile. The third — arriving at 0247 — does not match any known profile. Thermal signature matches the May 15 artisanal mining crew. It departed without reaching the tailings fence. Recommend flag for tonight." },
+  { role: "q", text: "Same crew as last week?" },
   { role: "a", text: "Yes. 94% confidence match on thermal and movement profile. This is the 4th appearance in 22 days. Previous three visits were surveillance runs. Tonight may be operational." },
 ];
 
@@ -140,7 +140,7 @@ export function Intelligence() {
                 <div key={c} style={{ width: 9, height: 9, borderRadius: "50%", background: c, opacity: .7 }} />
               ))}
               <span style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--text-3)", marginLeft: 8, letterSpacing: ".06em" }}>
-                Samaritan Intel · KP 47 · Pipeline corridor
+                Samaritan Intel · Concession Perimeter, Sector 4
               </span>
               <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: 5 }}>
                 <div style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--green)", animation: "pulse 2s infinite" }} />

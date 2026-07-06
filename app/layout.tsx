@@ -21,13 +21,13 @@ const shareTechMono = Share_Tech_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Algorealm — Autonomous Intelligence Infrastructure",
+  title: "Algorealm — Smart Aerial Security for African Mines",
   description:
-    "Algorealm builds autonomous intelligence infrastructure for critical infrastructure protection, security operations, and sovereign environments. Persistent situational awareness. Early warning before contact. Built in Africa.",
+    "Algorealm deploys autonomous drone swarms to protect remote African mining concessions — perimeter surveillance, convoy escort, and offline threat detection. Built in Africa, for African terrain.",
   openGraph: {
-    title: "Algorealm — Autonomous Intelligence Infrastructure",
+    title: "Algorealm — Smart Aerial Security for African Mines",
     description:
-      "Persistent intelligence for critical infrastructure, security operations, and sovereign environments. Autonomous situational awareness that prevents incidents before they occur.",
+      "Illegal mining and haulage ambushes cost African mining operators billions annually. Samaritan is the aerial intelligence layer that catches it before it happens — completely offline.",
     images: ["https://www.algorealm.tech/images/nigeria-threat-map.png"],
     url: "https://www.algorealm.ng",
     type: "website",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Samaritan — Algorealm",
     description:
-      "Nigeria's security and infrastructure spend already exceeds $20B annually — across pipeline security, national defense, and conflict-affected agriculture.",
+      "Illegal mining and haulage ambushes cost African mining operators billions annually. Samaritan is the aerial intelligence layer that catches it before it happens — completely offline.",
     images: ["https://www.algorealm.tech/images/nigeria-threat-map.png"],
   },
 };

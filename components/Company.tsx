@@ -11,7 +11,7 @@ const pillars = [
   },
   {
     title: "Platform, not product",
-    body: "One engine. Military, pipeline, telecoms, agriculture. Samaritan adapts to the domain — the intelligence layer is the same underneath.",
+    body: "One engine. Pit and perimeter defense, convoy escort. Samaritan adapts to the job — the intelligence layer underneath is the same.",
   },
   {
     title: "Predictive, not reactive",
@@ -147,7 +147,7 @@ export function Company() {
                 marginTop: 8,
               }}>
                 {[
-                  { val: "4", label: "Sectors served" },
+                  { val: "2", label: "Core workflows" },
                   { val: "100km²", label: "Per deployment" },
                   { val: "24/7", label: "Autonomous watch" },
                 ].map((m) => (

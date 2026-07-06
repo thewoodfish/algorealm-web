@@ -2,18 +2,19 @@
 import { useRef, useState } from "react";
 import { Reveal } from "./ui/Reveal";
 
-const sectors = ["Military / Security ISR", "Pipeline & Infrastructure", "Telecoms Tower Protection", "Agricultural Security", "Other"];
+const minerals = ["Gold", "Lithium", "Base Metals", "Other"];
+const challenges = ["Perimeter Infiltration", "Haulage Ambush", "Both"];
 
 export function Contact() {
-  const [sector, setSector] = useState("");
+  const [mineral, setMineral] = useState("");
+  const [challenge, setChallenge] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const nameRef    = useRef<HTMLInputElement>(null);
-  const orgRef     = useRef<HTMLInputElement>(null);
-  const emailRef   = useRef<HTMLInputElement>(null);
-  const messageRef = useRef<HTMLTextAreaElement>(null);
+  const nameRef  = useRef<HTMLInputElement>(null);
+  const orgRef   = useRef<HTMLInputElement>(null);
+  const emailRef = useRef<HTMLInputElement>(null);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -27,8 +28,8 @@ export function Contact() {
           name:    nameRef.current?.value,
           org:     orgRef.current?.value,
           email:   emailRef.current?.value,
-          interest: sector,
-          message: messageRef.current?.value,
+          interest: mineral,
+          message: `Primary security challenge: ${challenge}`,
         }),
       });
       if (!res.ok) throw new Error("Failed to send");
@@ -77,7 +78,7 @@ export function Contact() {
         {/* form */}
         <Reveal>
           <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--gold)", letterSpacing: ".14em", textTransform: "uppercase", marginBottom: 16 }}>
-            Get in touch
+            Concession audit
           </div>
           <h2 style={{
             fontFamily: "var(--font-display)",
@@ -85,10 +86,15 @@ export function Contact() {
             fontWeight: 700,
             letterSpacing: "-.025em",
             color: "var(--text)",
-            marginBottom: 40,
+            marginBottom: 16,
           }}>
-            Request a demonstration.
+            Request a 3-Day Risk Validation Audit.
           </h2>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--text-2)", lineHeight: 1.7, fontWeight: 300, marginBottom: 32 }}>
+            Twenty minutes. Your terrain, your threat profile, live software. We
+            don&apos;t do generic slides — we run the demo using an operational
+            scenario from your specific mining zone.
+          </p>
 
           {submitted ? (
             <div style={{
@@ -102,47 +108,50 @@ export function Contact() {
                 Request received.
               </div>
               <p style={{ fontFamily: "var(--font-body)", fontSize: 13, color: "var(--text-2)", lineHeight: 1.65 }}>
-                We will reach out within 24 hours to schedule a briefing tailored to your sector.
+                We will reach out within 24 hours to secure your audit window.
               </p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-              <div className="contact-name-org two-col" style={{ gap: 16 }}>
-                <div>
-                  <label style={labelStyle}>Full name</label>
-                  <input ref={nameRef} style={inputStyle} type="text" placeholder="Aminu Bello" required />
-                </div>
-                <div>
-                  <label style={labelStyle}>Organisation</label>
-                  <input ref={orgRef} style={inputStyle} type="text" placeholder="Nigerian Army" required />
-                </div>
+              <div>
+                <label style={labelStyle}>Full Name</label>
+                <input ref={nameRef} style={inputStyle} type="text" placeholder="Aminu Bello" required />
               </div>
 
               <div>
-                <label style={labelStyle}>Email</label>
-                <input ref={emailRef} style={inputStyle} type="email" placeholder="a.bello@example.ng" required />
+                <label style={labelStyle}>Corporate Email</label>
+                <input ref={emailRef} style={inputStyle} type="email" placeholder="a.bello@example.com" required />
               </div>
 
               <div>
-                <label style={labelStyle}>Sector</label>
+                <label style={labelStyle}>Company / Mine Operator Name</label>
+                <input ref={orgRef} style={inputStyle} type="text" placeholder="Konko Gold Mines Ltd." required />
+              </div>
+
+              <div>
+                <label style={labelStyle}>Primary Mineral</label>
                 <select
                   style={{ ...inputStyle, cursor: "pointer" }}
-                  value={sector}
-                  onChange={e => setSector(e.target.value)}
+                  value={mineral}
+                  onChange={e => setMineral(e.target.value)}
                   required
                 >
-                  <option value="" disabled>Select your sector</option>
-                  {sectors.map(s => <option key={s} value={s}>{s}</option>)}
+                  <option value="" disabled>Gold, Lithium, Base Metals, etc.</option>
+                  {minerals.map(m => <option key={m} value={m}>{m}</option>)}
                 </select>
               </div>
 
               <div>
-                <label style={labelStyle}>Operational challenge (optional)</label>
-                <textarea
-                  ref={messageRef}
-                  style={{ ...inputStyle, resize: "vertical", minHeight: 96 }}
-                  placeholder="Describe the area, infrastructure, or threat you need to cover..."
-                />
+                <label style={labelStyle}>Primary Security Challenge</label>
+                <select
+                  style={{ ...inputStyle, cursor: "pointer" }}
+                  value={challenge}
+                  onChange={e => setChallenge(e.target.value)}
+                  required
+                >
+                  <option value="" disabled>Select your primary challenge</option>
+                  {challenges.map(c => <option key={c} value={c}>{c}</option>)}
+                </select>
               </div>
 
               {error && (
@@ -169,7 +178,7 @@ export function Contact() {
                 onMouseEnter={e => { if (!loading) e.currentTarget.style.background = "var(--gold-2)"; }}
                 onMouseLeave={e => (e.currentTarget.style.background = "var(--gold)")}
               >
-                {loading ? "Sending…" : "Send request"}
+                {loading ? "Sending…" : "Secure Your Audit Window"}
               </button>
             </form>
           )}
@@ -187,12 +196,15 @@ export function Contact() {
               marginBottom: 16,
               lineHeight: 1.3,
             }}>
-              We'll show you what it looks like on your actual ground.
+              Let us prove it on your dirt.
             </h3>
             <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 36 }}>
-              Twenty minutes. Your terrain, your threat profile, live software.
-              We don&apos;t do generic slides — we run the demo against a scenario
-              from your specific operational area. If it fits, we talk next steps.
+              Algorealm is built in Africa, engineered for African terrain, and
+              deeply committed to local data sovereignty. We don&apos;t expect you
+              to buy an enterprise software subscription based on a generic
+              slide deck. Let us run a simple 3-day sandboxed dry run on a
+              troubled spot of your perimeter to show you exactly what our
+              software can see.
             </p>
 
             {/* channels */}

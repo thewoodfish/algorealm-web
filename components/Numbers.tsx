@@ -2,22 +2,19 @@ import { Reveal } from "./ui/Reveal";
 
 const stats = [
   {
-    val: "$2-4B",
-    label: "Annual pipeline losses",
-    desc: "Billions are lost every year because threats are discovered after the damage is done. The intelligence required to intervene earlier rarely exists.",
-    tag: "Oil & Gas",
+    val: "No Internet",
+    desc: "Cloud-dependent cameras and standard commercial drones stop working the moment local cellular or internet networks drop out in the bush.",
+    tag: "Connectivity gap",
   },
   {
-    val: "8,000+",
-    label: "Lives lost annually",
-    desc: "Security forces are often forced to react to events that have already unfolded. The gap is not response capability — it is persistent intelligence.",
-    tag: "Military / Security",
+    val: "Too Much Land",
+    desc: "Physical fences are too expensive to build over a 100km² lease, and human foot patrols leave massive geographic gaps that organized thieves easily exploit.",
+    tag: "Coverage gap",
   },
   {
-    val: "Zero",
-    label: "Indigenous ISR Platforms",
-    desc: "Africa depends almost entirely on imported surveillance systems. No indigenous autonomous intelligence platform exists at scale.",
-    tag: "Market gap",
+    val: "Data Leaks",
+    desc: "Sending your proprietary mine maps, concession layouts, and high-value transport schedules to foreign cloud servers leaves your business vulnerable to corporate espionage.",
+    tag: "Security gap",
   },
 ];
 
@@ -31,7 +28,7 @@ export function Numbers() {
       }}
     >
       {stats.map((s, i) => (
-        <Reveal key={s.label} delay={i * 0.1}>
+        <Reveal key={s.val} delay={i * 0.1}>
           <div
             style={{
               padding: "52px 48px",
@@ -54,27 +51,14 @@ export function Numbers() {
             {/* value */}
             <div style={{
               fontFamily: "var(--font-display)",
-              fontSize: "clamp(36px, 4vw, 56px)",
+              fontSize: "clamp(26px, 2.6vw, 36px)",
               fontWeight: 800,
               color: "var(--gold)",
-              letterSpacing: "-.03em",
-              lineHeight: 1,
-              marginBottom: 10,
+              letterSpacing: "-.02em",
+              lineHeight: 1.1,
+              marginBottom: 16,
             }}>
               {s.val}
-            </div>
-
-            {/* label */}
-            <div style={{
-              fontFamily: "var(--font-display)",
-              fontSize: 13,
-              fontWeight: 600,
-              color: "var(--text)",
-              letterSpacing: ".04em",
-              textTransform: "uppercase",
-              marginBottom: 14,
-            }}>
-              {s.label}
             </div>
 
             {/* desc */}

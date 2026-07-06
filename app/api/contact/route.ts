@@ -10,16 +10,16 @@ export async function POST(req: NextRequest) {
     from: "Samaritan <onboarding@resend.dev>",
     to: "jasonholt2002@gmail.com",
     replyTo: email,
-    subject: `Demo Request — ${name} (${org})`,
+    subject: `Audit Request — ${name} (${org})`,
     html: `
       <div style="font-family:monospace;background:#090c12;color:#dce8f5;padding:32px;border-radius:4px;">
-        <h2 style="color:#c9a84c;margin:0 0 24px;letter-spacing:.1em;">NEW DEMO REQUEST</h2>
+        <h2 style="color:#ff6a13;margin:0 0 24px;letter-spacing:.1em;">NEW AUDIT REQUEST</h2>
         <table style="border-collapse:collapse;width:100%;">
-          <tr><td style="color:#7a94b0;padding:6px 0;width:120px;">Name</td><td style="padding:6px 0;">${name}</td></tr>
-          <tr><td style="color:#7a94b0;padding:6px 0;">Organisation</td><td style="padding:6px 0;">${org}</td></tr>
-          <tr><td style="color:#7a94b0;padding:6px 0;">Email</td><td style="padding:6px 0;"><a href="mailto:${email}" style="color:#c9a84c;">${email}</a></td></tr>
-          <tr><td style="color:#7a94b0;padding:6px 0;">Interest</td><td style="padding:6px 0;">${interest}</td></tr>
-          <tr><td style="color:#7a94b0;padding:6px 0;vertical-align:top;">Message</td><td style="padding:6px 0;">${message || "—"}</td></tr>
+          <tr><td style="color:#7a94b0;padding:6px 0;width:160px;">Name</td><td style="padding:6px 0;">${name}</td></tr>
+          <tr><td style="color:#7a94b0;padding:6px 0;">Company / Mine Operator</td><td style="padding:6px 0;">${org}</td></tr>
+          <tr><td style="color:#7a94b0;padding:6px 0;">Email</td><td style="padding:6px 0;"><a href="mailto:${email}" style="color:#ff6a13;">${email}</a></td></tr>
+          <tr><td style="color:#7a94b0;padding:6px 0;">Primary Mineral</td><td style="padding:6px 0;">${interest}</td></tr>
+          <tr><td style="color:#7a94b0;padding:6px 0;vertical-align:top;">Notes</td><td style="padding:6px 0;">${message || "—"}</td></tr>
         </table>
       </div>
     `,

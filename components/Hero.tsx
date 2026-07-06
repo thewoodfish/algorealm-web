@@ -1,77 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-
-const LINES = [
-  { text: "Nigeria is losing billions",           gold: false },
-  { text: "to threats with detectable patterns.", gold: false },
-  { text: "Nobody was watching. Until now.",      gold: true  },
-];
-
-function TypewriterHeadline() {
-  const [lineIndex, setLineIndex] = useState(0);
-  const [charIndex, setCharIndex] = useState(0);
-  const [done, setDone] = useState(false);
-
-  useEffect(() => {
-    if (done) return;
-    const current = LINES[lineIndex];
-    if (charIndex < current.text.length) {
-      const t = setTimeout(() => setCharIndex(c => c + 1), 38);
-      return () => clearTimeout(t);
-    }
-    if (lineIndex < LINES.length - 1) {
-      const t = setTimeout(() => { setLineIndex(l => l + 1); setCharIndex(0); }, 320);
-      return () => clearTimeout(t);
-    }
-    setDone(true);
-  }, [charIndex, lineIndex, done]);
-
-  return (
-    <h1 style={{
-      fontFamily: "var(--font-mono)",
-      fontSize: "clamp(22px, 3.5vw, 52px)",
-      fontWeight: 400,
-      letterSpacing: ".04em",
-      lineHeight: 1.3,
-      marginBottom: 28,
-      textAlign: "center",
-    }}>
-      {LINES.map((line, i) => {
-        const isActive = i === lineIndex;
-        const isPast   = i < lineIndex;
-        const visible  = isPast ? line.text : isActive ? line.text.slice(0, charIndex) : "";
-        if (!visible && !isActive) return null;
-        return (
-          <span key={i} style={{
-            display: "block",
-            color: line.gold ? "var(--gold)" : "#fff",
-            ...(line.gold ? {
-              fontSize: "1.2em",
-              letterSpacing: ".12em",
-              textTransform: "uppercase",
-              textShadow: "0 0 24px rgba(201,168,76,.5), 0 0 60px rgba(201,168,76,.2)",
-            } : {}),
-          }}>
-            {visible}
-            {isActive && !done && (
-              <span style={{
-                display: "inline-block",
-                width: "0.55em",
-                height: "2px",
-                background: "var(--gold)",
-                verticalAlign: "middle",
-                marginLeft: "3px",
-                animation: "blink .6s step-end infinite",
-              }} />
-            )}
-          </span>
-        );
-      })}
-      <style>{`@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }`}</style>
-    </h1>
-  );
-}
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 28 },
@@ -146,7 +74,7 @@ export function Hero() {
         {/* headline */}
         <motion.h1 {...fadeUp(0.2)} style={{
           fontFamily: "var(--font-display)",
-          fontSize: "clamp(32px, 5vw, 76px)",
+          fontSize: "clamp(32px, 5vw, 72px)",
           fontWeight: 800,
           letterSpacing: "-.03em",
           lineHeight: 1.05,
@@ -154,7 +82,7 @@ export function Hero() {
           textAlign: "center",
           color: "#fff",
         }}>
-          Building Autonomous Intelligence Infrastructure
+          Smart aerial security built for remote African mines
         </motion.h1>
 
         {/* sub */}
@@ -165,31 +93,19 @@ export function Hero() {
             fontSize: 18,
             color: "rgba(255,255,255,.75)",
             lineHeight: 1.6,
-            maxWidth: 560,
-            margin: "0 auto 16px",
+            maxWidth: 620,
+            margin: "0 auto 40px",
             fontWeight: 300,
           }}
         >
-          Persistent intelligence for critical infrastructure, security operations, and sovereign environments.
-        </motion.p>
-
-        {/* tagline */}
-        <motion.p
-          {...fadeUp(0.48)}
-          style={{
-            fontFamily: "var(--font-mono)",
-            fontSize: 13,
-            color: "var(--gold)",
-            letterSpacing: ".1em",
-            textTransform: "uppercase",
-            margin: "0 auto 40px",
-          }}
-        >
-          Built in Africa. For the world&apos;s hardest environments.
+          Keep your workers safe, stop illegal mining, and protect your transport
+          trucks. Algorealm uses teams of self-flying drones that watch over a
+          100km² area without needing the internet. We give your on-site security
+          team early warnings before trouble ever reaches your property.
         </motion.p>
 
         {/* CTAs */}
-        <motion.div {...fadeUp(0.62)} style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
+        <motion.div {...fadeUp(0.62)} style={{ display: "flex", gap: 20, justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
           <a
             href="#contact"
             style={{
@@ -210,7 +126,7 @@ export function Hero() {
             onMouseEnter={e => (e.currentTarget.style.background = "var(--gold-2)")}
             onMouseLeave={e => (e.currentTarget.style.background = "var(--gold)")}
           >
-            Request demo
+            Book a 10-Minute Virtual Demo
           </a>
           <a
             href="https://youtu.be/tCKMECph5PE"
@@ -219,29 +135,28 @@ export function Hero() {
             style={{
               display: "inline-flex",
               alignItems: "center",
-              gap: 8,
+              gap: 6,
               background: "transparent",
-              color: "#fff",
+              color: "rgba(255,255,255,.75)",
               fontFamily: "var(--font-body)",
               fontSize: 13,
-              fontWeight: 600,
-              padding: "11px 24px",
-              borderRadius: 4,
+              fontWeight: 500,
               textDecoration: "none",
-              letterSpacing: ".04em",
-              border: "1px solid rgba(255,255,255,.25)",
-              transition: "border-color .2s, color .2s",
+              letterSpacing: ".02em",
+              borderBottom: "1px solid rgba(255,255,255,.25)",
+              paddingBottom: 2,
+              transition: "color .2s, border-color .2s",
             }}
             onMouseEnter={e => {
-              e.currentTarget.style.borderColor = "rgba(255,255,255,.6)";
               e.currentTarget.style.color = "#fff";
+              e.currentTarget.style.borderBottomColor = "rgba(255,255,255,.6)";
             }}
             onMouseLeave={e => {
-              e.currentTarget.style.borderColor = "rgba(255,255,255,.25)";
-              e.currentTarget.style.color = "#fff";
+              e.currentTarget.style.color = "rgba(255,255,255,.75)";
+              e.currentTarget.style.borderBottomColor = "rgba(255,255,255,.25)";
             }}
           >
-            ▶ Watch MVP Demo
+            ▶ Watch the Samaritan Core Demo Video
           </a>
         </motion.div>
       </div>
