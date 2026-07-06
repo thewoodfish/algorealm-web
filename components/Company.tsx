@@ -2,20 +2,12 @@ import { Reveal } from "./ui/Reveal";
 
 const pillars = [
   {
-    title: "Engineering-First",
-    body: "We don't buy off-the-shelf software and label it ours. Algorealm builds core, low-level infrastructure from scratch. Our decentralized sharding and replication foundation is fully public and open-source at ://github.com, proving our technical capabilities to your engineering and security teams before we ever step onto your site.",
+    title: "0 to 1",
+    body: "We build products that solve a problem no one else has solved yet — not incremental features bolted onto an existing tool.",
   },
   {
-    title: "Guaranteed Data Sovereignty",
-    body: "Your high-value geospatial mine maps and vulnerability logs will never live on a foreign cloud network. Samaritan runs entirely on local, ruggedized server hardware deployed directly at your mine site. You maintain 100% physical and digital ownership of your security intelligence, making it completely secure from network cut-offs and corporate espionage.",
-  },
-  {
-    title: "Absolute Focus on Avoidance",
-    body: "Traditional surveillance tools are purely reactive — they record footage of an incident while it is happening or after a loss has occurred. Samaritan is designed for avoidance. Our edge AI models convert raw camera pixels into real-time location coordinates and early warning windows, giving your tactical teams the time they need to step in before your perimeters or truck convoys are touched.",
-  },
-  {
-    title: "Local Field Execution",
-    body: "We are headquartered in Lagos, Nigeria, placing our engineering and deployment teams in the same time zones and geographic regions as your remote concessions. We don't troubleshoot your hardware or software bugs from a remote office across the ocean; we manage, service, and deploy our systems directly on your dirt.",
+    title: "Product design",
+    body: "We care deeply about how the product feels to use. If it's not intuitive for the security team on the ground, it isn't done.",
   },
 ];
 
