@@ -29,10 +29,10 @@ export function What() {
             Warnings before the pit is breached.<br />Not footage after it is.
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
-            Samaritan is an AI-powered security system that monitors large
-            areas and complex terrain and infrastructure — sprawling
-            concessions, waste piles, tailings facilities, and haul roads —
-            continuously and without a human watching every camera feed.
+            Samaritan is an AI-powered security system. It watches your
+            concession, waste piles, tailings facilities, and haul roads
+            around the clock — no human has to sit and stare at camera
+            feeds.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
             Built for remote mine sites where cellular and internet coverage
