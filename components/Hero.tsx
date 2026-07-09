@@ -93,10 +93,10 @@ export function Hero() {
             fontWeight: 300,
           }}
         >
-          Detect illegal mining, protect your workforce, and secure critical
-          assets with autonomous aircraft that continuously monitor vast
-          concessions and provide actionable intelligence without relying
-          on the cloud.
+          Protect your people, stop illegal mining, and secure critical mining
+          operations with autonomous aircraft that provide persistent
+          operational awareness and early, actionable intelligence—even in
+          remote, offline environments.
         </motion.p>
 
         {/* CTAs */}
