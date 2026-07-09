@@ -93,10 +93,10 @@ export function Hero() {
             fontWeight: 300,
           }}
         >
-          Keep your workers safe, stop illegal mining, and protect your transport
-          trucks. Algorealm uses teams of self-flying drones that watch over a
-          100km² area without needing the internet. We give your on-site security
-          team early warnings before trouble ever reaches your property.
+          Detect illegal mining, protect your workforce, and secure critical
+          assets with autonomous aircraft that continuously monitor vast
+          concessions and provide actionable intelligence without relying
+          on the cloud.
         </motion.p>
 
         {/* CTAs */}
