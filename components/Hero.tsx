@@ -124,7 +124,7 @@ export function Hero() {
             Book a 10-Minute Virtual Demo
           </a>
           <a
-            href="https://youtu.be/tCKMECph5PE"
+            href="https://youtu.be/esrYG921o_Y"
             target="_blank"
             rel="noopener noreferrer"
             style={{
