@@ -77,7 +77,7 @@ export function Hero() {
           textAlign: "center",
           color: "#fff",
         }}>
-          Intelligent aerial security built for remote African mines
+          Intelligent aerial security for remote African mines
         </motion.h1>
 
         {/* sub */}
