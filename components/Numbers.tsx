@@ -12,9 +12,9 @@ const stats = [
     tag: "Coverage gap",
   },
   {
-    val: "Data Leaks",
-    desc: "Sending your proprietary mine maps, concession layouts, and high-value transport schedules to foreign cloud servers leaves your business vulnerable to corporate espionage.",
-    tag: "Security gap",
+    val: "No Institutional Memory",
+    desc: "Every incident is treated like the first time. Without a system that learns your site's specific patterns over time, your team re-learns the same lessons after every breach.",
+    tag: "Memory gap",
   },
 ];
 

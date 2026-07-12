@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Algorealm — Intelligent Aerial Security for African Mines",
     description:
-      "Illegal mining and haulage ambushes cost African mining operators billions annually. Samaritan is the aerial intelligence layer that catches it before it happens — completely offline.",
+      "Illegal mining and haulage ambushes cost African mining operators billions annually. Samaritan is the aerial intelligence layer that catches it before it happens — built for mines with no reliable internet connection.",
     images: ["https://www.algorealm.tech/images/nigeria-threat-map.png"],
     url: "https://www.algorealm.ng",
     type: "website",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Samaritan — Algorealm",
     description:
-      "Illegal mining and haulage ambushes cost African mining operators billions annually. Samaritan is the aerial intelligence layer that catches it before it happens — completely offline.",
+      "Illegal mining and haulage ambushes cost African mining operators billions annually. Samaritan is the aerial intelligence layer that catches it before it happens — built for mines with no reliable internet connection.",
     images: ["https://www.algorealm.tech/images/nigeria-threat-map.png"],
   },
 };

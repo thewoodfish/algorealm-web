@@ -93,8 +93,8 @@ export function Hero() {
         >
           Protect your people, stop illegal mining, and secure critical mining
           operations with autonomous aircraft that provide persistent
-          operational awareness and early, actionable intelligence—even in
-          remote, offline environments.
+          operational awareness and early, actionable intelligence—even
+          where there&apos;s no reliable connection.
         </motion.p>
 
         {/* CTAs */}
