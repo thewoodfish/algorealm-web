@@ -26,8 +26,8 @@ export function Hero() {
     >
       {/* hero image */}
       <Image
-        src="/agr-hero.webp"
-        alt="Autonomous drone over a mining concession"
+        src="/hero-wireframe.webp"
+        alt="Wireframe surveillance render of a mining concession"
         fill
         priority
         style={{
@@ -46,21 +46,19 @@ export function Hero() {
         pointerEvents: "none",
       }} />
 
-      {/* dark overlay */}
+      {/* dark overlay for text contrast */}
       <div style={{
         position: "absolute", inset: 0,
-        background: "rgba(0, 0, 0, 0.55)",
+        background: "rgba(0, 0, 0, 0.35)",
         zIndex: 2,
       }} />
 
-      {/* grid */}
+      {/* vignette focused behind the headline/copy */}
       <div style={{
         position: "absolute", inset: 0,
-        backgroundImage: "linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px)",
-        backgroundSize: "60px 60px",
-        opacity: 0.4,
-        pointerEvents: "none",
+        background: "radial-gradient(ellipse 640px 420px at 50% 46%, rgba(0,0,0,.65), transparent 70%)",
         zIndex: 3,
+        pointerEvents: "none",
       }} />
 
       {/* content */}
