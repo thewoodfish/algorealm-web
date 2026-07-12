@@ -199,12 +199,11 @@ export function Contact() {
               Let us prove it on your dirt.
             </h3>
             <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 36 }}>
-              Algorealm is built in Africa, engineered for African terrain, and
-              deeply committed to local data sovereignty. We don&apos;t expect you
-              to buy an enterprise software subscription based on a generic
-              slide deck. Let us run a simple 3-day sandboxed dry run on a
-              troubled spot of your perimeter to show you exactly what our
-              software can see.
+              Algorealm is built in Africa, engineered for African terrain.
+              We don&apos;t expect you to buy an enterprise software
+              subscription based on a generic slide deck. Let us run a
+              simple 3-day sandboxed dry run on a troubled spot of your
+              perimeter to show you exactly what our software can see.
             </p>
 
             {/* channels */}

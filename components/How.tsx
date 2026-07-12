@@ -15,7 +15,7 @@ const steps = [
   {
     num: "02",
     title: "100% Offline (Zero-Bandwidth)",
-    body: "Samaritan works completely without the internet. Every byte of security data is processed right at the mine site on local, rugged hardware you control. Your high-value maps and vulnerability logs stay completely private, sovereign, and offline.",
+    body: "Samaritan works completely without the internet. Every byte of security data is processed right at the mine site on local, rugged hardware you control. Your high-value maps and vulnerability logs stay completely private and offline.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <line x1="1" y1="1" x2="23" y2="23" />
