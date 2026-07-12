@@ -42,8 +42,8 @@ const steps = [
   },
   {
     num: "04",
-    title: "Total Coverage With No Blind Spots",
-    body: "The system moves the drones in unpredictable, randomized, AI-driven patrol matrices across your 100km² property. Because the flight schedules and paths change constantly, illicit mining syndicates can never time your patrols to sneak past your perimeter.",
+    title: "Full Coverage, Every Cycle",
+    body: "Drones fly fixed-spacing sweep patterns across your concession, methodically covering every meter of the zones you define — no gaps, no missed rows, no relying on a guard's memory of where they last walked.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <circle cx="12" cy="12" r="10" />
