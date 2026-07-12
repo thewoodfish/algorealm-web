@@ -41,7 +41,7 @@ export function Hero() {
         position: "absolute",
         bottom: 0, left: 0, right: 0,
         height: "25%",
-        background: "linear-gradient(to bottom, transparent, #090c12)",
+        background: "linear-gradient(to bottom, transparent, #000000)",
         zIndex: 5,
         pointerEvents: "none",
       }} />
@@ -49,14 +49,14 @@ export function Hero() {
       {/* dark overlay */}
       <div style={{
         position: "absolute", inset: 0,
-        background: "rgba(6, 8, 12, 0.55)",
+        background: "rgba(0, 0, 0, 0.55)",
         zIndex: 2,
       }} />
 
       {/* grid */}
       <div style={{
         position: "absolute", inset: 0,
-        backgroundImage: "linear-gradient(rgba(26,37,53,.35) 1px, transparent 1px), linear-gradient(90deg, rgba(26,37,53,.35) 1px, transparent 1px)",
+        backgroundImage: "linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px)",
         backgroundSize: "60px 60px",
         opacity: 0.4,
         pointerEvents: "none",
@@ -108,7 +108,7 @@ export function Hero() {
               alignItems: "center",
               gap: 8,
               background: "var(--gold)",
-              color: "#0a0c12",
+              color: "#000000",
               fontFamily: "var(--font-body)",
               fontSize: 13,
               fontWeight: 600,

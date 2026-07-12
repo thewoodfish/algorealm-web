@@ -26,7 +26,7 @@ export function Nav() {
         alignItems: "center",
         padding: "0 48px",
         boxSizing: "border-box",
-        background: scrolled ? "rgba(9,12,18,.92)" : "transparent",
+        background: scrolled ? "rgba(0,0,0,.92)" : "transparent",
         backdropFilter: scrolled ? "blur(20px)" : "none",
         borderBottom: scrolled ? ".5px solid var(--border)" : ".5px solid transparent",
         zIndex: 100,
@@ -80,7 +80,7 @@ export function Nav() {
               transition: "all .2s",
             }}
             onMouseEnter={e => {
-              e.currentTarget.style.background = "rgba(201,168,76,.12)";
+              e.currentTarget.style.background = "rgba(255,255,255,.12)";
               e.currentTarget.style.color = "var(--gold-2)";
             }}
             onMouseLeave={e => {

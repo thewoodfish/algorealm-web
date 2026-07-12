@@ -162,7 +162,7 @@ export function Contact() {
                 disabled={loading}
                 style={{
                   background: "var(--gold)",
-                  color: "#0a0c12",
+                  color: "#000000",
                   fontFamily: "var(--font-body)",
                   fontSize: 13,
                   fontWeight: 600,
