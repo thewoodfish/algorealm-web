@@ -83,10 +83,10 @@ export function What() {
             maxWidth: 460,
           }}>
             <Image
-              src="/images/drone_over.png"
-              alt="Drone surveillance overview"
-              width={920}
-              height={920}
+              src="/images/perimeter-hud.webp"
+              alt="Perimeter surveillance overview with patrol coverage overlay"
+              width={1254}
+              height={1254}
               style={{ width: "100%", height: "auto", display: "block" }}
             />
           </div>
