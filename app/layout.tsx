@@ -21,22 +21,22 @@ const shareTechMono = Share_Tech_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Algorealm — Intelligent Aerial Security for African Mines",
+  title: "Algorealm — Operational Intelligence for Critical Infrastructure",
   description:
-    "Algorealm deploys autonomous drone swarms to protect remote African mining concessions — perimeter surveillance, convoy escort, and offline threat detection. Built in Africa, for African terrain.",
+    "Algorealm builds the operational intelligence platform for critical operations, turning observations from autonomous systems into clear, actionable next steps. Samaritan, our first application, is live in mining today.",
   openGraph: {
-    title: "Algorealm — Intelligent Aerial Security for African Mines",
+    title: "Algorealm — Operational Intelligence for Critical Infrastructure",
     description:
-      "Illegal mining and haulage ambushes cost African mining operators billions annually. Samaritan is the aerial intelligence layer that catches it before it happens — built for mines with no reliable internet connection.",
+      "Critical operations generate enormous amounts of information — most of it never understood. Algorealm continuously observes, understands, and explains what is happening, so operators can act before problems escalate.",
     images: ["https://www.algorealm.tech/images/nigeria-threat-map.png"],
     url: "https://www.algorealm.ng",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Samaritan — Algorealm",
+    title: "Algorealm — Operational Intelligence for Critical Infrastructure",
     description:
-      "Illegal mining and haulage ambushes cost African mining operators billions annually. Samaritan is the aerial intelligence layer that catches it before it happens — built for mines with no reliable internet connection.",
+      "Critical operations generate enormous amounts of information — most of it never understood. Algorealm continuously observes, understands, and explains what is happening, so operators can act before problems escalate.",
     images: ["https://www.algorealm.tech/images/nigeria-threat-map.png"],
   },
 };
