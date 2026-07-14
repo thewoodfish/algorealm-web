@@ -4,7 +4,7 @@ import { Reveal } from "./ui/Reveal";
 
 export function What() {
   return (
-    <section id="what" className="section-pad" style={{}}>
+    <section id="samaritan" className="section-pad" style={{}}>
 
       <div className="two-col" style={{
         maxWidth: 1200,
@@ -15,7 +15,7 @@ export function What() {
         {/* copy */}
         <Reveal>
           <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--gold)", letterSpacing: ".14em", textTransform: "uppercase", marginBottom: 20 }}>
-            What it is
+            Samaritan · First application
           </div>
           <h2 style={{
             fontFamily: "var(--font-display)",
@@ -29,10 +29,16 @@ export function What() {
             Warnings before the pit is breached.<br />Not footage after it is.
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
-            Samaritan is an AI-powered security system. It watches your
-            concession, waste piles, tailings facilities, and haul roads
-            around the clock — no human has to sit and stare at camera
-            feeds.
+            Samaritan is the first operational application built on
+            Algorealm&apos;s intelligence platform — purpose-built for
+            mining, with the same platform extending to energy, ports, and
+            other critical operations.
+          </p>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
+            It is an AI-powered operational intelligence system that watches
+            your concession, waste piles, tailings facilities, and haul
+            roads around the clock — no human has to sit and stare at
+            camera feeds.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
             Built for remote mine sites where cellular and internet coverage

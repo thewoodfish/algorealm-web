@@ -2,18 +2,18 @@ import { Reveal } from "./ui/Reveal";
 
 const stats = [
   {
-    val: "No Internet",
-    desc: "Cloud-dependent cameras and standard commercial drones stop working the moment local cellular or internet networks drop out in the bush.",
+    val: "No Connectivity",
+    desc: "Cloud-dependent cameras and sensors stop working the moment local networks drop out — exactly where large, remote operations tend to happen.",
     tag: "Connectivity gap",
   },
   {
-    val: "Too Much Land",
-    desc: "Physical fences are too expensive to build over a 100km² lease, and human foot patrols leave massive geographic gaps that organized thieves easily exploit.",
+    val: "Too Much Ground",
+    desc: "Physical fencing and human patrols don't scale to sites spanning tens or hundreds of square kilometers. Coverage gaps are the default, not the exception.",
     tag: "Coverage gap",
   },
   {
     val: "No Institutional Memory",
-    desc: "Every incident is treated like the first time. Without a system that learns your site's specific patterns over time, your team re-learns the same lessons after every breach.",
+    desc: "Every incident is treated like the first time. Without a system that learns a site's specific patterns over time, teams re-learn the same lessons after every incident.",
     tag: "Memory gap",
   },
 ];

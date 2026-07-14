@@ -2,10 +2,13 @@ import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
 import { HeroBridge } from "@/components/HeroBridge";
 import { Numbers } from "@/components/Numbers";
+import { Intelligence } from "@/components/Intelligence";
 import { What } from "@/components/What";
+import { Flow } from "@/components/Flow";
 import { How } from "@/components/How";
 import { Solutions } from "@/components/Solutions";
-import { Intelligence } from "@/components/Intelligence";
+import { Industries } from "@/components/Industries";
+import { Closing } from "@/components/Closing";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -17,10 +20,13 @@ export default function Home() {
         <Hero />
         <HeroBridge />
         <Numbers />
+        <Intelligence />
         <What />
+        <Flow />
         <How />
         <Solutions />
-        <Intelligence />
+        <Industries />
+        <Closing />
         <Contact />
       </main>
       <Footer />

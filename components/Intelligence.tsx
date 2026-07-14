@@ -3,7 +3,7 @@ import { Reveal } from "./ui/Reveal";
 const features = [
   {
     title: "Learns your baseline",
-    body: "After days of watching, Samaritan knows what normal looks like on your specific concession. It builds a model of expected activity across the pit, perimeter, and haul roads — and flags deviations the moment they appear.",
+    body: "After days of observation, the platform knows what normal looks like across your operation. It builds a model of expected activity across every zone you define — and flags deviations the moment they appear.",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <path d="M12 20h9" /><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
@@ -12,7 +12,7 @@ const features = [
   },
   {
     title: "Finds recurring patterns",
-    body: "A vehicle that appeared three Tuesday nights in a row. An approach vector used in every previous ambush attempt. Samaritan surfaces these patterns before they become the next incident.",
+    body: "A vehicle that appeared on the same three nights in a row. An approach used in every previous incident. The platform surfaces these patterns before they become the next one.",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
@@ -21,7 +21,7 @@ const features = [
   },
   {
     title: "Answers plain-language questions",
-    body: "Ask anything. \"What happened overnight?\" \"Has this vehicle been seen before?\" \"Which sector is highest risk tonight?\" Samaritan answers from your operational data — specific, grounded, actionable.",
+    body: "Ask anything. \"What happened overnight?\" \"Has this pattern been seen before?\" \"Which zone is highest risk right now?\" The platform answers from your operational data — specific, grounded, actionable.",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -57,7 +57,7 @@ export function Intelligence() {
         {/* left */}
         <Reveal>
           <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--gold)", letterSpacing: ".14em", textTransform: "uppercase", marginBottom: 16 }}>
-            The intelligence layer
+            Operational intelligence
           </div>
           <h2 style={{
             fontFamily: "var(--font-display)",
@@ -70,9 +70,10 @@ export function Intelligence() {
             It does not just watch.<br />It thinks.
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 48 }}>
-            Every previous surveillance pitch has been about a camera. Samaritan
-            is an analyst that never sleeps — learning your specific ground, your
-            specific threats, your specific patterns.
+            Every previous approach to operational visibility has been about
+            a camera feed. Algorealm is an analyst that never sleeps —
+            learning the specific terrain, the specific risks, and the
+            specific patterns of your operation.
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>

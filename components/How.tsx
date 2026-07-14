@@ -15,7 +15,7 @@ const steps = [
   {
     num: "02",
     title: "Real-Time Detection, Fully Local",
-    body: "Every drone, every alert, every second-by-second decision happens on hardware at the mine site — detection and response never depend on a live internet connection. The intelligence layer that gets sharper over time syncs securely when connectivity allows.",
+    body: "Every aircraft, every alert, every second-by-second decision happens on hardware at the mine site — detection and response never depend on a live internet connection. The intelligence layer that gets sharper over time syncs securely when connectivity allows.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <line x1="1" y1="1" x2="23" y2="23" />
@@ -30,8 +30,8 @@ const steps = [
   },
   {
     num: "03",
-    title: "Drones That Work Together",
-    body: "The drones fly as a team and communicate natively with each other via an encrypted, peer-to-peer local radio network. If one drone gets damaged or its battery runs low, the remaining drones automatically change their routes to cover the gap without requiring a human pilot.",
+    title: "Aircraft That Work Together",
+    body: "The aircraft fly as a team and communicate natively with each other via an encrypted, peer-to-peer local radio network. If one aircraft gets damaged or its battery runs low, the remaining aircraft automatically change their routes to cover the gap without requiring a human pilot.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="4" />
@@ -43,7 +43,7 @@ const steps = [
   {
     num: "04",
     title: "Full Coverage, Every Cycle",
-    body: "Drones fly fixed-spacing sweep patterns across your concession, methodically covering every meter of the zones you define — no gaps, no missed rows, no relying on a guard's memory of where they last walked.",
+    body: "Aircraft fly fixed-spacing sweep patterns across your concession, methodically covering every meter of the zones you define — no gaps, no missed rows, no relying on a guard's memory of where they last walked.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <circle cx="12" cy="12" r="10" />
@@ -67,7 +67,7 @@ const steps = [
 export function How() {
   return (
     <section
-      id="how"
+      id="reliability"
       className="section-pad"
       style={{
         background: "var(--surface)",

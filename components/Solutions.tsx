@@ -16,7 +16,7 @@ const solutions: Record<SolutionId, {
   pit: {
     label: "🏗️ Mine Pit & Perimeter",
     title: "Guarding the Mine Pit & Perimeter",
-    desc: "Automated drone flights scan your concession boundaries, waste piles, and tailings management facilities day and night. The system catches illegal artisanal mining encampments, equipment sabotage, and perimeter trespassing before illegal extraction can scale.",
+    desc: "Automated aircraft flights scan your concession boundaries, waste piles, and tailings management facilities day and night. The system catches illegal artisanal mining encampments, equipment sabotage, and perimeter trespassing before illegal extraction can scale.",
     pains: [
       "Concession boundaries stretch across 100km² — too vast for fences or foot patrols",
       "Illegal artisanal mining encampments appear and vanish before guards ever arrive",
@@ -34,7 +34,7 @@ const solutions: Record<SolutionId, {
       status: "Patrol active",
       alerts: [
         { time: "02:14", text: "Illegal pit encampment — 6 persons — SW boundary", color: "var(--red)" },
-        { time: "02:11", text: "Drone-2 → tracking encampment. Coverage redistributed.", color: "var(--purple)" },
+        { time: "02:11", text: "Aircraft-2 → tracking encampment. Coverage redistributed.", color: "var(--purple)" },
         { time: "01:47", text: "Perimeter fence disturbance detected — east line", color: "var(--amber)" },
         { time: "00:52", text: "Tailings facility sweep — no contacts — clear", color: "var(--text-3)" },
       ],
@@ -45,7 +45,7 @@ const solutions: Record<SolutionId, {
   convoy: {
     label: "🚛 Cargo Convoys",
     title: "Escorting Cargo Convoys",
-    desc: "We mount automated drone launch boxes directly onto your security escort trucks. The drones automatically fly 5 to 10 kilometers ahead of your gold doré or lithium dump truck fleets to spot roadblocks, illegal checkpoints, or staged ambushes — giving your drivers plenty of time to halt and reverse safely.",
+    desc: "We mount automated aircraft launch boxes directly onto your security escort trucks. The aircraft automatically fly 5 to 10 kilometers ahead of your gold doré or lithium dump truck fleets to spot roadblocks, illegal checkpoints, or staged ambushes — giving your drivers plenty of time to halt and reverse safely.",
     pains: [
       "Ambush points along haul roads are scouted for weeks before a hit",
       "Roadblocks and staged checkpoints appear with no warning to drivers",
@@ -63,7 +63,7 @@ const solutions: Record<SolutionId, {
       status: "Escort active",
       alerts: [
         { time: "05:22", text: "Staged roadblock detected — 8km ahead — HIGH", color: "var(--red)" },
-        { time: "05:20", text: "Drone-1 → holding overwatch. Convoy notified.", color: "var(--purple)" },
+        { time: "05:20", text: "Aircraft-1 → holding overwatch. Convoy notified.", color: "var(--purple)" },
         { time: "05:14", text: "Vehicle stopped roadside — 6km ahead — monitoring", color: "var(--amber)" },
         { time: "04:40", text: "Route KM 0–20 swept — clear — convoy cleared to move", color: "var(--green)" },
       ],

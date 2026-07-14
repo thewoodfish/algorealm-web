@@ -75,7 +75,7 @@ export function Hero() {
           textAlign: "center",
           color: "#fff",
         }}>
-          Intelligent aerial security for remote African mines
+          Operational Intelligence for Critical Infrastructure
         </motion.h1>
 
         {/* sub */}
@@ -91,16 +91,16 @@ export function Hero() {
             fontWeight: 300,
           }}
         >
-          Protect your people, stop illegal mining, and secure critical mining
-          operations with autonomous aircraft that provide persistent
-          operational awareness and early, actionable intelligence—even
-          where there&apos;s no reliable connection.
+          Algorealm continuously transforms observations from autonomous
+          systems into actionable operational intelligence — helping
+          organizations understand what is happening, why it matters, and
+          what to do next.
         </motion.p>
 
         {/* CTAs */}
         <motion.div {...fadeUp(0.62)} style={{ display: "flex", gap: 20, justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
           <a
-            href="#contact"
+            href="#samaritan"
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -119,7 +119,7 @@ export function Hero() {
             onMouseEnter={e => (e.currentTarget.style.background = "var(--gold-2)")}
             onMouseLeave={e => (e.currentTarget.style.background = "var(--gold)")}
           >
-            Book a 10-Minute Virtual Demo
+            Explore Samaritan
           </a>
           <a
             href="https://youtu.be/uLrshcacFwo"
@@ -149,7 +149,7 @@ export function Hero() {
               e.currentTarget.style.borderBottomColor = "rgba(255,255,255,.25)";
             }}
           >
-            ▶ Watch the Samaritan Core Demo Video
+            ▶ Watch Demo
           </a>
         </motion.div>
       </div>

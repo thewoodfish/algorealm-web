@@ -9,7 +9,7 @@ export function HeroBridge() {
     }}>
       <Reveal>
         <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--gold)", letterSpacing: ".14em", textTransform: "uppercase", marginBottom: 20 }}>
-          The landscape
+          The problem
         </div>
         <p style={{
           fontFamily: "var(--font-display)",
@@ -20,8 +20,8 @@ export function HeroBridge() {
           color: "var(--text)",
           marginBottom: 24,
         }}>
-          Why standard security fails<br />
-          <span style={{ color: "var(--gold)" }}>at remote mines.</span>
+          Critical operations generate enormous amounts of information.<br />
+          <span style={{ color: "var(--gold)" }}>Most of it is never understood.</span>
         </p>
         <p style={{
           fontFamily: "var(--font-body)",
@@ -32,10 +32,11 @@ export function HeroBridge() {
           maxWidth: 680,
           margin: "0 auto",
         }}>
-          Guarding a remote gold or lithium concession is tough. Sprawling
-          boundaries, thick bush canopy, and seasonal mud or dust destroy
-          traditional setups. Standard security tools usually break down
-          because of three main issues:
+          Sensors, patrols, and field reports all produce signal, but without
+          a system to connect it, most of that signal goes unreviewed until
+          after something has already gone wrong. In large, remote, and
+          high-value operations, that gap usually comes down to three
+          issues:
         </p>
       </Reveal>
     </div>

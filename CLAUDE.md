@@ -1,144 +1,430 @@
-CHANGE 1 — Meta description
-Current:
-"AI-powered surveillance intelligence platform deploying
-autonomous aircraft to protect Nigerian critical
-infrastructure. Pipeline security, military ISR, tower
-protection. Built in Nigeria. Data never leaves the country."
+# change.md
 
-Replace with:
-"AI-powered surveillance intelligence platform deploying
-autonomous aircraft to protect African critical
-infrastructure. Pipeline security, military ISR, tower
-protection. Built in Africa. Data never leaves your country."
+# Objective
 
-CHANGE 2 — Meta OG description
-Current:
-"Nigeria loses $8.3B annually to preventable threats.
-Samaritan is the intelligence layer that changes that.
-Built in Nigeria. Data never leaves the country."
+Reposition **Algorealm** from a company that builds autonomous drones to a company that builds **Operational Intelligence**.
 
-Replace with:
-"Africa loses billions annually to preventable threats.
-Samaritan is the intelligence layer that changes that.
-Data never leaves your country."
+This is a strategic repositioning—not a visual redesign.
 
-CHANGE 3 — Hero headline
-Current:
-"Every threat has a pattern.
-Samaritan finds it before it lands."
+The website should communicate one idea above all else:
 
-This is already generic. Keep it exactly as is.
+> **Algorealm transforms observations into operational intelligence.**
 
-CHANGE 4 — Numbers strip sector tags
-Current: "Oil & Gas" "Military / Security" "Market gap"
-These are fine. Keep them.
+Aircraft, sensors, AI models, networking, edge computing, and robotics are all components of how we gather information—not what we fundamentally sell.
 
-Current number descriptions:
-Cell 1: "Stolen from Nigerian pipelines every year."
-Replace: "Stolen from African pipelines every year."
+The intelligence layer is the product.
 
-Cell 2: "Nigerians killed by bandits and insurgents each year."
-Replace: "Africans killed by insurgents and armed groups
-          each year."
+---
 
-Cell 3: "No persistent autonomous swarm surveillance system
-         has been built in Nigeria. Until now."
-Replace: "No persistent autonomous swarm surveillance system
-          has been built in Africa. Until now."
+# New Company Positioning
 
-CHANGE 5 — What-is section body copy
-Current:
-"Samaritan is an AI-powered security system that monitors
-large areas and complex terrain and infrastructure..."
+Old positioning:
 
-This is already generic. Keep it.
+> Autonomous drone company
 
-CHANGE 6 — Intelligence layer feature 4
-Current:
-"Stays in Nigeria
-Every byte of operational data is processed on hardware
-you control, in the country you operate. No foreign servers.
-No data-sharing agreements. No dependency on external networks."
+> Drone swarm company
 
-Replace heading and body with:
-"Stays in your country
-Every byte of operational data is processed on hardware
-you control, inside your country. No foreign servers.
-No data-sharing agreements. No dependency on external
-networks that can be switched off."
+> Security drone platform
 
-CHANGE 7 — Company section principle 1
-Current:
-"Nigerian technology
-Built here. For here. Not a foreign product sold to
-Nigeria — an indigenous capability developed by a Nigerian
-team for Nigerian conditions."
+New positioning:
 
-Replace with:
-"African technology
-Built here. For here. Not a foreign product sold into
-Africa — an indigenous capability developed by an African
-team that understands African conditions."
+> Operational Intelligence Company
 
-CHANGE 8 — Company section body copy
-Current:
-"We are building the security infrastructure Africa needs
-— owned by Africans, operated by Africans, serving
-African conditions."
-Keep this exactly. Already correct.
+> Autonomous Intelligence Infrastructure
 
-Current:
-"Nigeria loses billions annually to threats that could
-be prevented with persistent, intelligent surveillance."
+> Intelligence Platform for Critical Operations
 
-Replace with:
-"Africa loses billions annually to threats that could
-be prevented with persistent, intelligent surveillance.
-We started in Nigeria — where our relationships are
-deepest and the urgency is most acute."
+> Software-defined Operational Awareness
 
-CHANGE 9 — Contact section address
-Current:
-"Launch Base — Maimalari Cantonment · Maiduguri, Nigeria"
+Everything on the website should reinforce this.
 
-This needs to go entirely. Listing a Nigerian Army base
-as your business address creates problems before you have
-a formal relationship there.
+---
 
-Replace with:
-"Headquarters — Lagos, Nigeria"
+# Core Narrative
 
-CHANGE 10 — Footer
-Current:
-"© 2026 Algorealm Technologies · Lagos, Nigeria"
+Replace the existing story.
 
-Replace with:
-"© 2026 Algorealm Technologies · Lagos · Berlin"
+Old:
 
-CHANGE 11 — Solutions tab: Military ISR intel query
-Current:
-"The northwest corridor is priority tonight. Activity
-is +340% above baseline. A vehicle matching CTT-002's
-profile has appeared on 4 consecutive Tuesday nights
-between 0130–0300. Tonight is Tuesday."
+Drone → AI → Alert
 
-This is fine — it is a specific demo scenario not a
-general claim. Keep it. Specificity here is credibility.
+New:
 
-CHANGE 12 — Intelligence screen demo
-Current pipeline demo references "KP 47" and specific
-Nigeria corridor. Keep these — same reason as above.
-Specific demo scenarios prove the system works.
-They are not limiting the geography claim.
+Observe
 
-DO NOT CHANGE:
-- The Nigeria threat map image (hero background)
-  Nigeria is the proof of concept. The map stays.
-- Any of the solutions tab specific scenario content
-- The demo alert feed content
-- The numbers ($4.4B, 8,000, Zero) with their
-  sources — these are Nigerian figures used as
-  the specific example, not the universal claim
-- The intelligence conversation demo content
-- The how-it-works three steps
-- All animation behavior
+↓
+
+Understand
+
+↓
+
+Recommend
+
+↓
+
+Act
+
+The aircraft simply collect observations.
+
+Algorealm turns observations into decisions.
+
+---
+
+# New Messaging Hierarchy
+
+The homepage should progressively communicate:
+
+## 1
+
+Critical operations generate enormous amounts of information.
+
+## 2
+
+Most of that information is never understood.
+
+## 3
+
+Algorealm continuously observes, understands and explains what is happening.
+
+## 4
+
+Operators make better decisions.
+
+The website should never lead with aircraft.
+
+---
+
+# Hero Section
+
+Completely rewrite the hero.
+
+The first thing visitors should understand is intelligence.
+
+Possible messaging:
+
+Headline:
+
+Operational Intelligence for Critical Infrastructure
+
+Subheadline:
+
+Algorealm continuously transforms observations from autonomous systems into actionable operational intelligence, helping organizations understand what is happening, why it matters and what to do next.
+
+CTA:
+
+Explore Samaritan
+
+Secondary CTA:
+
+Watch Demo
+
+---
+
+# About Algorealm
+
+Rewrite.
+
+Instead of describing hardware.
+
+Describe the company.
+
+Example narrative:
+
+Algorealm builds operational intelligence systems for organizations operating in large, remote and high-value environments.
+
+We combine autonomous sensing, edge computing and artificial intelligence to create continuous situational awareness that helps operators make faster and better decisions.
+
+Our platform is designed to understand complex environments—not simply observe them.
+
+---
+
+# Products
+
+Reframe products.
+
+Instead of:
+
+Drone Platform
+
+Instead:
+
+Operational Intelligence Platform
+
+Then explain:
+
+Samaritan is the first operational application built on Algorealm's intelligence platform.
+
+Future products may exist across:
+
+Mining
+
+Energy
+
+Utilities
+
+Ports
+
+Construction
+
+Industrial Operations
+
+Defence
+
+Emergency Response
+
+The website should hint that Samaritan is the first product—not the company.
+
+---
+
+# Vocabulary Changes
+
+Replace:
+
+Drone Swarm
+
+with
+
+Autonomous Sensing
+
+---
+
+Replace:
+
+Drone Surveillance
+
+with
+
+Operational Intelligence
+
+---
+
+Replace:
+
+Security Platform
+
+with
+
+Operational Intelligence Platform
+
+---
+
+Replace:
+
+AI Surveillance
+
+with
+
+Continuous Operational Awareness
+
+---
+
+Replace:
+
+Autonomous Drone
+
+with
+
+Autonomous Aircraft
+
+only where hardware must be mentioned.
+
+---
+
+Replace:
+
+Monitoring
+
+with
+
+Understanding
+
+where appropriate.
+
+---
+
+Replace:
+
+Threat Detection
+
+with
+
+Operational Event Detection
+
+or
+
+Operational Awareness
+
+---
+
+Replace:
+
+Surveillance
+
+with
+
+Situational Awareness
+
+or
+
+Operational Visibility
+
+---
+
+# Product Philosophy
+
+The website should consistently communicate:
+
+We are not building aircraft.
+
+We are not building cameras.
+
+We are not building drones.
+
+We are building intelligence.
+
+Aircraft are simply one way of collecting observations.
+
+Tomorrow those observations could come from:
+
+- autonomous aircraft
+- CCTV
+- thermal cameras
+- IoT sensors
+- satellites
+- robots
+- existing enterprise systems
+
+The intelligence layer remains the same.
+
+---
+
+# Website Flow
+
+Hero
+
+↓
+
+The Problem
+
+Organizations cannot manage what they cannot continuously understand.
+
+↓
+
+Operational Intelligence
+
+Explain the intelligence platform.
+
+↓
+
+Samaritan
+
+Present Samaritan as the first application built on the platform.
+
+↓
+
+How It Works
+
+Observe
+
+Understand
+
+Recommend
+
+Respond
+
+↓
+
+Industries
+
+Mining
+
+Energy
+
+Utilities
+
+Telecommunications
+
+Industrial Facilities
+
+Construction
+
+Ports
+
+Government
+
+↓
+
+Closing
+
+The future of critical operations isn't collecting more data.
+
+It's understanding it.
+
+---
+
+# Design Language
+
+The visual identity should evolve alongside the messaging.
+
+Less emphasis on aircraft.
+
+More emphasis on:
+
+- maps
+- intelligence
+- operational dashboards
+- infrastructure
+- terrain
+- information layers
+- decision support
+- operators
+
+The product should feel closer to Palantir than to a drone manufacturer.
+
+---
+
+# Writing Style
+
+Everything should sound calm, intelligent and deliberate.
+
+Avoid:
+
+- futuristic marketing
+- military buzzwords
+- hype
+- "cutting edge"
+- "revolutionary"
+
+Prefer:
+
+- operational clarity
+- understanding
+- intelligence
+- visibility
+- awareness
+- decision-making
+- confidence
+
+---
+
+# Guiding Principle
+
+Every page should answer one question:
+
+> **How does Algorealm help operators understand what is happening across their operations?**
+
+Not:
+
+> **What drone do we fly?**
+
+That distinction should define the entire website.
+
+---
+
+# Long-Term Vision
+
+The website should leave visitors with this understanding:
+
+Algorealm is building the intelligence layer for critical operations.
+
+Samaritan is simply the first application of that vision.
