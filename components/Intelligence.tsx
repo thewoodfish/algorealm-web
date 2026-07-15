@@ -32,7 +32,7 @@ const features = [
 
 const chatLines = [
   { role: "q", text: "What happened overnight on the south perimeter?" },
-  { role: "a", text: "Three approaches between 0130–0300. Two were classified as routine patrol crossings based on gait and time-of-day profile. The third — arriving at 0247 — does not match any known profile. Thermal signature matches the May 15 artisanal mining crew. It departed without reaching the tailings fence. Recommend flag for tonight." },
+  { role: "a", text: "Three approaches between 0130–0300. Two were classified as routine patrol crossings based on gait and time-of-day profile. The third — arriving at 0247 — does not match any known profile. Thermal signature matches a crew first logged on May 15. It departed without reaching the boundary fence. Recommend flag for tonight." },
   { role: "q", text: "Same crew as last week?" },
   { role: "a", text: "Yes. 94% confidence match on thermal and movement profile. This is the 4th appearance in 22 days. Previous three visits were surveillance runs. Tonight may be operational." },
 ];
@@ -132,7 +132,7 @@ export function Intelligence() {
                 <div key={c} style={{ width: 9, height: 9, borderRadius: "50%", background: c, opacity: .7 }} />
               ))}
               <span style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--text-3)", marginLeft: 8, letterSpacing: ".06em" }}>
-                Samaritan Intel · Concession Perimeter, Sector 4
+                Samaritan Intel · Site Perimeter, Sector 4
               </span>
               <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: 5 }}>
                 <div style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--green)", animation: "pulse 2s infinite" }} />

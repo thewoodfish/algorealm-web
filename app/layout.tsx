@@ -23,7 +23,7 @@ const shareTechMono = Share_Tech_Mono({
 export const metadata: Metadata = {
   title: "Algorealm — Operational Intelligence for Critical Infrastructure",
   description:
-    "Algorealm builds the operational intelligence platform for critical operations, turning observations from autonomous systems into clear, actionable next steps. Samaritan, our first application, is live in mining today.",
+    "Algorealm builds the operational intelligence platform for critical operations, turning observations from autonomous systems into clear, actionable next steps. Samaritan is the first application built on that platform.",
   openGraph: {
     title: "Algorealm — Operational Intelligence for Critical Infrastructure",
     description:

@@ -2,11 +2,9 @@
 import { useRef, useState } from "react";
 import { Reveal } from "./ui/Reveal";
 
-const minerals = ["Gold", "Lithium", "Base Metals", "Other"];
-const challenges = ["Perimeter Infiltration", "Haulage Ambush", "Both"];
+const challenges = ["Perimeter Security", "Asset & Convoy Protection", "Both"];
 
 export function Contact() {
-  const [mineral, setMineral] = useState("");
   const [challenge, setChallenge] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -28,7 +26,6 @@ export function Contact() {
           name:    nameRef.current?.value,
           org:     orgRef.current?.value,
           email:   emailRef.current?.value,
-          interest: mineral,
           message: `Primary security challenge: ${challenge}`,
         }),
       });
@@ -78,7 +75,7 @@ export function Contact() {
         {/* form */}
         <Reveal>
           <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--gold)", letterSpacing: ".14em", textTransform: "uppercase", marginBottom: 16 }}>
-            Concession audit
+            Operational audit
           </div>
           <h2 style={{
             fontFamily: "var(--font-display)",
@@ -93,7 +90,7 @@ export function Contact() {
           <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--text-2)", lineHeight: 1.7, fontWeight: 300, marginBottom: 32 }}>
             Twenty minutes. Your terrain, your threat profile, live software. We
             don&apos;t do generic slides — we run the demo using an operational
-            scenario from your specific mining zone.
+            scenario from your specific site.
           </p>
 
           {submitted ? (
@@ -124,21 +121,8 @@ export function Contact() {
               </div>
 
               <div>
-                <label style={labelStyle}>Company / Mine Operator Name</label>
-                <input ref={orgRef} style={inputStyle} type="text" placeholder="Konko Gold Mines Ltd." required />
-              </div>
-
-              <div>
-                <label style={labelStyle}>Primary Mineral</label>
-                <select
-                  style={{ ...inputStyle, cursor: "pointer" }}
-                  value={mineral}
-                  onChange={e => setMineral(e.target.value)}
-                  required
-                >
-                  <option value="" disabled>Gold, Lithium, Base Metals, etc.</option>
-                  {minerals.map(m => <option key={m} value={m}>{m}</option>)}
-                </select>
+                <label style={labelStyle}>Company Name</label>
+                <input ref={orgRef} style={inputStyle} type="text" placeholder="Northbridge Industrial Ltd." required />
               </div>
 
               <div>

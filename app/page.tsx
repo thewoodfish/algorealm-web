@@ -3,11 +3,9 @@ import { Hero } from "@/components/Hero";
 import { HeroBridge } from "@/components/HeroBridge";
 import { Numbers } from "@/components/Numbers";
 import { What } from "@/components/What";
-import { WhyMining } from "@/components/WhyMining";
 import { Intelligence } from "@/components/Intelligence";
 import { Flow } from "@/components/Flow";
 import { How } from "@/components/How";
-import { Solutions } from "@/components/Solutions";
 import { Industries } from "@/components/Industries";
 import { Closing } from "@/components/Closing";
 import { Contact } from "@/components/Contact";
@@ -22,11 +20,9 @@ export default function Home() {
         <HeroBridge />
         <Numbers />
         <What />
-        <WhyMining />
         <Intelligence />
         <Flow />
         <How />
-        <Solutions />
         <Industries />
         <Closing />
         <Contact />

@@ -26,38 +26,36 @@ export function What() {
             marginBottom: 24,
             color: "var(--text)",
           }}>
-            Warnings before the pit is breached.<br />Not footage after it is.
+            Warnings before the breach.<br />Not footage after it is.
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
             Samaritan is the first operational application built on
-            Algorealm&apos;s intelligence platform — purpose-built for
-            mining, with the same platform extending to energy, ports, and
-            other critical operations.
+            Algorealm&apos;s intelligence platform.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
             It is an AI-powered operational intelligence system that watches
-            your concession, waste piles, tailings facilities, and haul
-            roads around the clock — no human has to sit and stare at
-            camera feeds.
+            your site and perimeter around the clock — no human has to sit
+            and stare at camera feeds.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
-            Built for remote mine sites where cellular and internet coverage
+            Built for remote sites where cellular and internet coverage
             cannot be relied on, Samaritan transforms streams of thermal and
             optical sensor data into actionable intelligence — giving your
-            security team the awareness needed to intervene before illegal
-            extraction or an ambush ever reaches your property.
+            security team the awareness needed to intervene before a breach
+            or incident ever reaches your operation.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 36 }}>
-            To create persistent situational awareness over a 100km² lease,
-            Samaritan deploys a coordinated swarm of autonomous aircraft that
-            share information, maintain coverage, and operate continuously
-            without requiring a human pilot for every aircraft.
+            To create persistent situational awareness over a large
+            operational area, Samaritan deploys a coordinated swarm of
+            autonomous aircraft that share information, maintain coverage,
+            and operate continuously without requiring a human pilot for
+            every aircraft.
           </p>
           <div style={{ display: "flex", gap: 12 }}>
-            {["How it works", "See solutions"].map((label, i) => (
+            {["How it works", "See industries"].map((label, i) => (
               <a
                 key={label}
-                href={i === 0 ? "#how" : "#solutions"}
+                href={i === 0 ? "#how" : "#industries"}
                 style={{
                   fontFamily: "var(--font-body)",
                   fontSize: 12,

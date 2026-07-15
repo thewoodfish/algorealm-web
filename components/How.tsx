@@ -4,7 +4,7 @@ const steps = [
   {
     num: "01",
     title: "Real Warnings, Not Just Video",
-    body: "We don't just stream hours of raw, exhausting video for a human operator to watch. Our software automatically spots threats — like illegal pit setups, perimeter fences being cut, or armed groups in the bush — and alerts your team with the exact coordinates immediately.",
+    body: "We don't just stream hours of raw, exhausting video for a human operator to watch. Our software automatically spots threats — like unauthorized structures, perimeter fences being cut, or armed groups nearby — and alerts your team with the exact coordinates immediately.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
@@ -15,7 +15,7 @@ const steps = [
   {
     num: "02",
     title: "Real-Time Detection, Fully Local",
-    body: "Every aircraft, every alert, every second-by-second decision happens on hardware at the mine site — detection and response never depend on a live internet connection. The intelligence layer that gets sharper over time syncs securely when connectivity allows.",
+    body: "Every aircraft, every alert, every second-by-second decision happens on hardware at the site — detection and response never depend on a live internet connection. The intelligence layer that gets sharper over time syncs securely when connectivity allows.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <line x1="1" y1="1" x2="23" y2="23" />
@@ -43,7 +43,7 @@ const steps = [
   {
     num: "04",
     title: "Full Coverage, Every Cycle",
-    body: "Aircraft fly fixed-spacing sweep patterns across your concession, methodically covering every meter of the zones you define — no gaps, no missed rows, no relying on a guard's memory of where they last walked.",
+    body: "Aircraft fly fixed-spacing sweep patterns across your site, methodically covering every meter of the zones you define — no gaps, no missed rows, no relying on a guard's memory of where they last walked.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <circle cx="12" cy="12" r="10" />
@@ -55,7 +55,7 @@ const steps = [
   {
     num: "05",
     title: "Mission-Hardened Hardware",
-    body: "These are heavy-duty, weather-resistant industrial VTOL aircraft built to handle extreme heat, thick dust, and heavy mining blasts. Equipped with long-wave infrared (LWIR) thermal cameras, they cut through night darkness and tree canopy, launching directly from automated base stations or moving trucks.",
+    body: "These are heavy-duty, weather-resistant industrial VTOL aircraft built to handle extreme heat, thick dust, and harsh operating conditions. Equipped with long-wave infrared (LWIR) thermal cameras, they cut through night darkness and tree canopy, launching directly from automated base stations or moving trucks.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <path d="M12 2l8 4v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6z" />

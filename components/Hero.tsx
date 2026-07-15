@@ -27,7 +27,7 @@ export function Hero() {
       {/* hero image */}
       <Image
         src="/hero-wireframe.webp"
-        alt="Wireframe surveillance render of a mining concession"
+        alt="Wireframe surveillance render of a remote industrial site"
         fill
         priority
         style={{

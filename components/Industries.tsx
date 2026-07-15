@@ -1,14 +1,14 @@
 import { Reveal } from "./ui/Reveal";
 
 const industries = [
-  { name: "Mining", status: "Live — Samaritan" },
-  { name: "Energy", status: "Platform" },
-  { name: "Utilities", status: "Platform" },
-  { name: "Telecommunications", status: "Platform" },
-  { name: "Industrial Facilities", status: "Platform" },
-  { name: "Construction", status: "Platform" },
-  { name: "Ports", status: "Platform" },
-  { name: "Government", status: "Platform" },
+  "Energy",
+  "Utilities",
+  "Telecommunications",
+  "Industrial Facilities",
+  "Construction",
+  "Ports",
+  "Government",
+  "Emergency Response",
 ];
 
 export function Industries() {
@@ -40,22 +40,20 @@ export function Industries() {
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 48, maxWidth: 640 }}>
             Samaritan is the first operational application built on the
-            platform, live today in mining. The same intelligence layer —
-            observe, understand, recommend, decide, act — applies anywhere
-            operators need continuous awareness over ground they cannot
-            watch in person.
+            platform. The same intelligence layer — observe, understand,
+            recommend, decide, act — applies anywhere operators need
+            continuous awareness over ground they cannot watch in person.
           </p>
         </Reveal>
 
         <Reveal delay={0.1}>
           <div className="four-col" style={{ gap: 1, background: "var(--border)" }}>
-            {industries.map((ind) => (
+            {industries.map((name) => (
               <div
-                key={ind.name}
+                key={name}
                 style={{
                   background: "var(--bg)",
                   padding: "24px 20px",
-                  borderLeft: ind.status === "Live — Samaritan" ? "2px solid var(--gold)" : "2px solid transparent",
                 }}
               >
                 <div style={{
@@ -64,18 +62,8 @@ export function Industries() {
                   fontWeight: 700,
                   color: "var(--text)",
                   letterSpacing: "-.01em",
-                  marginBottom: 8,
                 }}>
-                  {ind.name}
-                </div>
-                <div style={{
-                  fontFamily: "var(--font-mono)",
-                  fontSize: 9,
-                  color: ind.status === "Live — Samaritan" ? "var(--gold)" : "var(--text-3)",
-                  letterSpacing: ".08em",
-                  textTransform: "uppercase",
-                }}>
-                  {ind.status}
+                  {name}
                 </div>
               </div>
             ))}

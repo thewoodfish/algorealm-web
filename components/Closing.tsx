@@ -21,7 +21,7 @@ export function Closing() {
           maxWidth: 760,
           margin: "0 auto 24px",
         }}>
-          <span style={{ color: "var(--gold)" }}>Beyond Mining.</span>
+          <span style={{ color: "var(--gold)" }}>One Platform. Every Operation.</span>
         </p>
         <p style={{
           fontFamily: "var(--font-body)",
@@ -33,9 +33,9 @@ export function Closing() {
           margin: "0 auto",
         }}>
           The same intelligence layer that observes, understands, and
-          recommends across a mining concession applies to any environment
-          where organizations must continuously understand complex,
-          distributed operations — energy, ports, utilities, and beyond.
+          recommends applies to any environment where organizations must
+          continuously understand complex, distributed operations — energy,
+          ports, utilities, and beyond.
         </p>
       </Reveal>
     </div>
