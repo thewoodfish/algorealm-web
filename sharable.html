@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Algorealm — Operational Intelligence for Critical Infrastructure</title>
-  <meta name="description" content="Algorealm builds the operational intelligence platform for critical operations, turning observations from autonomous systems into clear, actionable next steps. Samaritan, our first application, is live in mining today." />
+  <meta name="description" content="Algorealm builds the operational intelligence platform for critical operations, turning observations from autonomous systems into clear, actionable next steps. Samaritan is the first application built on that platform." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
@@ -212,11 +212,6 @@
     #intel-layer .sec-h2 { margin-bottom: 20px; }
     #intel-layer .intro { font-family: var(--font-body); font-size: 15px; color: var(--text-2); line-height: 1.75; font-weight: 300; margin-bottom: 48px; }
 
-    /* ── Why Mining ─────────────────────────────────────────── */
-    .why-mining { border-bottom: .5px solid var(--border); padding: 96px 48px; text-align: center; }
-    .why-mining .sec-label { text-align: center; }
-    .why-mining .statement { font-family: var(--font-display); font-size: clamp(24px,3.5vw,44px); font-weight: 700; letter-spacing: -.025em; line-height: 1.2; color: var(--text); max-width: 760px; margin: 0 auto 24px; }
-    .why-mining .body { font-family: var(--font-body); font-size: 15px; color: var(--text-2); line-height: 1.75; font-weight: 300; max-width: 680px; margin: 0 auto; }
     .intel-features { display: flex; flex-direction: column; gap: 32px; }
     .intel-feature { display: grid; grid-template-columns: 28px 1fr; gap: 16px; align-items: start; }
     .intel-icon { width: 28px; height: 28px; border: .5px solid var(--gold-dim); background: var(--gold-glow); border-radius: 3px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
@@ -278,55 +273,14 @@
     .how-h3 { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--text); letter-spacing: -.01em; margin-bottom: 14px; }
     .how-body { font-family: var(--font-body); font-size: 14px; color: var(--text-2); line-height: 1.7; font-weight: 300; }
 
-    /* ── Solutions ──────────────────────────────────────────── */
-    #solutions .inner { max-width: 1200px; margin: 0 auto; }
-    .sol-header { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 24px; margin-bottom: 48px; }
-    .sol-tabs { display: flex; gap: 4px; }
-    .sol-tab {
-      font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em;
-      text-transform: uppercase; padding: 7px 16px; border-radius: 3px;
-      border: .5px solid var(--border); background: transparent;
-      color: var(--text-2); cursor: pointer; transition: all .2s;
-    }
-    .sol-tab.active { border-color: var(--gold-dim); background: var(--gold-glow); color: var(--gold); }
-    .sol-panel { display: none; gap: 64px; align-items: start; animation: fadeIn .35s ease; }
-    .sol-panel.active { display: grid; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
-    .sol-title { font-family: var(--font-display); font-size: 24px; font-weight: 700; color: var(--text); letter-spacing: -.01em; margin-bottom: 16px; }
-    .sol-desc { font-family: var(--font-body); font-size: 14px; color: var(--text-2); line-height: 1.75; font-weight: 300; margin-bottom: 28px; }
-    .sol-pains { list-style: none; margin-bottom: 36px; }
-    .sol-pains li { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: .5px solid var(--border); font-family: var(--font-body); font-size: 13px; color: var(--text-2); line-height: 1.5; }
-    .sol-pains li span { color: var(--red); margin-top: 2px; flex-shrink: 0; }
-    .sol-stats { gap: 1px; background: var(--border); }
-    .sol-stat { background: var(--surface); padding: 20px 16px; text-align: center; }
-    .sol-stat-val { font-family: var(--font-display); font-size: 22px; font-weight: 800; color: var(--gold); letter-spacing: -.02em; margin-bottom: 4px; }
-    .sol-stat-label { font-family: var(--font-mono); font-size: 9px; color: var(--text-3); letter-spacing: .08em; text-transform: uppercase; }
-    .sol-card { background: var(--surface); border: .5px solid var(--border); border-radius: 4px; overflow: hidden; }
-    .sol-card-header { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; border-bottom: .5px solid var(--border); background: var(--surface-2); }
-    .sol-card-header-text { font-family: var(--font-mono); font-size: 10px; color: var(--text-2); letter-spacing: .06em; }
-    .sol-card-status { font-family: var(--font-mono); font-size: 9px; color: var(--green); background: rgba(74,222,128,.08); border: .5px solid rgba(74,222,128,.2); padding: 3px 8px; border-radius: 2px; letter-spacing: .08em; text-transform: uppercase; }
-    .sol-alerts { padding: 12px 0; }
-    .sol-alert { display: grid; grid-template-columns: 52px 1fr; gap: 12px; padding: 9px 20px; border-bottom: .5px solid var(--border); }
-    .sol-alert-time { font-family: var(--font-mono); font-size: 10px; color: var(--text-3); }
-    .sol-alert-text { font-family: var(--font-body); font-size: 12px; line-height: 1.4; }
-    .sol-intel { margin: 16px; background: var(--bg); border: .5px solid var(--border); border-radius: 3px; padding: 16px; }
-    .sol-intel-q { font-family: var(--font-mono); font-size: 10px; color: var(--text-3); margin-bottom: 10px; letter-spacing: .06em; }
-    .sol-intel-a { font-family: var(--font-body); font-size: 12px; color: var(--text-2); line-height: 1.7; }
-    .sol-intel-a em { color: var(--text); font-style: normal; }
-    .sol-intel-a strong { color: var(--gold); }
-    .sol-intel-a .red { color: var(--red); }
-
     /* ── Industries ─────────────────────────────────────────── */
     #industries { background: var(--surface); border-top: .5px solid var(--border); border-bottom: .5px solid var(--border); }
     #industries .inner { max-width: 1200px; margin: 0 auto; }
     #industries .sec-h2 { margin-bottom: 20px; max-width: 640px; }
     #industries .industries-intro { font-family: var(--font-body); font-size: 15px; color: var(--text-2); line-height: 1.75; font-weight: 300; margin-bottom: 48px; max-width: 640px; }
     .industries-grid { gap: 1px; background: var(--border); }
-    .industry-cell { background: var(--bg); padding: 24px 20px; border-left: 2px solid transparent; }
-    .industry-cell.live { border-left-color: var(--gold); }
-    .industry-name { font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--text); letter-spacing: -.01em; margin-bottom: 8px; }
-    .industry-status { font-family: var(--font-mono); font-size: 9px; color: var(--text-3); letter-spacing: .08em; text-transform: uppercase; }
-    .industry-cell.live .industry-status { color: var(--gold); }
+    .industry-cell { background: var(--bg); padding: 24px 20px; }
+    .industry-name { font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--text); letter-spacing: -.01em; }
 
     /* ── Closing ────────────────────────────────────────────── */
     .closing { border-bottom: .5px solid var(--border); padding: 96px 48px; text-align: center; }
@@ -391,7 +345,6 @@
       #hero { padding: 100px 20px 60px; }
       .numbers-grid .cell:not(:last-child) { border-right: none; border-bottom: .5px solid var(--border); }
       .form-row { grid-template-columns: 1fr !important; }
-      .sol-tabs { flex-wrap: wrap; }
       footer { padding: 24px 20px; }
     }
     @media (max-width: 480px) {
@@ -417,7 +370,7 @@
 
 <!-- HERO -->
 <section id="hero">
-  <img class="hero-bg" src="https://www.algorealm.tech/hero-wireframe.webp" alt="Wireframe surveillance render of a mining concession" />
+  <img class="hero-bg" src="https://www.algorealm.tech/hero-wireframe.webp" alt="Wireframe surveillance render of a remote industrial site" />
   <div class="hero-overlay"></div>
   <div class="hero-vignette"></div>
   <div class="hero-fade"></div>
@@ -471,14 +424,14 @@
   <div class="inner two-col">
     <div class="reveal">
       <div class="section-label">Samaritan · First application</div>
-      <h2>Warnings before the pit is breached.<br>Not footage after it is.</h2>
-      <p>Samaritan is the first operational application built on Algorealm's intelligence platform — purpose-built for mining, with the same platform extending to energy, ports, and other critical operations.</p>
-      <p>It is an AI-powered operational intelligence system that watches your concession, waste piles, tailings facilities, and haul roads around the clock — no human has to sit and stare at camera feeds.</p>
-      <p>Built for remote mine sites where cellular and internet coverage cannot be relied on, Samaritan transforms streams of thermal and optical sensor data into actionable intelligence — giving your security team the awareness needed to intervene before illegal extraction or an ambush ever reaches your property.</p>
-      <p>To create persistent situational awareness over a 100km² lease, Samaritan deploys a coordinated swarm of autonomous aircraft that share information, maintain coverage, and operate continuously without requiring a human pilot for every aircraft.</p>
+      <h2>Warnings before the breach.<br>Not footage after it is.</h2>
+      <p>Samaritan is the first operational application built on Algorealm's intelligence platform.</p>
+      <p>It is an AI-powered operational intelligence system that watches your site and perimeter around the clock — no human has to sit and stare at camera feeds.</p>
+      <p>Built for remote sites where cellular and internet coverage cannot be relied on, Samaritan transforms streams of thermal and optical sensor data into actionable intelligence — giving your security team the awareness needed to intervene before a breach or incident ever reaches your operation.</p>
+      <p>To create persistent situational awareness over a large operational area, Samaritan deploys a coordinated swarm of autonomous aircraft that share information, maintain coverage, and operate continuously without requiring a human pilot for every aircraft.</p>
       <div class="btns">
         <a href="#how">How it works</a>
-        <a href="#solutions">See solutions</a>
+        <a href="#industries">See industries</a>
       </div>
     </div>
     <div class="reveal reveal-d2">
@@ -488,13 +441,6 @@
     </div>
   </div>
 </section>
-
-<!-- WHY MINING -->
-<div class="why-mining reveal">
-  <div class="sec-label">Why mining</div>
-  <p class="statement">The hardest environment first.</p>
-  <p class="body">We did not start with mining because Algorealm is a mining company. We started here because mining concentrates nearly every operational challenge our platform is built to solve — enormous scale, remote and distributed assets, critical infrastructure that cannot go dark, and layers of operational complexity that compound by the hour. If the platform holds up here, it holds up almost anywhere.</p>
-</div>
 
 <!-- THE INTELLIGENCE LAYER -->
 <section id="intel-layer" class="section-pad">
@@ -525,7 +471,7 @@
           <div class="chat-dot" style="background:#ef4444"></div>
           <div class="chat-dot" style="background:#f59e0b"></div>
           <div class="chat-dot" style="background:#4ade80"></div>
-          <span class="chat-title">Samaritan Intel · Concession Perimeter, Sector 4</span>
+          <span class="chat-title">Samaritan Intel · Site Perimeter, Sector 4</span>
           <div class="chat-live">
             <div class="chat-live-dot"></div>
             <span class="chat-live-text">LIVE</span>
@@ -538,7 +484,7 @@
           </div>
           <div class="chat-msg">
             <div class="chat-avatar ai">AI</div>
-            <div class="chat-bubble a">Three approaches between 0130–0300. Two were classified as routine patrol crossings based on gait and time-of-day profile. The third — arriving at 0247 — does not match any known profile. Thermal signature matches the May 15 artisanal mining crew. It departed without reaching the tailings fence. Recommend flag for tonight.</div>
+            <div class="chat-bubble a">Three approaches between 0130–0300. Two were classified as routine patrol crossings based on gait and time-of-day profile. The third — arriving at 0247 — does not match any known profile. Thermal signature matches a crew first logged on May 15. It departed without reaching the boundary fence. Recommend flag for tonight.</div>
           </div>
           <div class="chat-msg q">
             <div class="chat-avatar op">OP</div>
@@ -609,7 +555,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         </div>
         <h3 class="how-h3">Real Warnings, Not Just Video</h3>
-        <p class="how-body">We don't just stream hours of raw, exhausting video for a human operator to watch. Our software automatically spots threats — like illegal pit setups, perimeter fences being cut, or armed groups in the bush — and alerts your team with the exact coordinates immediately.</p>
+        <p class="how-body">We don't just stream hours of raw, exhausting video for a human operator to watch. Our software automatically spots threats — like unauthorized structures, perimeter fences being cut, or armed groups nearby — and alerts your team with the exact coordinates immediately.</p>
       </div>
       <div class="how-cell reveal reveal-d1">
         <div class="how-num">02</div>
@@ -617,7 +563,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.58 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
         </div>
         <h3 class="how-h3">Real-Time Detection, Fully Local</h3>
-        <p class="how-body">Every aircraft, every alert, every second-by-second decision happens on hardware at the mine site — detection and response never depend on a live internet connection. The intelligence layer that gets sharper over time syncs securely when connectivity allows.</p>
+        <p class="how-body">Every aircraft, every alert, every second-by-second decision happens on hardware at the site — detection and response never depend on a live internet connection. The intelligence layer that gets sharper over time syncs securely when connectivity allows.</p>
       </div>
       <div class="how-cell reveal reveal-d2">
         <div class="how-num">03</div>
@@ -633,7 +579,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
         </div>
         <h3 class="how-h3">Full Coverage, Every Cycle</h3>
-        <p class="how-body">Aircraft fly fixed-spacing sweep patterns across your concession, methodically covering every meter of the zones you define — no gaps, no missed rows, no relying on a guard's memory of where they last walked.</p>
+        <p class="how-body">Aircraft fly fixed-spacing sweep patterns across your site, methodically covering every meter of the zones you define — no gaps, no missed rows, no relying on a guard's memory of where they last walked.</p>
       </div>
       <div class="how-cell reveal reveal-d1">
         <div class="how-num">05</div>
@@ -641,95 +587,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M12 2l8 4v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6z"/></svg>
         </div>
         <h3 class="how-h3">Mission-Hardened Hardware</h3>
-        <p class="how-body">These are heavy-duty, weather-resistant industrial VTOL aircraft built to handle extreme heat, thick dust, and heavy mining blasts. Equipped with long-wave infrared (LWIR) thermal cameras, they cut through night darkness and tree canopy, launching directly from automated base stations or moving trucks.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SOLUTIONS -->
-<section id="solutions" class="section-pad">
-  <div class="inner">
-    <div class="reveal">
-      <div class="sec-label">Operational workflows</div>
-      <div class="sol-header">
-        <h2 class="sec-h2">Built for two main jobs.</h2>
-        <div class="sol-tabs">
-          <button class="sol-tab active" data-sol="pit">🏗️ Mine Pit &amp; Perimeter</button>
-          <button class="sol-tab" data-sol="convoy">🚛 Cargo Convoys</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Mine Pit -->
-    <div class="sol-panel two-col active" id="sol-pit">
-      <div>
-        <h3 class="sol-title">Guarding the Mine Pit &amp; Perimeter</h3>
-        <p class="sol-desc">Automated aircraft flights scan your concession boundaries, waste piles, and tailings management facilities day and night. The system catches illegal artisanal mining encampments, equipment sabotage, and perimeter trespassing before illegal extraction can scale.</p>
-        <ul class="sol-pains">
-          <li><span>—</span> Concession boundaries stretch across 100km² — too vast for fences or foot patrols</li>
-          <li><span>—</span> Illegal artisanal mining encampments appear and vanish before guards ever arrive</li>
-          <li><span>—</span> Waste piles and tailings facilities sit unmonitored through the night</li>
-          <li><span>—</span> By the time equipment sabotage is discovered, the crew is already gone</li>
-        </ul>
-        <div class="sol-stats four-col">
-          <div class="sol-stat"><div class="sol-stat-val">100km²</div><div class="sol-stat-label">Coverage per deployment</div></div>
-          <div class="sol-stat"><div class="sol-stat-val">24/7</div><div class="sol-stat-label">Continuous patrol</div></div>
-          <div class="sol-stat"><div class="sol-stat-val">0</div><div class="sol-stat-label">Cellular dependency</div></div>
-          <div class="sol-stat"><div class="sol-stat-val">&lt;5 min</div><div class="sol-stat-label">Alert to dispatch</div></div>
-        </div>
-      </div>
-      <div class="sol-card">
-        <div class="sol-card-header">
-          <span class="sol-card-header-text">Samaritan Guard · Concession Perimeter, Sector 4</span>
-          <span class="sol-card-status">Patrol active</span>
-        </div>
-        <div class="sol-alerts">
-          <div class="sol-alert"><span class="sol-alert-time">02:14</span><span class="sol-alert-text" style="color:var(--red)">Illegal pit encampment — 6 persons — SW boundary</span></div>
-          <div class="sol-alert"><span class="sol-alert-time">02:11</span><span class="sol-alert-text" style="color:var(--purple)">Aircraft-2 → tracking encampment. Coverage redistributed.</span></div>
-          <div class="sol-alert"><span class="sol-alert-time">01:47</span><span class="sol-alert-text" style="color:var(--amber)">Perimeter fence disturbance detected — east line</span></div>
-          <div class="sol-alert"><span class="sol-alert-time">00:52</span><span class="sol-alert-text" style="color:var(--text-3)">Tailings facility sweep — no contacts — clear</span></div>
-        </div>
-        <div class="sol-intel">
-          <div class="sol-intel-q">— Is the south pit safe to leave unguarded tonight?</div>
-          <p class="sol-intel-a">An unregistered encampment of <em>6 persons</em> has been detected on the SW boundary, <strong>consistent with 3 prior artisanal mining incidents</strong> in this sector. <em class="red">Recommend immediate ground response</em> before extraction equipment is moved in.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Cargo Convoys -->
-    <div class="sol-panel two-col" id="sol-convoy">
-      <div>
-        <h3 class="sol-title">Escorting Cargo Convoys</h3>
-        <p class="sol-desc">We mount automated aircraft launch boxes directly onto your security escort trucks. The aircraft automatically fly 5 to 10 kilometers ahead of your gold doré or lithium dump truck fleets to spot roadblocks, illegal checkpoints, or staged ambushes — giving your drivers plenty of time to halt and reverse safely.</p>
-        <ul class="sol-pains">
-          <li><span>—</span> Ambush points along haul roads are scouted for weeks before a hit</li>
-          <li><span>—</span> Roadblocks and staged checkpoints appear with no warning to drivers</li>
-          <li><span>—</span> A single hijacked doré or lithium shipment can cost more than a year of security spend</li>
-          <li><span>—</span> Radio-only convoys have no eyes beyond the next bend</li>
-        </ul>
-        <div class="sol-stats four-col">
-          <div class="sol-stat"><div class="sol-stat-val">5–10km</div><div class="sol-stat-label">Lookahead range</div></div>
-          <div class="sol-stat"><div class="sol-stat-val">0</div><div class="sol-stat-label">Internet required</div></div>
-          <div class="sol-stat"><div class="sol-stat-val">Real-time</div><div class="sol-stat-label">Route hazard alerts</div></div>
-          <div class="sol-stat"><div class="sol-stat-val">100%</div><div class="sol-stat-label">Convoy coverage</div></div>
-        </div>
-      </div>
-      <div class="sol-card">
-        <div class="sol-card-header">
-          <span class="sol-card-header-text">Samaritan Escort · Haul Route HR-04</span>
-          <span class="sol-card-status">Escort active</span>
-        </div>
-        <div class="sol-alerts">
-          <div class="sol-alert"><span class="sol-alert-time">05:22</span><span class="sol-alert-text" style="color:var(--red)">Staged roadblock detected — 8km ahead — HIGH</span></div>
-          <div class="sol-alert"><span class="sol-alert-time">05:20</span><span class="sol-alert-text" style="color:var(--purple)">Aircraft-1 → holding overwatch. Convoy notified.</span></div>
-          <div class="sol-alert"><span class="sol-alert-time">05:14</span><span class="sol-alert-text" style="color:var(--amber)">Vehicle stopped roadside — 6km ahead — monitoring</span></div>
-          <div class="sol-alert"><span class="sol-alert-time">04:40</span><span class="sol-alert-text" style="color:var(--green)">Route KM 0–20 swept — clear — convoy cleared to move</span></div>
-        </div>
-        <div class="sol-intel">
-          <div class="sol-intel-q">— Is the route ahead clear for the convoy?</div>
-          <p class="sol-intel-a">A <em>staged roadblock</em> has been detected 8km ahead of the convoy — vehicle positioning matches <strong>2 previous ambush attempts</strong> on this route. <em class="red">Recommend the convoy halt and reverse now.</em> Alternate route via HR-06 is clear.</p>
-        </div>
+        <p class="how-body">These are heavy-duty, weather-resistant industrial VTOL aircraft built to handle extreme heat, thick dust, and harsh operating conditions. Equipped with long-wave infrared (LWIR) thermal cameras, they cut through night darkness and tree canopy, launching directly from automated base stations or moving trucks.</p>
       </div>
     </div>
   </div>
@@ -741,18 +599,18 @@
     <div class="reveal">
       <div class="sec-label">Industries</div>
       <h2 class="sec-h2">One platform. Every large, remote, high-value operation.</h2>
-      <p class="industries-intro">Samaritan is the first operational application built on the platform, live today in mining. The same intelligence layer — observe, understand, recommend, decide, act — applies anywhere operators need continuous awareness over ground they cannot watch in person.</p>
+      <p class="industries-intro">Samaritan is the first operational application built on the platform. The same intelligence layer — observe, understand, recommend, decide, act — applies anywhere operators need continuous awareness over ground they cannot watch in person.</p>
     </div>
     <div class="reveal reveal-d1">
       <div class="industries-grid four-col">
-        <div class="industry-cell live"><div class="industry-name">Mining</div><div class="industry-status">Live — Samaritan</div></div>
-        <div class="industry-cell"><div class="industry-name">Energy</div><div class="industry-status">Platform</div></div>
-        <div class="industry-cell"><div class="industry-name">Utilities</div><div class="industry-status">Platform</div></div>
-        <div class="industry-cell"><div class="industry-name">Telecommunications</div><div class="industry-status">Platform</div></div>
-        <div class="industry-cell"><div class="industry-name">Industrial Facilities</div><div class="industry-status">Platform</div></div>
-        <div class="industry-cell"><div class="industry-name">Construction</div><div class="industry-status">Platform</div></div>
-        <div class="industry-cell"><div class="industry-name">Ports</div><div class="industry-status">Platform</div></div>
-        <div class="industry-cell"><div class="industry-name">Government</div><div class="industry-status">Platform</div></div>
+        <div class="industry-cell"><div class="industry-name">Energy</div></div>
+        <div class="industry-cell"><div class="industry-name">Utilities</div></div>
+        <div class="industry-cell"><div class="industry-name">Telecommunications</div></div>
+        <div class="industry-cell"><div class="industry-name">Industrial Facilities</div></div>
+        <div class="industry-cell"><div class="industry-name">Construction</div></div>
+        <div class="industry-cell"><div class="industry-name">Ports</div></div>
+        <div class="industry-cell"><div class="industry-name">Government</div></div>
+        <div class="industry-cell"><div class="industry-name">Emergency Response</div></div>
       </div>
     </div>
   </div>
@@ -761,17 +619,17 @@
 <!-- CLOSING (VISION) -->
 <div class="closing reveal">
   <div class="sec-label">Vision</div>
-  <p><span>Beyond Mining.</span></p>
-  <p class="body">The same intelligence layer that observes, understands, and recommends across a mining concession applies to any environment where organizations must continuously understand complex, distributed operations — energy, ports, utilities, and beyond.</p>
+  <p><span>One Platform. Every Operation.</span></p>
+  <p class="body">The same intelligence layer that observes, understands, and recommends applies to any environment where organizations must continuously understand complex, distributed operations — energy, ports, utilities, and beyond.</p>
 </div>
 
 <!-- CONTACT -->
 <section id="contact" class="section-pad">
   <div class="inner two-col">
     <div class="reveal">
-      <div class="sec-label">Concession audit</div>
+      <div class="sec-label">Operational audit</div>
       <h2>Request a 3-Day Risk Validation Audit.</h2>
-      <p class="contact-intro">Twenty minutes. Your terrain, your threat profile, live software. We don't do generic slides — we run the demo using an operational scenario from your specific mining zone.</p>
+      <p class="contact-intro">Twenty minutes. Your terrain, your threat profile, live software. We don't do generic slides — we run the demo using an operational scenario from your specific site.</p>
       <form class="contact-form" id="contact-form">
         <div>
           <label class="form-label">Full Name</label>
@@ -782,25 +640,15 @@
           <input class="form-input" type="email" placeholder="a.bello@example.com" required />
         </div>
         <div>
-          <label class="form-label">Company / Mine Operator Name</label>
-          <input class="form-input" type="text" placeholder="Konko Gold Mines Ltd." required />
-        </div>
-        <div>
-          <label class="form-label">Primary Mineral</label>
-          <select class="form-select" required>
-            <option value="" disabled selected>Gold, Lithium, Base Metals, etc.</option>
-            <option>Gold</option>
-            <option>Lithium</option>
-            <option>Base Metals</option>
-            <option>Other</option>
-          </select>
+          <label class="form-label">Company Name</label>
+          <input class="form-input" type="text" placeholder="Northbridge Industrial Ltd." required />
         </div>
         <div>
           <label class="form-label">Primary Security Challenge</label>
           <select class="form-select" required>
             <option value="" disabled selected>Select your primary challenge</option>
-            <option>Perimeter Infiltration</option>
-            <option>Haulage Ambush</option>
+            <option>Perimeter Security</option>
+            <option>Asset &amp; Convoy Protection</option>
             <option>Both</option>
           </select>
         </div>
@@ -854,17 +702,6 @@
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
   }, { rootMargin: '-80px' });
   reveals.forEach(el => observer.observe(el));
-
-  // Solutions tabs
-  document.querySelectorAll('.sol-tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-      const id = tab.dataset.sol;
-      document.querySelectorAll('.sol-tab').forEach(t => t.classList.remove('active'));
-      document.querySelectorAll('.sol-panel').forEach(p => p.classList.remove('active'));
-      tab.classList.add('active');
-      document.getElementById('sol-' + id).classList.add('active');
-    });
-  });
 
   // Contact form → mailto fallback
   document.getElementById('contact-form').addEventListener('submit', function(e) {
