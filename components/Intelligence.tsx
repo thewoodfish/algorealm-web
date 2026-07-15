@@ -40,7 +40,7 @@ const chatLines = [
 export function Intelligence() {
   return (
     <section
-      id="intelligence"
+      id="intel-layer"
       className="section-pad"
       style={{
         background: "var(--surface)",
@@ -57,7 +57,7 @@ export function Intelligence() {
         {/* left */}
         <Reveal>
           <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--gold)", letterSpacing: ".14em", textTransform: "uppercase", marginBottom: 16 }}>
-            Operational intelligence
+            The intelligence layer
           </div>
           <h2 style={{
             fontFamily: "var(--font-display)",

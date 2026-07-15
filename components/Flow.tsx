@@ -18,7 +18,12 @@ const steps = [
   },
   {
     num: "04",
-    verb: "Respond",
+    verb: "Decide",
+    body: "Your team weighs the recommendation against real-time context — location, available personnel, and risk — and decides the right response for that moment.",
+  },
+  {
+    num: "05",
+    verb: "Act",
     body: "Your team acts with full context: exact location, matched history, and a clear next step, delivered before the event has finished unfolding.",
   },
 ];
@@ -44,7 +49,7 @@ export function Flow() {
           </h2>
         </Reveal>
 
-        <div className="four-col" style={{ gap: 1, background: "var(--border)" }}>
+        <div className="five-col" style={{ gap: 1, background: "var(--border)" }}>
           {steps.map((s, i) => (
             <Reveal key={s.num} delay={i * 0.08}>
               <div style={{

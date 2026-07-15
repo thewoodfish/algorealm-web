@@ -1,6 +1,6 @@
 import { Reveal } from "./ui/Reveal";
 
-export function Closing() {
+export function WhyMining() {
   return (
     <div style={{
       borderBottom: ".5px solid var(--border)",
@@ -9,7 +9,7 @@ export function Closing() {
     }}>
       <Reveal>
         <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--gold)", letterSpacing: ".14em", textTransform: "uppercase", marginBottom: 20 }}>
-          Vision
+          Why mining
         </div>
         <p style={{
           fontFamily: "var(--font-display)",
@@ -21,7 +21,7 @@ export function Closing() {
           maxWidth: 760,
           margin: "0 auto 24px",
         }}>
-          <span style={{ color: "var(--gold)" }}>Beyond Mining.</span>
+          The hardest environment first.
         </p>
         <p style={{
           fontFamily: "var(--font-body)",
@@ -32,10 +32,13 @@ export function Closing() {
           maxWidth: 680,
           margin: "0 auto",
         }}>
-          The same intelligence layer that observes, understands, and
-          recommends across a mining concession applies to any environment
-          where organizations must continuously understand complex,
-          distributed operations — energy, ports, utilities, and beyond.
+          We did not start with mining because Algorealm is a mining
+          company. We started here because mining concentrates nearly
+          every operational challenge our platform is built to solve —
+          enormous scale, remote and distributed assets, critical
+          infrastructure that cannot go dark, and layers of operational
+          complexity that compound by the hour. If the platform holds up
+          here, it holds up almost anywhere.
         </p>
       </Reveal>
     </div>

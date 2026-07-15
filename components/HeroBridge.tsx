@@ -2,14 +2,14 @@ import { Reveal } from "./ui/Reveal";
 
 export function HeroBridge() {
   return (
-    <div style={{
+    <div id="intelligence" style={{
       borderBottom: ".5px solid var(--border)",
       padding: "64px 48px",
       textAlign: "center",
     }}>
       <Reveal>
         <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--gold)", letterSpacing: ".14em", textTransform: "uppercase", marginBottom: 20 }}>
-          The problem
+          Operational intelligence
         </div>
         <p style={{
           fontFamily: "var(--font-display)",
@@ -20,7 +20,7 @@ export function HeroBridge() {
           color: "var(--text)",
           marginBottom: 24,
         }}>
-          Critical operations generate enormous amounts of information.<br />
+          Organizations generate enormous amounts of operational data.<br />
           <span style={{ color: "var(--gold)" }}>Most of it is never understood.</span>
         </p>
         <p style={{
@@ -32,11 +32,11 @@ export function HeroBridge() {
           maxWidth: 680,
           margin: "0 auto",
         }}>
-          Sensors, patrols, and field reports all produce signal, but without
-          a system to connect it, most of that signal goes unreviewed until
-          after something has already gone wrong. In large, remote, and
-          high-value operations, that gap usually comes down to three
-          issues:
+          Algorealm continuously transforms observations into operational
+          understanding — helping teams see what is happening, why it
+          matters, and what to do next before problems compound. In large,
+          remote, and high-value operations, that gap usually shows up in
+          three ways:
         </p>
       </Reveal>
     </div>

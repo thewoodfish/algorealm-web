@@ -2,8 +2,9 @@ import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
 import { HeroBridge } from "@/components/HeroBridge";
 import { Numbers } from "@/components/Numbers";
-import { Intelligence } from "@/components/Intelligence";
 import { What } from "@/components/What";
+import { WhyMining } from "@/components/WhyMining";
+import { Intelligence } from "@/components/Intelligence";
 import { Flow } from "@/components/Flow";
 import { How } from "@/components/How";
 import { Solutions } from "@/components/Solutions";
@@ -20,8 +21,9 @@ export default function Home() {
         <Hero />
         <HeroBridge />
         <Numbers />
-        <Intelligence />
         <What />
+        <WhyMining />
+        <Intelligence />
         <Flow />
         <How />
         <Solutions />

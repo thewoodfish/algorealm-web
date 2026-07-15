@@ -91,16 +91,16 @@ export function Hero() {
             fontWeight: 300,
           }}
         >
-          Algorealm continuously transforms observations from autonomous
-          systems into actionable operational intelligence — helping
-          organizations understand what is happening, why it matters, and
-          what to do next.
+          Algorealm helps organizations continuously understand what is
+          happening across their operations by transforming observations
+          from autonomous systems, sensors, and enterprise data into
+          actionable operational intelligence.
         </motion.p>
 
         {/* CTAs */}
         <motion.div {...fadeUp(0.62)} style={{ display: "flex", gap: 20, justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
           <a
-            href="#samaritan"
+            href="#intelligence"
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -119,7 +119,7 @@ export function Hero() {
             onMouseEnter={e => (e.currentTarget.style.background = "var(--gold-2)")}
             onMouseLeave={e => (e.currentTarget.style.background = "var(--gold)")}
           >
-            Explore Samaritan
+            See the Platform
           </a>
           <a
             href="https://youtu.be/uLrshcacFwo"
