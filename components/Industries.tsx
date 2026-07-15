@@ -41,7 +41,7 @@ export function Industries() {
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 48, maxWidth: 640 }}>
             Samaritan is the first operational application built on the
             platform, live today in mining. The same intelligence layer —
-            observe, understand, recommend, respond — applies anywhere
+            observe, understand, recommend, decide, act — applies anywhere
             operators need continuous awareness over ground they cannot
             watch in person.
           </p>
