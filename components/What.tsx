@@ -26,7 +26,7 @@ export function What() {
             marginBottom: 24,
             color: "var(--text)",
           }}>
-            Warnings before the breach.<br />Not footage after it is.
+            Warnings before the incident.<br />Not footage after it is.
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
             Samaritan is the first operational application built on
@@ -34,18 +34,18 @@ export function What() {
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
             It is an AI-powered operational intelligence system that watches
-            your site and perimeter around the clock — no human has to sit
-            and stare at camera feeds.
+            your site around the clock — no human has to sit and stare at
+            camera feeds.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
             Built for remote sites where cellular and internet coverage
             cannot be relied on, Samaritan transforms streams of thermal and
             optical sensor data into actionable intelligence — giving your
-            security team the awareness needed to intervene before a breach
-            or incident ever reaches your operation.
+            team the awareness needed to act before small problems become
+            expensive ones.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 36 }}>
-            To create persistent situational awareness over a large
+            To create persistent operational visibility over a large
             operational area, Samaritan deploys a coordinated swarm of
             autonomous aircraft that share information, maintain coverage,
             and operate continuously without requiring a human pilot for
@@ -88,7 +88,7 @@ export function What() {
           }}>
             <Image
               src="/images/perimeter-hud.webp"
-              alt="Perimeter surveillance overview with patrol coverage overlay"
+              alt="Aerial operational overview with coverage overlay"
               width={1254}
               height={1254}
               style={{ width: "100%", height: "auto", display: "block" }}

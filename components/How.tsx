@@ -4,7 +4,7 @@ const steps = [
   {
     num: "01",
     title: "Real Warnings, Not Just Video",
-    body: "We don't just stream hours of raw, exhausting video for a human operator to watch. Our software automatically spots threats — like unauthorized structures, perimeter fences being cut, or armed groups nearby — and alerts your team with the exact coordinates immediately.",
+    body: "We don't just stream hours of raw, exhausting video for a human operator to watch. Our software automatically spots what matters — from blocked routes and equipment issues to unauthorized activity — and alerts your team with the exact coordinates immediately.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
@@ -54,7 +54,7 @@ const steps = [
   },
   {
     num: "05",
-    title: "Mission-Hardened Hardware",
+    title: "Field-Hardened Hardware",
     body: "These are heavy-duty, weather-resistant industrial VTOL aircraft built to handle extreme heat, thick dust, and harsh operating conditions. Equipped with long-wave infrared (LWIR) thermal cameras, they cut through night darkness and tree canopy, launching directly from automated base stations or moving trucks.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">

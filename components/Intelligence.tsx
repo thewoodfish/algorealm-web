@@ -12,7 +12,7 @@ const features = [
   },
   {
     title: "Finds recurring patterns",
-    body: "A vehicle that appeared on the same three nights in a row. An approach used in every previous incident. The platform surfaces these patterns before they become the next one.",
+    body: "A route that's blocked at the same time every week. A vehicle that's appeared on the same three nights in a row. The platform surfaces these patterns before they become the next problem.",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
@@ -31,10 +31,10 @@ const features = [
 ];
 
 const chatLines = [
-  { role: "q", text: "What happened overnight on the south perimeter?" },
-  { role: "a", text: "Three approaches between 0130–0300. Two were classified as routine patrol crossings based on gait and time-of-day profile. The third — arriving at 0247 — does not match any known profile. Thermal signature matches a crew first logged on May 15. It departed without reaching the boundary fence. Recommend flag for tonight." },
-  { role: "q", text: "Same crew as last week?" },
-  { role: "a", text: "Yes. 94% confidence match on thermal and movement profile. This is the 4th appearance in 22 days. Previous three visits were surveillance runs. Tonight may be operational." },
+  { role: "q", text: "What's the status of the haul road this morning?" },
+  { role: "a", text: "Route 4 has been partially blocked since 0512 — a stalled vehicle near the second switchback. Traffic is backing up toward the pit. Two alternate routes are clear. Recommend dispatch reroute now before the delay compounds." },
+  { role: "q", text: "Any other flags overnight?" },
+  { role: "a", text: "One. An unregistered vehicle was logged near the east boundary at 0247 — thermal signature matches a crew first seen on May 15. It departed without approaching the fence line. Flagged for review, not urgent." },
 ];
 
 export function Intelligence() {
@@ -132,7 +132,7 @@ export function Intelligence() {
                 <div key={c} style={{ width: 9, height: 9, borderRadius: "50%", background: c, opacity: .7 }} />
               ))}
               <span style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--text-3)", marginLeft: 8, letterSpacing: ".06em" }}>
-                Samaritan Intel · Site Perimeter, Sector 4
+                Samaritan Intel · Site Overview, Sector 4
               </span>
               <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: 5 }}>
                 <div style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--green)", animation: "pulse 2s infinite" }} />

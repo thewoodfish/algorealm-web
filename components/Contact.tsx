@@ -2,7 +2,7 @@
 import { useRef, useState } from "react";
 import { Reveal } from "./ui/Reveal";
 
-const challenges = ["Perimeter Security", "Asset & Convoy Protection", "Both"];
+const challenges = ["Operational Visibility", "Safety & Emergency Response", "Asset & Perimeter Protection", "Other"];
 
 export function Contact() {
   const [challenge, setChallenge] = useState("");
@@ -26,7 +26,7 @@ export function Contact() {
           name:    nameRef.current?.value,
           org:     orgRef.current?.value,
           email:   emailRef.current?.value,
-          message: `Primary security challenge: ${challenge}`,
+          message: `Primary operational focus: ${challenge}`,
         }),
       });
       if (!res.ok) throw new Error("Failed to send");
@@ -85,10 +85,10 @@ export function Contact() {
             color: "var(--text)",
             marginBottom: 16,
           }}>
-            Request a 3-Day Risk Validation Audit.
+            Request a 3-Day Operational Visibility Audit.
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--text-2)", lineHeight: 1.7, fontWeight: 300, marginBottom: 32 }}>
-            Twenty minutes. Your terrain, your threat profile, live software. We
+            Twenty minutes. Your terrain, your operation, live software. We
             don&apos;t do generic slides — we run the demo using an operational
             scenario from your specific site.
           </p>
@@ -126,14 +126,14 @@ export function Contact() {
               </div>
 
               <div>
-                <label style={labelStyle}>Primary Security Challenge</label>
+                <label style={labelStyle}>Primary Operational Focus</label>
                 <select
                   style={{ ...inputStyle, cursor: "pointer" }}
                   value={challenge}
                   onChange={e => setChallenge(e.target.value)}
                   required
                 >
-                  <option value="" disabled>Select your primary challenge</option>
+                  <option value="" disabled>Select your primary focus</option>
                   {challenges.map(c => <option key={c} value={c}>{c}</option>)}
                 </select>
               </div>
@@ -186,8 +186,8 @@ export function Contact() {
               Algorealm is built in Africa, engineered for African terrain.
               We don&apos;t expect you to buy an enterprise software
               subscription based on a generic slide deck. Let us run a
-              simple 3-day sandboxed dry run on a troubled spot of your
-              perimeter to show you exactly what our software can see.
+              simple 3-day sandboxed dry run on a representative part of
+              your site to show you exactly what our software can see.
             </p>
 
             {/* channels */}
