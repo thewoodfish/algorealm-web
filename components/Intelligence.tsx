@@ -71,9 +71,9 @@ export function Intelligence() {
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 48 }}>
             Every previous approach to operational visibility has been about
-            a camera feed. Algorealm is an analyst that never sleeps —
-            learning the specific terrain, the specific risks, and the
-            specific patterns of your operation.
+            a camera feed. Algorealm&apos;s platform is an analyst that
+            never sleeps — learning the specific terrain, the specific
+            risks, and the specific patterns of your operation.
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
