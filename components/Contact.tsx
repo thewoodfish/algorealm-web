@@ -105,7 +105,7 @@ export function Contact() {
                 Request received.
               </div>
               <p style={{ fontFamily: "var(--font-body)", fontSize: 13, color: "var(--text-2)", lineHeight: 1.65 }}>
-                We will reach out within 24 hours to secure your audit window.
+                We&apos;ll reach out within 24 hours to set up your demo.
               </p>
             </div>
           ) : (

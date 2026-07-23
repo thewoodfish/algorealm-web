@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Algorealm — Operational Intelligence for Critical Infrastructure</title>
-  <meta name="description" content="Algorealm builds the operational intelligence platform for critical operations, turning observations from autonomous systems into clear, actionable next steps. Samaritan is the first application built on that platform." />
+  <title>Algorealm — Understand what's happening across your operations</title>
+  <meta name="description" content="Algorealm helps organizations understand what is happening across their operations, uncover why problems occur, and make faster, better decisions. Samaritan, our operational investigation platform, explains what happened and why." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
@@ -182,31 +182,64 @@
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
     @keyframes dotBlink { 0%,80%,100%{opacity:.2} 40%{opacity:1} }
 
-    /* ── Hero bridge (Problem) ──────────────────────────────── */
-    .hero-bridge { border-bottom: .5px solid var(--border); padding: 64px 48px; text-align: center; }
-    .hero-bridge p { font-family: var(--font-display); font-size: clamp(24px,3.5vw,48px); font-weight: 700; letter-spacing: -.025em; line-height: 1.15; color: var(--text); margin-bottom: 24px; }
-    .hero-bridge span { color: var(--gold); }
-    .hero-bridge .bridge-body { font-family: var(--font-body); font-size: 15px; color: var(--text-2); line-height: 1.75; font-weight: 300; max-width: 680px; margin: 0 auto; }
-
-    /* ── Numbers (Problem stats) ────────────────────────────── */
-    .numbers-grid {
-      border-top: .5px solid var(--border);
-      border-bottom: .5px solid var(--border);
-    }
-    .numbers-grid .cell {
-      padding: 52px 48px; position: relative;
-    }
-    .numbers-grid .cell:not(:last-child) { border-right: .5px solid var(--border); }
-    .num-tag { font-family: var(--font-mono); font-size: 9px; color: var(--text-3); letter-spacing: .12em; text-transform: uppercase; margin-bottom: 20px; }
-    .num-val { font-family: var(--font-display); font-size: clamp(26px,2.6vw,36px); font-weight: 800; color: var(--gold); letter-spacing: -.02em; line-height: 1.1; margin-bottom: 16px; }
-    .num-desc { font-family: var(--font-body); font-size: 13px; color: var(--text-2); line-height: 1.65; font-weight: 300; }
-    .num-accent { position: absolute; left: 0; top: 30%; height: 40%; width: 2px; border-radius: 1px; }
-
     /* ── Section label shared ───────────────────────────────── */
     .sec-label { font-family: var(--font-mono); font-size: 10px; color: var(--gold); letter-spacing: .14em; text-transform: uppercase; margin-bottom: 16px; }
     .sec-h2 { font-family: var(--font-display); font-size: clamp(28px,3vw,42px); font-weight: 700; letter-spacing: -.025em; color: var(--text); }
 
-    /* ── The intelligence layer ─────────────────────────────── */
+    /* ── Problem ────────────────────────────────────────────── */
+    #problem { border-top: .5px solid var(--border); border-bottom: .5px solid var(--border); }
+    #problem .inner { max-width: 1200px; margin: 0 auto; }
+    .problem-h2 { font-family: var(--font-display); font-size: clamp(30px,4vw,52px); font-weight: 700; letter-spacing: -.025em; line-height: 1.1; color: var(--text); margin-bottom: 28px; max-width: 720px; }
+    .problem-intro { font-family: var(--font-body); font-size: 16px; color: var(--text-2); line-height: 1.75; font-weight: 300; max-width: 640px; margin-bottom: 56px; }
+    .events-grid { gap: 1px; background: var(--border); margin-bottom: 40px; }
+    .event-cell { background: var(--bg); padding: 28px 24px; }
+    .event-cell div { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--text); letter-spacing: -.01em; }
+    .problem-kicker { font-family: var(--font-display); font-size: clamp(20px,2.4vw,30px); font-weight: 700; letter-spacing: -.02em; line-height: 1.3; color: var(--text); max-width: 760px; }
+    .problem-kicker span { color: var(--text-2); font-weight: 300; }
+
+    /* ── Solution ───────────────────────────────────────────── */
+    #solution .inner { max-width: 1200px; margin: 0 auto; }
+    .solution-h2 { font-family: var(--font-display); font-size: clamp(30px,4vw,52px); font-weight: 700; letter-spacing: -.025em; line-height: 1.1; color: var(--text); margin-bottom: 28px; max-width: 760px; }
+    .solution-p { font-family: var(--font-body); font-size: 16px; color: var(--text-2); line-height: 1.75; font-weight: 300; max-width: 640px; }
+    .questions-grid { gap: 1px; background: var(--border); }
+    .question-cell { background: var(--surface); padding: 40px 32px; display: flex; align-items: flex-start; gap: 16px; }
+    .question-num { font-family: var(--font-mono); font-size: 11px; color: var(--text-3); letter-spacing: .1em; padding-top: 4px; }
+    .question-text { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--text); letter-spacing: -.01em; line-height: 1.35; }
+
+    /* ── Outcomes ───────────────────────────────────────────── */
+    #outcomes .inner { max-width: 1200px; margin: 0 auto; }
+    #outcomes .sec-h2 { margin-bottom: 48px; max-width: 640px; }
+    .outcomes-grid { gap: 1px; background: var(--border); }
+    .outcome-cell { background: var(--surface); padding: 36px 28px; }
+    .outcome-num { font-family: var(--font-mono); font-size: 11px; color: var(--text-3); letter-spacing: .12em; margin-bottom: 22px; }
+    .outcome-h3 { font-family: var(--font-display); font-size: 17px; font-weight: 700; color: var(--text); letter-spacing: -.01em; line-height: 1.25; margin-bottom: 12px; }
+    .outcome-body { font-family: var(--font-body); font-size: 13px; color: var(--text-2); line-height: 1.65; font-weight: 300; }
+
+    /* ── Flow (How it works) ────────────────────────────────── */
+    #how .inner { max-width: 1200px; margin: 0 auto; }
+    #how .sec-h2 { margin-bottom: 64px; max-width: 640px; }
+    .flow-grid { gap: 1px; background: var(--border); }
+    .flow-cell { background: var(--surface); padding: 36px 28px; position: relative; }
+    .flow-num { font-family: var(--font-mono); font-size: 11px; color: var(--text-3); letter-spacing: .12em; margin-bottom: 20px; }
+    .flow-verb { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--gold); letter-spacing: -.01em; margin-bottom: 12px; }
+    .flow-body { font-family: var(--font-body); font-size: 13px; color: var(--text-2); line-height: 1.7; font-weight: 300; }
+
+    /* ── Samaritan (What) ───────────────────────────────────── */
+    #samaritan .inner { max-width: 1200px; margin: 0 auto; gap: 80px; align-items: center; }
+    #samaritan .section-label { font-family: var(--font-mono); font-size: 10px; color: var(--gold); letter-spacing: .14em; text-transform: uppercase; margin-bottom: 20px; }
+    #samaritan h2 { font-family: var(--font-display); font-size: clamp(30px,3.5vw,46px); font-weight: 700; letter-spacing: -.025em; line-height: 1.1; margin-bottom: 24px; color: var(--text); }
+    #samaritan p { font-family: var(--font-body); font-size: 15px; color: var(--text-2); line-height: 1.75; font-weight: 300; margin-bottom: 16px; }
+    #samaritan .btns { display: flex; gap: 12px; margin-top: 20px; }
+    #samaritan .btns a {
+      font-family: var(--font-body); font-size: 12px; font-weight: 500;
+      color: var(--text-2); padding: 9px 18px; border: .5px solid var(--border-2);
+      border-radius: 4px; text-decoration: none; transition: color .2s, border-color .2s; letter-spacing: .04em;
+    }
+    #samaritan .btns a:hover { color: var(--gold); border-color: var(--gold-dim); }
+    #samaritan .samaritan-img { border: .5px solid var(--border); border-radius: 4px; overflow: hidden; max-width: 460px; }
+    #samaritan .samaritan-img img { width: 100%; height: auto; display: block; }
+
+    /* ── Samaritan in action (intelligence) ─────────────────── */
     #intel-layer { background: var(--surface); border-top: .5px solid var(--border); border-bottom: .5px solid var(--border); }
     #intel-layer .inner { max-width: 1200px; margin: 0 auto; gap: 80px; align-items: start; }
     #intel-layer .sec-h2 { margin-bottom: 20px; }
@@ -238,56 +271,35 @@
     .typing-dots span:nth-child(2) { animation-delay: .2s; }
     .typing-dots span:nth-child(3) { animation-delay: .4s; }
 
-    /* ── Samaritan (What) ───────────────────────────────────── */
-    #samaritan .inner { max-width: 1200px; margin: 0 auto; gap: 80px; align-items: center; }
-    #samaritan .section-label { font-family: var(--font-mono); font-size: 10px; color: var(--gold); letter-spacing: .14em; text-transform: uppercase; margin-bottom: 20px; }
-    #samaritan h2 { font-family: var(--font-display); font-size: clamp(30px,3.5vw,46px); font-weight: 700; letter-spacing: -.025em; line-height: 1.1; margin-bottom: 24px; color: var(--text); }
-    #samaritan p { font-family: var(--font-body); font-size: 15px; color: var(--text-2); line-height: 1.75; font-weight: 300; margin-bottom: 16px; }
-    #samaritan .btns { display: flex; gap: 12px; margin-top: 20px; }
-    #samaritan .btns a {
-      font-family: var(--font-body); font-size: 12px; font-weight: 500;
-      color: var(--text-2); padding: 9px 18px; border: .5px solid var(--border-2);
-      border-radius: 4px; text-decoration: none; transition: color .2s, border-color .2s; letter-spacing: .04em;
-    }
-    #samaritan .btns a:hover { color: var(--gold); border-color: var(--gold-dim); }
-    #samaritan .samaritan-img { border: .5px solid var(--border); border-radius: 4px; overflow: hidden; max-width: 460px; }
-    #samaritan .samaritan-img img { width: 100%; height: auto; display: block; }
-
-    /* ── Flow (How it works) ────────────────────────────────── */
-    #how .inner { max-width: 1200px; margin: 0 auto; }
-    #how .sec-h2 { margin-bottom: 64px; max-width: 640px; }
-    .flow-grid { gap: 1px; background: var(--border); }
-    .flow-cell { background: var(--surface); padding: 36px 28px; position: relative; }
-    .flow-num { font-family: var(--font-mono); font-size: 11px; color: var(--text-3); letter-spacing: .12em; margin-bottom: 20px; }
-    .flow-verb { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--gold); letter-spacing: -.01em; margin-bottom: 12px; }
-    .flow-body { font-family: var(--font-body); font-size: 13px; color: var(--text-2); line-height: 1.7; font-weight: 300; }
-
-    /* ── Reliability (five reasons) ─────────────────────────── */
-    #reliability { background: var(--surface); border-top: .5px solid var(--border); border-bottom: .5px solid var(--border); }
-    #reliability .inner { max-width: 1200px; margin: 0 auto; }
-    #reliability .sec-h2 { margin-bottom: 64px; }
-    .how-grid { gap: 1px; background: var(--border); }
-    .how-cell { background: var(--surface); padding: 44px 36px; position: relative; }
-    .how-num { font-family: var(--font-mono); font-size: 11px; color: var(--text-3); letter-spacing: .12em; margin-bottom: 28px; }
-    .how-icon { width: 40px; height: 40px; border: .5px solid var(--gold-dim); background: var(--gold-glow); border-radius: 4px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; }
-    .how-h3 { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--text); letter-spacing: -.01em; margin-bottom: 14px; }
-    .how-body { font-family: var(--font-body); font-size: 14px; color: var(--text-2); line-height: 1.7; font-weight: 300; }
-
     /* ── Industries ─────────────────────────────────────────── */
     #industries { background: var(--surface); border-top: .5px solid var(--border); border-bottom: .5px solid var(--border); }
     #industries .inner { max-width: 1200px; margin: 0 auto; }
     #industries .sec-h2 { margin-bottom: 20px; max-width: 640px; }
     #industries .industries-intro { font-family: var(--font-body); font-size: 15px; color: var(--text-2); line-height: 1.75; font-weight: 300; margin-bottom: 48px; max-width: 640px; }
     .industries-grid { gap: 1px; background: var(--border); }
-    .industry-cell { background: var(--bg); padding: 24px 20px; }
-    .industry-name { font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--text); letter-spacing: -.01em; }
+    .industry-cell { background: var(--bg); padding: 32px 28px; }
+    .industry-name { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--text); letter-spacing: -.01em; margin-bottom: 10px; }
+    .industry-line { font-family: var(--font-body); font-size: 13px; color: var(--text-2); line-height: 1.65; font-weight: 300; }
+
+    /* ── Why Algorealm ──────────────────────────────────────── */
+    #why { background: var(--surface); border-top: .5px solid var(--border); border-bottom: .5px solid var(--border); }
+    #why .inner { max-width: 1200px; margin: 0 auto; }
+    #why .sec-h2 { margin-bottom: 56px; max-width: 640px; }
+    .why-list { display: flex; flex-direction: column; }
+    .why-row { display: grid; grid-template-columns: 40px 1fr; gap: 24px; align-items: baseline; padding: 28px 0; border-top: .5px solid var(--border); }
+    .why-row:last-child { border-bottom: .5px solid var(--border); }
+    .why-num { font-family: var(--font-mono); font-size: 11px; color: var(--text-3); letter-spacing: .1em; }
+    .why-cols { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.4fr); gap: 40px; }
+    .why-title { font-family: var(--font-display); font-size: clamp(20px,2vw,26px); font-weight: 700; color: var(--text); letter-spacing: -.015em; line-height: 1.2; }
+    .why-body { font-family: var(--font-body); font-size: 15px; color: var(--text-2); line-height: 1.7; font-weight: 300; }
 
     /* ── Closing ────────────────────────────────────────────── */
     .closing { border-bottom: .5px solid var(--border); padding: 96px 48px; text-align: center; }
     .closing .sec-label { text-align: center; }
-    .closing p { font-family: var(--font-display); font-size: clamp(24px,3.5vw,44px); font-weight: 700; letter-spacing: -.025em; line-height: 1.2; color: var(--text); max-width: 760px; margin: 0 auto 24px; }
-    .closing span { color: var(--gold); }
-    .closing .body { font-family: var(--font-body); font-size: 15px; color: var(--text-2); line-height: 1.75; font-weight: 300; max-width: 680px; margin: 0 auto; }
+    .closing p { font-family: var(--font-display); font-size: clamp(26px,3.8vw,48px); font-weight: 700; letter-spacing: -.025em; line-height: 1.2; color: var(--text); max-width: 780px; margin: 0 auto 28px; }
+    .closing p span { color: var(--text-2); font-weight: 300; }
+    .closing .body { font-family: var(--font-body); font-size: 15px; color: var(--text-2); line-height: 1.75; font-weight: 300; max-width: 620px; margin: 0 auto 40px; }
+    .closing .btn-primary { padding: 12px 28px; }
 
     /* ── Contact ────────────────────────────────────────────── */
     #contact { background: var(--surface); border-top: .5px solid var(--border); }
@@ -340,10 +352,10 @@
       .three-col { grid-template-columns: 1fr !important; }
       .four-col { grid-template-columns: 1fr 1fr !important; }
       .five-col { grid-template-columns: 1fr 1fr !important; }
+      .why-cols { grid-template-columns: 1fr !important; gap: 12px !important; }
       nav { padding: 0 20px; }
       .nav-links { display: none; }
       #hero { padding: 100px 20px 60px; }
-      .numbers-grid .cell:not(:last-child) { border-right: none; border-bottom: .5px solid var(--border); }
       .form-row { grid-template-columns: 1fr !important; }
       footer { padding: 24px 20px; }
     }
@@ -361,7 +373,7 @@
     <img src="https://www.algorealm.tech/logo-cropped.svg" alt="Algorealm" />
   </a>
   <ul class="nav-links">
-    <li><a href="#intelligence">Platform</a></li>
+    <li><a href="#how">How it works</a></li>
     <li><a href="#samaritan">Samaritan</a></li>
     <li><a href="#industries">Industries</a></li>
     <li><a href="#contact" class="nav-cta">Request Demo</a></li>
@@ -370,17 +382,17 @@
 
 <!-- HERO -->
 <section id="hero">
-  <img class="hero-bg" src="https://www.algorealm.tech/hero-wireframe.webp" alt="Wireframe surveillance render of a remote industrial site" />
+  <img class="hero-bg" src="https://www.algorealm.tech/hero-wireframe.webp" alt="Aerial view of a large industrial operation" />
   <div class="hero-overlay"></div>
   <div class="hero-vignette"></div>
   <div class="hero-fade"></div>
 
   <div class="hero-content">
-    <h1 class="hero-h1">Operational Intelligence for Critical Infrastructure</h1>
-    <p class="hero-sub">Algorealm helps organizations continuously understand what is happening across their operations by transforming observations from autonomous systems, sensors, and enterprise data into actionable operational intelligence.</p>
+    <h1 class="hero-h1">Understand what's happening.<br>Know why. Decide faster.</h1>
+    <p class="hero-sub">Algorealm helps organizations understand what is happening across their operations, uncover why problems occur, and make faster, better operational decisions.</p>
     <div class="hero-ctas">
-      <a href="#intelligence" class="btn-primary">See the Platform</a>
-      <a href="https://youtu.be/uLrshcacFwo" target="_blank" rel="noopener noreferrer" class="btn-outline">▶ Watch Demo</a>
+      <a href="#contact" class="btn-primary">Request a Demo</a>
+      <a href="#how" class="btn-outline">See how it works</a>
     </div>
   </div>
 
@@ -390,45 +402,142 @@
   </div>
 </section>
 
-<!-- HERO BRIDGE (WHAT IS OPERATIONAL INTELLIGENCE) -->
-<div id="intelligence" class="hero-bridge reveal">
-  <div class="sec-label" style="text-align:center">Operational intelligence</div>
-  <p>Organizations generate enormous amounts of operational data.<br><span>Most of it is never understood.</span></p>
-  <p class="bridge-body">Algorealm continuously transforms observations into operational understanding — helping teams see what is happening, why it matters, and what to do next before problems compound. In large, remote, and high-value operations, that gap usually shows up in three ways:</p>
-</div>
+<!-- PROBLEM -->
+<section id="problem" class="section-pad">
+  <div class="inner">
+    <div class="reveal">
+      <div class="sec-label">The problem</div>
+      <h2 class="problem-h2">Running a large operation shouldn't feel like guesswork.</h2>
+      <p class="problem-intro">Every operation generates thousands of events a day. Most organizations never connect them. Finding out what actually happened takes hours, days — or never happens at all.</p>
+    </div>
+    <div class="reveal reveal-d1">
+      <div class="events-grid three-col">
+        <div class="event-cell"><div>People move.</div></div>
+        <div class="event-cell"><div>Machines stop.</div></div>
+        <div class="event-cell"><div>Vehicles travel.</div></div>
+        <div class="event-cell"><div>Equipment fails.</div></div>
+        <div class="event-cell"><div>Weather changes.</div></div>
+        <div class="event-cell"><div>Incidents happen.</div></div>
+      </div>
+    </div>
+    <div class="reveal reveal-d2">
+      <p class="problem-kicker">You already have cameras, sensors, and software. <span>What you don't have is a clear answer to what happened, and why.</span></p>
+    </div>
+  </div>
+</section>
 
-<!-- NUMBERS -->
-<div class="numbers-grid three-col">
-  <div class="cell reveal">
-    <div class="num-accent" style="background:var(--gold)"></div>
-    <div class="num-tag">Connectivity gap</div>
-    <div class="num-val">No Connectivity</div>
-    <p class="num-desc">Cloud-dependent cameras and sensors stop working the moment local networks drop out — exactly where large, remote operations tend to happen.</p>
+<!-- SOLUTION -->
+<section id="solution" class="section-pad">
+  <div class="inner">
+    <div class="reveal">
+      <div class="sec-label">The solution</div>
+      <h2 class="solution-h2">We turn operational events into operational understanding.</h2>
+      <p class="solution-p" style="margin-bottom:12px">We don't collect more data. We connect the events you already have into a clear picture of what is happening.</p>
+      <p class="solution-p" style="margin-bottom:56px">Instead of another dashboard to watch, you get answers to the questions that actually matter:</p>
+    </div>
+    <div class="reveal reveal-d1">
+      <div class="questions-grid three-col">
+        <div class="question-cell"><span class="question-num">01</span><p class="question-text">Why did production drop yesterday?</p></div>
+        <div class="question-cell"><span class="question-num">02</span><p class="question-text">Why are trucks waiting?</p></div>
+        <div class="question-cell"><span class="question-num">03</span><p class="question-text">Why is efficiency falling?</p></div>
+        <div class="question-cell"><span class="question-num">04</span><p class="question-text">What happened before the incident?</p></div>
+        <div class="question-cell"><span class="question-num">05</span><p class="question-text">Where should we investigate first?</p></div>
+        <div class="question-cell"><span class="question-num">06</span><p class="question-text">What changed this week?</p></div>
+      </div>
+    </div>
   </div>
-  <div class="cell reveal reveal-d1">
-    <div class="num-accent"></div>
-    <div class="num-tag">Coverage gap</div>
-    <div class="num-val">Too Much Ground</div>
-    <p class="num-desc">Physical fencing and human patrols don't scale to sites spanning tens or hundreds of square kilometers. Coverage gaps are the default, not the exception.</p>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries" class="section-pad">
+  <div class="inner">
+    <div class="reveal">
+      <div class="sec-label">Industries</div>
+      <h2 class="sec-h2">Any operation big enough to lose track of itself.</h2>
+      <p class="industries-intro">The problem is the same everywhere: too much happening across too much ground to keep in your head. Algorealm helps operators understand it — whatever they run.</p>
+    </div>
+    <div class="reveal reveal-d1">
+      <div class="industries-grid three-col">
+        <div class="industry-cell"><div class="industry-name">Mining</div><p class="industry-line">See why production slipped and where haulage is losing time across the pit.</p></div>
+        <div class="industry-cell"><div class="industry-name">Manufacturing</div><p class="industry-line">Trace a drop in output back to the line, shift, or machine that caused it.</p></div>
+        <div class="industry-cell"><div class="industry-name">Energy</div><p class="industry-line">Understand what changed across generation and distribution before it becomes an outage.</p></div>
+        <div class="industry-cell"><div class="industry-name">Utilities</div><p class="industry-line">Keep track of distributed assets and spot faults developing across the network.</p></div>
+        <div class="industry-cell"><div class="industry-name">Agriculture</div><p class="industry-line">Watch large areas of land and livestock without walking every hectare.</p></div>
+        <div class="industry-cell"><div class="industry-name">Logistics</div><p class="industry-line">Find out why shipments are late and where movement stalls in the yard.</p></div>
+        <div class="industry-cell"><div class="industry-name">Ports</div><p class="industry-line">Follow vehicles, cargo, and congestion to keep the terminal moving.</p></div>
+        <div class="industry-cell"><div class="industry-name">Airports</div><p class="industry-line">Stay on top of ground movement and turnaround delays across the apron.</p></div>
+        <div class="industry-cell"><div class="industry-name">Security</div><p class="industry-line">Know what is happening across a site the moment something is out of place.</p></div>
+        <div class="industry-cell"><div class="industry-name">Defence</div><p class="industry-line">Maintain awareness over large, remote areas that can't be watched in person.</p></div>
+        <div class="industry-cell"><div class="industry-name">Industrial Facilities</div><p class="industry-line">Understand activity across sprawling sites without adding more control rooms.</p></div>
+        <div class="industry-cell"><div class="industry-name">Smart Infrastructure</div><p class="industry-line">Make sense of what is happening across roads, grids, and public spaces.</p></div>
+      </div>
+    </div>
   </div>
-  <div class="cell reveal reveal-d2">
-    <div class="num-accent"></div>
-    <div class="num-tag">Memory gap</div>
-    <div class="num-val">No Institutional Memory</div>
-    <p class="num-desc">Every incident is treated like the first time. Without a system that learns a site's specific patterns over time, teams re-learn the same lessons after every incident.</p>
+</section>
+
+<!-- OUTCOMES -->
+<section id="outcomes" class="section-pad">
+  <div class="inner">
+    <div class="reveal">
+      <div class="sec-label">Outcomes</div>
+      <h2 class="sec-h2">What understanding your operation actually gets you.</h2>
+    </div>
+    <div class="reveal reveal-d1">
+      <div class="outcomes-grid four-col">
+        <div class="outcome-cell"><div class="outcome-num">01</div><h3 class="outcome-h3">Improve operational efficiency</h3><p class="outcome-body">Find where time and output are lost, and fix the cause instead of the symptom.</p></div>
+        <div class="outcome-cell"><div class="outcome-num">02</div><h3 class="outcome-h3">Reduce downtime</h3><p class="outcome-body">Catch the conditions that lead to stoppages before they take equipment offline.</p></div>
+        <div class="outcome-cell"><div class="outcome-num">03</div><h3 class="outcome-h3">Improve safety</h3><p class="outcome-body">See risky situations as they develop, not in the report written after.</p></div>
+        <div class="outcome-cell"><div class="outcome-num">04</div><h3 class="outcome-h3">Improve security</h3><p class="outcome-body">Know the moment something is out of place across the whole site.</p></div>
+        <div class="outcome-cell"><div class="outcome-num">05</div><h3 class="outcome-h3">Improve asset utilisation</h3><p class="outcome-body">Understand how vehicles, equipment, and people are actually being used.</p></div>
+        <div class="outcome-cell"><div class="outcome-num">06</div><h3 class="outcome-h3">Investigate incidents faster</h3><p class="outcome-body">Reconstruct what happened in minutes instead of piecing footage together for days.</p></div>
+        <div class="outcome-cell"><div class="outcome-num">07</div><h3 class="outcome-h3">Increase operational awareness</h3><p class="outcome-body">Keep a clear, current picture of everything happening across your operation.</p></div>
+        <div class="outcome-cell"><div class="outcome-num">08</div><h3 class="outcome-h3">Make better decisions</h3><p class="outcome-body">Act on what is actually happening and why — not on a hunch.</p></div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
+<!-- FLOW (HOW IT WORKS) -->
+<section id="how" class="section-pad">
+  <div class="inner">
+    <div class="reveal">
+      <div class="sec-label">How it works</div>
+      <h2 class="sec-h2">From scattered events to a clear next step.</h2>
+    </div>
+    <div class="flow-grid four-col">
+      <div class="flow-cell reveal">
+        <div class="flow-num">01</div>
+        <h3 class="flow-verb">Observe</h3>
+        <p class="flow-body">Algorealm draws on the cameras, sensors, and systems you already run — and, where you need more eyes, its own autonomous aircraft. Everything happening on the ground becomes one continuous stream of events.</p>
+      </div>
+      <div class="flow-cell reveal reveal-d1">
+        <div class="flow-num">02</div>
+        <h3 class="flow-verb">Understand</h3>
+        <p class="flow-body">It learns what normal looks like for your operation, then connects those events into a clear picture — what is happening, and what has changed.</p>
+      </div>
+      <div class="flow-cell reveal reveal-d2">
+        <div class="flow-num">03</div>
+        <h3 class="flow-verb">Investigate</h3>
+        <p class="flow-body">Ask a plain question and get a plain answer. Algorealm traces a problem back through the events that led to it and explains why it happened.</p>
+      </div>
+      <div class="flow-cell reveal reveal-d2">
+        <div class="flow-num">04</div>
+        <h3 class="flow-verb">Decide</h3>
+        <p class="flow-body">Your team acts on a clear account of the situation — where to look, what caused it, and what to do next — instead of guessing.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- SAMARITAN (WHAT) -->
 <section id="samaritan" class="section-pad">
   <div class="inner two-col">
     <div class="reveal">
-      <div class="section-label">Samaritan · First application</div>
-      <h2>Warnings before the incident.<br>Not footage after it is.</h2>
-      <p>Samaritan is the first operational application built on Algorealm's intelligence platform.</p>
-      <p>It is an AI-powered operational intelligence system that watches your site around the clock — no human has to sit and stare at camera feeds.</p>
-      <p>Built for remote sites where cellular and internet coverage cannot be relied on, Samaritan transforms streams of thermal and optical sensor data into actionable intelligence — giving your team the awareness needed to act before small problems become expensive ones.</p>
-      <p>To create persistent operational visibility over a large operational area, Samaritan deploys a coordinated swarm of autonomous aircraft that share information, maintain coverage, and operate continuously without requiring a human pilot for every aircraft.</p>
+      <div class="section-label">Product · Samaritan</div>
+      <h2>The operational investigation platform.</h2>
+      <p>Samaritan is our first product. It investigates your operation — explaining what happened, uncovering why, and supporting the decisions that follow.</p>
+      <p>Ask it a question in plain language — why production dropped, why trucks are waiting, what happened before an incident — and it works back through the events across your site to give you a grounded answer, not another feed to watch.</p>
+      <p>It works with the cameras, sensors, and systems you already have. Where a site has ground it cannot watch, Algorealm's autonomous aircraft add coverage — one more source of observation feeding the same understanding.</p>
       <div class="btns">
         <a href="#how">How it works</a>
         <a href="#industries">See industries</a>
@@ -442,25 +551,25 @@
   </div>
 </section>
 
-<!-- THE INTELLIGENCE LAYER -->
+<!-- SAMARITAN IN ACTION (INTELLIGENCE) -->
 <section id="intel-layer" class="section-pad">
   <div class="inner two-col">
     <div class="reveal">
-      <div class="sec-label">The intelligence layer</div>
-      <h2 class="sec-h2">It does not just watch.<br>It thinks.</h2>
-      <p class="intro">Every previous approach to operational visibility has been about a camera feed. Algorealm's platform is an analyst that never sleeps — learning the specific terrain, the specific risks, and the specific patterns of your operation.</p>
+      <div class="sec-label">Samaritan in action</div>
+      <h2 class="sec-h2">It doesn't just show you footage.<br>It explains it.</h2>
+      <p class="intro">Most tools hand you a feed and leave the thinking to you. Samaritan works like an analyst who never sleeps — it has watched every hour of your operation and can tell you, in plain words, what happened and why.</p>
       <div class="intel-features">
         <div class="intel-feature">
           <div class="intel-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
-          <div><h4 class="intel-h4">Learns your baseline</h4><p class="intel-p">After days of observation, the platform knows what normal looks like across your operation. It builds a model of expected activity across every zone you define — and flags deviations the moment they appear.</p></div>
+          <div><h4 class="intel-h4">Learns what normal looks like</h4><p class="intel-p">After a few days of watching, Samaritan knows the usual rhythm of your operation — the normal flow of people, vehicles, and equipment. When something drifts from that, it notices.</p></div>
         </div>
         <div class="intel-feature">
           <div class="intel-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-          <div><h4 class="intel-h4">Finds recurring patterns</h4><p class="intel-p">A route that's blocked at the same time every week. A vehicle that's appeared on the same three nights in a row. The platform surfaces these patterns before they become the next problem.</p></div>
+          <div><h4 class="intel-h4">Connects the dots over time</h4><p class="intel-p">A loader that keeps idling before every slowdown. A gate that backs up at the same hour each week. Samaritan links these events together so a recurring problem stops looking like a run of bad luck.</p></div>
         </div>
         <div class="intel-feature">
           <div class="intel-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-          <div><h4 class="intel-h4">Answers plain-language questions</h4><p class="intel-p">Ask anything. "What happened overnight?" "Has this pattern been seen before?" "Which zone is highest risk right now?" The platform answers from your operational data — specific, grounded, actionable.</p></div>
+          <div><h4 class="intel-h4">Answers plain-language questions</h4><p class="intel-p">Ask it the way you'd ask a colleague. "Why did output drop yesterday?" "What happened before the alarm?" "Where should we look first?" You get a specific answer, drawn from what actually happened.</p></div>
         </div>
       </div>
     </div>
@@ -480,19 +589,19 @@
         <div class="chat-messages">
           <div class="chat-msg q">
             <div class="chat-avatar op">OP</div>
-            <div class="chat-bubble q">What's the status of the haul road this morning?</div>
+            <div class="chat-bubble q">Why did production drop yesterday afternoon?</div>
           </div>
           <div class="chat-msg">
             <div class="chat-avatar ai">AI</div>
-            <div class="chat-bubble a">Route 4 has been partially blocked since 0512 — a stalled vehicle near the second switchback. Traffic is backing up toward the pit. Two alternate routes are clear. Recommend dispatch reroute now before the delay compounds.</div>
+            <div class="chat-bubble a">Output fell about 18% after 14:20. It traces back to the primary crusher: it stopped twice, 22 minutes total, and haul trucks queued behind it — six waiting at the peak. The same stall pattern showed up on the 9th and 14th. Worth having maintenance look at the crusher before the next shift.</div>
           </div>
           <div class="chat-msg q">
             <div class="chat-avatar op">OP</div>
-            <div class="chat-bubble q">Any other flags overnight?</div>
+            <div class="chat-bubble q">Anything else slowing us down today?</div>
           </div>
           <div class="chat-msg">
             <div class="chat-avatar ai">AI</div>
-            <div class="chat-bubble a">One. An unregistered vehicle was logged near the east boundary at 0247 — thermal signature matches a crew first seen on May 15. It departed without approaching the fence line. Flagged for review, not urgent.</div>
+            <div class="chat-bubble a">One thing. Trucks on the north ramp are waiting an average of 7 minutes longer than usual — a grader has been parked across the passing bay since 08:10. Moving it would clear the backup.</div>
           </div>
           <div class="chat-msg">
             <div class="chat-avatar ai">AI</div>
@@ -504,132 +613,68 @@
   </div>
 </section>
 
-<!-- FLOW (HOW IT WORKS) -->
-<section id="how" class="section-pad">
+<!-- WHY ALGOREALM -->
+<section id="why" class="section-pad">
   <div class="inner">
     <div class="reveal">
-      <div class="sec-label">How it works</div>
-      <h2 class="sec-h2">From raw observation to a clear next step.</h2>
+      <div class="sec-label">Why Algorealm</div>
+      <h2 class="sec-h2">What makes it different.</h2>
     </div>
-    <div class="flow-grid five-col">
-      <div class="flow-cell reveal">
-        <div class="flow-num">01</div>
-        <h3 class="flow-verb">Observe</h3>
-        <p class="flow-body">Autonomous aircraft, sensors, and existing infrastructure continuously collect signal across your operation — thermal, optical, and positional data, day and night.</p>
+    <div class="why-list">
+      <div class="why-row reveal">
+        <span class="why-num">01</span>
+        <div class="why-cols">
+          <h3 class="why-title">Built for physical operations</h3>
+          <p class="why-body">Not an office analytics tool pointed at the field. Algorealm is made for large, messy, moving operations where the important things happen on the ground.</p>
+        </div>
       </div>
-      <div class="flow-cell reveal reveal-d1">
-        <div class="flow-num">02</div>
-        <h3 class="flow-verb">Understand</h3>
-        <p class="flow-body">The platform builds a model of what is normal for your specific operation, then identifies what has changed, what is unusual, and what matters.</p>
+      <div class="why-row reveal">
+        <span class="why-num">02</span>
+        <div class="why-cols">
+          <h3 class="why-title">Works with what you already have</h3>
+          <p class="why-body">Your cameras, sensors, and systems stay in place. Algorealm connects to them instead of asking you to rip anything out and start over.</p>
+        </div>
       </div>
-      <div class="flow-cell reveal reveal-d2">
-        <div class="flow-num">03</div>
-        <h3 class="flow-verb">Recommend</h3>
-        <p class="flow-body">Every event is scored and explained in plain language, with a specific, actionable recommendation — not just a clip to review.</p>
+      <div class="why-row reveal">
+        <span class="why-num">03</span>
+        <div class="why-cols">
+          <h3 class="why-title">Explains why, not just what</h3>
+          <p class="why-body">Alerts tell you something happened. Algorealm tells you why it happened and what led to it — the part that actually helps you fix it.</p>
+        </div>
       </div>
-      <div class="flow-cell reveal reveal-d2">
-        <div class="flow-num">04</div>
-        <h3 class="flow-verb">Decide</h3>
-        <p class="flow-body">Your team weighs the recommendation against real-time context — location, available personnel, and risk — and decides the right response for that moment.</p>
+      <div class="why-row reveal">
+        <span class="why-num">04</span>
+        <div class="why-cols">
+          <h3 class="why-title">Understands continuously</h3>
+          <p class="why-body">It doesn't wait to be asked. Algorealm keeps up a live account of your operation, so the answer is ready the moment you need it.</p>
+        </div>
       </div>
-      <div class="flow-cell reveal reveal-d2">
-        <div class="flow-num">05</div>
-        <h3 class="flow-verb">Act</h3>
-        <p class="flow-body">Your team acts with full context: exact location, matched history, and a clear next step, delivered before the event has finished unfolding.</p>
+      <div class="why-row reveal">
+        <span class="why-num">05</span>
+        <div class="why-cols">
+          <h3 class="why-title">Supports faster decisions</h3>
+          <p class="why-body">Less time reconstructing what happened means more time acting on it. Your team decides with a clear picture instead of a hunch.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- RELIABILITY (FIVE REASONS) -->
-<section id="reliability" class="section-pad">
-  <div class="inner">
-    <div class="reveal">
-      <div class="sec-label">Our system: Samaritan</div>
-      <h2 class="sec-h2">Five simple reasons it works where others fail.</h2>
-    </div>
-    <div class="how-grid three-col">
-      <div class="how-cell reveal">
-        <div class="how-num">01</div>
-        <div class="how-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        </div>
-        <h3 class="how-h3">Real Warnings, Not Just Video</h3>
-        <p class="how-body">We don't just stream hours of raw, exhausting video for a human operator to watch. Our software automatically spots what matters — from blocked routes and equipment issues to unauthorized activity — and alerts your team with the exact coordinates immediately.</p>
-      </div>
-      <div class="how-cell reveal reveal-d1">
-        <div class="how-num">02</div>
-        <div class="how-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.58 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
-        </div>
-        <h3 class="how-h3">Real-Time Detection, Fully Local</h3>
-        <p class="how-body">Every aircraft, every alert, every second-by-second decision happens on hardware at the site — detection and response never depend on a live internet connection. The intelligence layer that gets sharper over time syncs securely when connectivity allows.</p>
-      </div>
-      <div class="how-cell reveal reveal-d2">
-        <div class="how-num">03</div>
-        <div class="how-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
-        </div>
-        <h3 class="how-h3">Aircraft That Work Together</h3>
-        <p class="how-body">The aircraft fly as a team and communicate natively with each other via an encrypted, peer-to-peer local radio network. If one aircraft gets damaged or its battery runs low, the remaining aircraft automatically change their routes to cover the gap without requiring a human pilot.</p>
-      </div>
-      <div class="how-cell reveal">
-        <div class="how-num">04</div>
-        <div class="how-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
-        </div>
-        <h3 class="how-h3">Full Coverage, Every Cycle</h3>
-        <p class="how-body">Aircraft fly fixed-spacing sweep patterns across your site, methodically covering every meter of the zones you define — no gaps, no missed rows, no relying on a guard's memory of where they last walked.</p>
-      </div>
-      <div class="how-cell reveal reveal-d1">
-        <div class="how-num">05</div>
-        <div class="how-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M12 2l8 4v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6z"/></svg>
-        </div>
-        <h3 class="how-h3">Field-Hardened Hardware</h3>
-        <p class="how-body">These are heavy-duty, weather-resistant industrial VTOL aircraft built to handle extreme heat, thick dust, and harsh operating conditions. Equipped with long-wave infrared (LWIR) thermal cameras, they cut through night darkness and tree canopy, launching directly from automated base stations or moving trucks.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- INDUSTRIES -->
-<section id="industries" class="section-pad">
-  <div class="inner">
-    <div class="reveal">
-      <div class="sec-label">Industries</div>
-      <h2 class="sec-h2">One platform. Every large, remote, high-value operation.</h2>
-      <p class="industries-intro">Samaritan is the first operational application built on the platform. The same intelligence layer — observe, understand, recommend, decide, act — applies anywhere operators need continuous awareness over ground they cannot watch in person.</p>
-    </div>
-    <div class="reveal reveal-d1">
-      <div class="industries-grid four-col">
-        <div class="industry-cell"><div class="industry-name">Energy</div></div>
-        <div class="industry-cell"><div class="industry-name">Utilities</div></div>
-        <div class="industry-cell"><div class="industry-name">Telecommunications</div></div>
-        <div class="industry-cell"><div class="industry-name">Industrial Facilities</div></div>
-        <div class="industry-cell"><div class="industry-name">Construction</div></div>
-        <div class="industry-cell"><div class="industry-name">Ports</div></div>
-        <div class="industry-cell"><div class="industry-name">Government</div></div>
-        <div class="industry-cell"><div class="industry-name">Emergency Response</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CLOSING (VISION) -->
+<!-- CLOSING -->
 <div class="closing reveal">
-  <div class="sec-label">Vision</div>
-  <p><span>One Platform. Every Operation.</span></p>
-  <p class="body">The same intelligence layer that observes, understands, and recommends applies to any environment where organizations must continuously understand complex, distributed operations — energy, ports, utilities, and beyond.</p>
+  <div class="sec-label">The point</div>
+  <p>The future of large operations isn't collecting more data. <span>It's understanding it.</span></p>
+  <p class="body">See your operation the way Algorealm does — what is happening, why it is happening, and what to do about it.</p>
+  <a href="#contact" class="btn-primary">Request a Demo</a>
 </div>
 
 <!-- CONTACT -->
 <section id="contact" class="section-pad">
   <div class="inner two-col">
     <div class="reveal">
-      <div class="sec-label">Operational audit</div>
-      <h2>Request a 3-Day Operational Visibility Audit.</h2>
-      <p class="contact-intro">Twenty minutes. Your terrain, your operation, live software. We don't do generic slides — we run the demo using an operational scenario from your specific site.</p>
+      <div class="sec-label">Get started</div>
+      <h2>See your operation differently.</h2>
+      <p class="contact-intro">Tell us a little about your operation and we'll set up a demo. No generic slide deck — we walk through a real scenario from your site and the questions you actually want answered.</p>
       <form class="contact-form" id="contact-form">
         <div>
           <label class="form-label">Full Name</label>
@@ -647,24 +692,25 @@
           <label class="form-label">Primary Operational Focus</label>
           <select class="form-select" required>
             <option value="" disabled selected>Select your primary focus</option>
-            <option>Operational Visibility</option>
-            <option>Safety &amp; Emergency Response</option>
-            <option>Asset &amp; Perimeter Protection</option>
+            <option>Understanding what's happening</option>
+            <option>Investigating incidents faster</option>
+            <option>Improving efficiency &amp; uptime</option>
+            <option>Safety &amp; security</option>
             <option>Other</option>
           </select>
         </div>
-        <button type="submit" class="form-submit">Secure Your Audit Window</button>
+        <button type="submit" class="form-submit">Request a Demo</button>
       </form>
       <div id="form-success" class="form-success">
         <div class="form-success-title">Request received.</div>
-        <p class="form-success-body">We will reach out within 24 hours to secure your audit window.</p>
+        <p class="form-success-body">We'll reach out within 24 hours to set up your demo.</p>
       </div>
     </div>
 
     <div class="reveal reveal-d2">
       <div>
-        <h3 class="contact-info-h3">Let us prove it on your dirt.</h3>
-        <p class="contact-info-p">Algorealm is built in Africa, engineered for African terrain. We don't expect you to buy an enterprise software subscription based on a generic slide deck. Let us run a simple 3-day sandboxed dry run on a representative part of your site to show you exactly what our software can see.</p>
+        <h3 class="contact-info-h3">Let us prove it on your operation.</h3>
+        <p class="contact-info-p">We don't expect you to commit based on a slide deck. We'll take a real part of your operation, run Algorealm against it, and show you exactly what it understands — what happened, why, and what you'd do next.</p>
         <div class="contact-channels">
           <a href="mailto:algorealm.org@gmail.com" class="channel">
             <div class="channel-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
@@ -704,7 +750,7 @@
   }, { rootMargin: '-80px' });
   reveals.forEach(el => observer.observe(el));
 
-  // Contact form → mailto fallback
+  // Contact form → success state
   document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
     this.style.display = 'none';
