@@ -5,8 +5,8 @@ import { Solution } from "@/components/Solution";
 import { Industries } from "@/components/Industries";
 import { Outcomes } from "@/components/Outcomes";
 import { Flow } from "@/components/Flow";
-import { What } from "@/components/What";
-import { Intelligence } from "@/components/Intelligence";
+// import { What } from "@/components/What";              // Samaritan product — hidden for now
+// import { Intelligence } from "@/components/Intelligence"; // Samaritan in action — hidden for now
 import { Why } from "@/components/Why";
 import { Closing } from "@/components/Closing";
 import { Contact } from "@/components/Contact";
@@ -23,8 +23,9 @@ export default function Home() {
         <Industries />
         <Outcomes />
         <Flow />
-        <What />
-        <Intelligence />
+        {/* Samaritan sections hidden for now */}
+        {/* <What /> */}
+        {/* <Intelligence /> */}
         <Why />
         <Closing />
         <Contact />
