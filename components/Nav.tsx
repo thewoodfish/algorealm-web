@@ -2,9 +2,9 @@
 import { useEffect, useState } from "react";
 
 const links = [
-  { href: "#intelligence", label: "Platform" },
-  { href: "#samaritan",    label: "Samaritan" },
-  { href: "#industries",   label: "Industries" },
+  { href: "#how",        label: "How it works" },
+  { href: "#samaritan",  label: "Samaritan" },
+  { href: "#industries", label: "Industries" },
 ];
 
 export function Nav() {

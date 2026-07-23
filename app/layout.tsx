@@ -21,22 +21,22 @@ const shareTechMono = Share_Tech_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Algorealm — Operational Intelligence for Critical Infrastructure",
+  title: "Algorealm — Understand what's happening across your operations",
   description:
-    "Algorealm builds the operational intelligence platform for critical operations, turning observations from autonomous systems into clear, actionable next steps. Samaritan is the first application built on that platform.",
+    "Algorealm helps organizations understand what is happening across their operations, uncover why problems occur, and make faster, better decisions. Samaritan, our operational investigation platform, explains what happened and why.",
   openGraph: {
-    title: "Algorealm — Operational Intelligence for Critical Infrastructure",
+    title: "Algorealm — Understand what's happening across your operations",
     description:
-      "Critical operations generate enormous amounts of information — most of it never understood. Algorealm continuously observes, understands, and explains what is happening, so operators can act before problems escalate.",
+      "Every operation generates thousands of events a day, and most are never connected. Algorealm turns those events into clear answers — what happened, why, and what to do next.",
     images: ["https://www.algorealm.tech/images/nigeria-threat-map.png"],
     url: "https://www.algorealm.ng",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Algorealm — Operational Intelligence for Critical Infrastructure",
+    title: "Algorealm — Understand what's happening across your operations",
     description:
-      "Critical operations generate enormous amounts of information — most of it never understood. Algorealm continuously observes, understands, and explains what is happening, so operators can act before problems escalate.",
+      "Every operation generates thousands of events a day, and most are never connected. Algorealm turns those events into clear answers — what happened, why, and what to do next.",
     images: ["https://www.algorealm.tech/images/nigeria-threat-map.png"],
   },
 };

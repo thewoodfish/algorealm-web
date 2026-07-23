@@ -2,8 +2,8 @@ import { Reveal } from "./ui/Reveal";
 
 const features = [
   {
-    title: "Learns your baseline",
-    body: "After days of observation, the platform knows what normal looks like across your operation. It builds a model of expected activity across every zone you define — and flags deviations the moment they appear.",
+    title: "Learns what normal looks like",
+    body: "After a few days of watching, Samaritan knows the usual rhythm of your operation — the normal flow of people, vehicles, and equipment. When something drifts from that, it notices.",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <path d="M12 20h9" /><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
@@ -11,8 +11,8 @@ const features = [
     ),
   },
   {
-    title: "Finds recurring patterns",
-    body: "A route that's blocked at the same time every week. A vehicle that's appeared on the same three nights in a row. The platform surfaces these patterns before they become the next problem.",
+    title: "Connects the dots over time",
+    body: "A loader that keeps idling before every slowdown. A gate that backs up at the same hour each week. Samaritan links these events together so a recurring problem stops looking like a run of bad luck.",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
@@ -21,7 +21,7 @@ const features = [
   },
   {
     title: "Answers plain-language questions",
-    body: "Ask anything. \"What happened overnight?\" \"Has this pattern been seen before?\" \"Which zone is highest risk right now?\" The platform answers from your operational data — specific, grounded, actionable.",
+    body: "Ask it the way you'd ask a colleague. \"Why did output drop yesterday?\" \"What happened before the alarm?\" \"Where should we look first?\" You get a specific answer, drawn from what actually happened.",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -31,10 +31,10 @@ const features = [
 ];
 
 const chatLines = [
-  { role: "q", text: "What's the status of the haul road this morning?" },
-  { role: "a", text: "Route 4 has been partially blocked since 0512 — a stalled vehicle near the second switchback. Traffic is backing up toward the pit. Two alternate routes are clear. Recommend dispatch reroute now before the delay compounds." },
-  { role: "q", text: "Any other flags overnight?" },
-  { role: "a", text: "One. An unregistered vehicle was logged near the east boundary at 0247 — thermal signature matches a crew first seen on May 15. It departed without approaching the fence line. Flagged for review, not urgent." },
+  { role: "q", text: "Why did production drop yesterday afternoon?" },
+  { role: "a", text: "Output fell about 18% after 14:20. It traces back to the primary crusher: it stopped twice, 22 minutes total, and haul trucks queued behind it — six waiting at the peak. The same stall pattern showed up on the 9th and 14th. Worth having maintenance look at the crusher before the next shift." },
+  { role: "q", text: "Anything else slowing us down today?" },
+  { role: "a", text: "One thing. Trucks on the north ramp are waiting an average of 7 minutes longer than usual — a grader has been parked across the passing bay since 08:10. Moving it would clear the backup." },
 ];
 
 export function Intelligence() {
@@ -57,7 +57,7 @@ export function Intelligence() {
         {/* left */}
         <Reveal>
           <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--gold)", letterSpacing: ".14em", textTransform: "uppercase", marginBottom: 16 }}>
-            The intelligence layer
+            Samaritan in action
           </div>
           <h2 style={{
             fontFamily: "var(--font-display)",
@@ -67,13 +67,13 @@ export function Intelligence() {
             color: "var(--text)",
             marginBottom: 20,
           }}>
-            It does not just watch.<br />It thinks.
+            It doesn&apos;t just show you footage.<br />It explains it.
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 48 }}>
-            Every previous approach to operational visibility has been about
-            a camera feed. Algorealm&apos;s platform is an analyst that
-            never sleeps — learning the specific terrain, the specific
-            risks, and the specific patterns of your operation.
+            Most tools hand you a feed and leave the thinking to you.
+            Samaritan works like an analyst who never sleeps — it has
+            watched every hour of your operation and can tell you, in plain
+            words, what happened and why.
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>

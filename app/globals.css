@@ -84,6 +84,7 @@ body::before {
   nav           { padding: 0 20px !important; }
   .hero-pad     { padding: 100px 20px 60px; }
   .numbers-grid { grid-template-columns: 1fr !important; }
+  .why-cols     { grid-template-columns: 1fr !important; gap: 12px !important; }
   .contact-name-org { grid-template-columns: 1fr !important; }
   .solutions-stats  { grid-template-columns: 1fr 1fr !important; }
   .company-team     { grid-template-columns: 1fr 1fr !important; }

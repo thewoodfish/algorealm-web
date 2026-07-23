@@ -15,7 +15,7 @@ export function What() {
         {/* copy */}
         <Reveal>
           <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--gold)", letterSpacing: ".14em", textTransform: "uppercase", marginBottom: 20 }}>
-            Samaritan · First application
+            Product · Samaritan
           </div>
           <h2 style={{
             fontFamily: "var(--font-display)",
@@ -26,30 +26,24 @@ export function What() {
             marginBottom: 24,
             color: "var(--text)",
           }}>
-            Warnings before the incident.<br />Not footage after it is.
+            The operational investigation platform.
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
-            Samaritan is the first operational application built on
-            Algorealm&apos;s intelligence platform.
+            Samaritan is our first product. It investigates your operation —
+            explaining what happened, uncovering why, and supporting the
+            decisions that follow.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
-            It is an AI-powered operational intelligence system that watches
-            your site around the clock — no human has to sit and stare at
-            camera feeds.
-          </p>
-          <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 16 }}>
-            Built for remote sites where cellular and internet coverage
-            cannot be relied on, Samaritan transforms streams of thermal and
-            optical sensor data into actionable intelligence — giving your
-            team the awareness needed to act before small problems become
-            expensive ones.
+            Ask it a question in plain language — why production dropped, why
+            trucks are waiting, what happened before an incident — and it
+            works back through the events across your site to give you a
+            grounded answer, not another feed to watch.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 36 }}>
-            To create persistent operational visibility over a large
-            operational area, Samaritan deploys a coordinated swarm of
-            autonomous aircraft that share information, maintain coverage,
-            and operate continuously without requiring a human pilot for
-            every aircraft.
+            It works with the cameras, sensors, and systems you already have.
+            Where a site has ground it cannot watch, Algorealm&apos;s
+            autonomous aircraft add coverage — one more source of observation
+            feeding the same understanding.
           </p>
           <div style={{ display: "flex", gap: 12 }}>
             {["How it works", "See industries"].map((label, i) => (

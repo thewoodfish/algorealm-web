@@ -27,7 +27,7 @@ export function Hero() {
       {/* hero image */}
       <Image
         src="/hero-wireframe.webp"
-        alt="Wireframe surveillance render of a remote industrial site"
+        alt="Aerial view of a large industrial operation"
         fill
         priority
         style={{
@@ -75,7 +75,7 @@ export function Hero() {
           textAlign: "center",
           color: "#fff",
         }}>
-          Operational Intelligence for Critical Infrastructure
+          Understand what&apos;s happening.<br />Know why. Decide faster.
         </motion.h1>
 
         {/* sub */}
@@ -91,16 +91,15 @@ export function Hero() {
             fontWeight: 300,
           }}
         >
-          Algorealm helps organizations continuously understand what is
-          happening across their operations by transforming observations
-          from autonomous systems, sensors, and enterprise data into
-          actionable operational intelligence.
+          Algorealm helps organizations understand what is happening across
+          their operations, uncover why problems occur, and make faster,
+          better operational decisions.
         </motion.p>
 
         {/* CTAs */}
         <motion.div {...fadeUp(0.62)} style={{ display: "flex", gap: 20, justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
           <a
-            href="#intelligence"
+            href="#contact"
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -119,12 +118,10 @@ export function Hero() {
             onMouseEnter={e => (e.currentTarget.style.background = "var(--gold-2)")}
             onMouseLeave={e => (e.currentTarget.style.background = "var(--gold)")}
           >
-            See the Platform
+            Request a Demo
           </a>
           <a
-            href="https://youtu.be/uLrshcacFwo"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#how"
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -149,7 +146,7 @@ export function Hero() {
               e.currentTarget.style.borderBottomColor = "rgba(255,255,255,.25)";
             }}
           >
-            ▶ Watch Demo
+            See how it works
           </a>
         </motion.div>
       </div>

@@ -2,7 +2,7 @@
 import { useRef, useState } from "react";
 import { Reveal } from "./ui/Reveal";
 
-const challenges = ["Operational Visibility", "Safety & Emergency Response", "Asset & Perimeter Protection", "Other"];
+const challenges = ["Understanding what's happening", "Investigating incidents faster", "Improving efficiency & uptime", "Safety & security", "Other"];
 
 export function Contact() {
   const [challenge, setChallenge] = useState("");
@@ -75,7 +75,7 @@ export function Contact() {
         {/* form */}
         <Reveal>
           <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--gold)", letterSpacing: ".14em", textTransform: "uppercase", marginBottom: 16 }}>
-            Operational audit
+            Get started
           </div>
           <h2 style={{
             fontFamily: "var(--font-display)",
@@ -85,12 +85,12 @@ export function Contact() {
             color: "var(--text)",
             marginBottom: 16,
           }}>
-            Request a 3-Day Operational Visibility Audit.
+            See your operation differently.
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--text-2)", lineHeight: 1.7, fontWeight: 300, marginBottom: 32 }}>
-            Twenty minutes. Your terrain, your operation, live software. We
-            don&apos;t do generic slides — we run the demo using an operational
-            scenario from your specific site.
+            Tell us a little about your operation and we&apos;ll set up a demo.
+            No generic slide deck — we walk through a real scenario from your
+            site and the questions you actually want answered.
           </p>
 
           {submitted ? (
@@ -162,7 +162,7 @@ export function Contact() {
                 onMouseEnter={e => { if (!loading) e.currentTarget.style.background = "var(--gold-2)"; }}
                 onMouseLeave={e => (e.currentTarget.style.background = "var(--gold)")}
               >
-                {loading ? "Sending…" : "Secure Your Audit Window"}
+                {loading ? "Sending…" : "Request a Demo"}
               </button>
             </form>
           )}
@@ -180,14 +180,13 @@ export function Contact() {
               marginBottom: 16,
               lineHeight: 1.3,
             }}>
-              Let us prove it on your dirt.
+              Let us prove it on your operation.
             </h3>
             <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 36 }}>
-              Algorealm is built in Africa, engineered for African terrain.
-              We don&apos;t expect you to buy an enterprise software
-              subscription based on a generic slide deck. Let us run a
-              simple 3-day sandboxed dry run on a representative part of
-              your site to show you exactly what our software can see.
+              We don&apos;t expect you to commit based on a slide deck. We&apos;ll
+              take a real part of your operation, run Algorealm against it,
+              and show you exactly what it understands — what happened, why,
+              and what you&apos;d do next.
             </p>
 
             {/* channels */}

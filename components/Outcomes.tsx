@@ -1,35 +1,23 @@
 import { Reveal } from "./ui/Reveal";
 
-const steps = [
-  {
-    num: "01",
-    verb: "Observe",
-    body: "Algorealm draws on the cameras, sensors, and systems you already run — and, where you need more eyes, its own autonomous aircraft. Everything happening on the ground becomes one continuous stream of events.",
-  },
-  {
-    num: "02",
-    verb: "Understand",
-    body: "It learns what normal looks like for your operation, then connects those events into a clear picture — what is happening, and what has changed.",
-  },
-  {
-    num: "03",
-    verb: "Investigate",
-    body: "Ask a plain question and get a plain answer. Algorealm traces a problem back through the events that led to it and explains why it happened.",
-  },
-  {
-    num: "04",
-    verb: "Decide",
-    body: "Your team acts on a clear account of the situation — where to look, what caused it, and what to do next — instead of guessing.",
-  },
+const outcomes = [
+  { title: "Improve operational efficiency", body: "Find where time and output are lost, and fix the cause instead of the symptom." },
+  { title: "Reduce downtime", body: "Catch the conditions that lead to stoppages before they take equipment offline." },
+  { title: "Improve safety", body: "See risky situations as they develop, not in the report written after." },
+  { title: "Improve security", body: "Know the moment something is out of place across the whole site." },
+  { title: "Improve asset utilisation", body: "Understand how vehicles, equipment, and people are actually being used." },
+  { title: "Investigate incidents faster", body: "Reconstruct what happened in minutes instead of piecing footage together for days." },
+  { title: "Increase operational awareness", body: "Keep a clear, current picture of everything happening across your operation." },
+  { title: "Make better decisions", body: "Act on what is actually happening and why — not on a hunch." },
 ];
 
-export function Flow() {
+export function Outcomes() {
   return (
-    <section id="how" className="section-pad" style={{}}>
+    <section id="outcomes" className="section-pad">
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <Reveal>
           <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--gold)", letterSpacing: ".14em", textTransform: "uppercase", marginBottom: 16 }}>
-            How it works
+            Outcomes
           </div>
           <h2 style={{
             fontFamily: "var(--font-display)",
@@ -37,49 +25,49 @@ export function Flow() {
             fontWeight: 700,
             letterSpacing: "-.025em",
             color: "var(--text)",
-            marginBottom: 64,
+            marginBottom: 48,
             maxWidth: 640,
           }}>
-            From scattered events to a clear next step.
+            What understanding your operation actually gets you.
           </h2>
         </Reveal>
 
         <div className="four-col" style={{ gap: 1, background: "var(--border)" }}>
-          {steps.map((s, i) => (
-            <Reveal key={s.num} delay={i * 0.08}>
+          {outcomes.map((o, i) => (
+            <Reveal key={o.title} delay={(i % 4) * 0.06}>
               <div style={{
                 background: "var(--surface)",
                 padding: "36px 28px",
                 height: "100%",
-                position: "relative",
               }}>
                 <div style={{
                   fontFamily: "var(--font-mono)",
                   fontSize: 11,
                   color: "var(--text-3)",
                   letterSpacing: ".12em",
-                  marginBottom: 20,
+                  marginBottom: 22,
                 }}>
-                  {s.num}
+                  {String(i + 1).padStart(2, "0")}
                 </div>
                 <h3 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: 20,
+                  fontSize: 17,
                   fontWeight: 700,
-                  color: "var(--gold)",
+                  color: "var(--text)",
                   letterSpacing: "-.01em",
+                  lineHeight: 1.25,
                   marginBottom: 12,
                 }}>
-                  {s.verb}
+                  {o.title}
                 </h3>
                 <p style={{
                   fontFamily: "var(--font-body)",
                   fontSize: 13,
                   color: "var(--text-2)",
-                  lineHeight: 1.7,
+                  lineHeight: 1.65,
                   fontWeight: 300,
                 }}>
-                  {s.body}
+                  {o.body}
                 </p>
               </div>
             </Reveal>

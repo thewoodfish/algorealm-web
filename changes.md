@@ -1,159 +1,460 @@
-# CLAUDE.md — Remove "data sovereignty / zero-bandwidth" claims from algorealm.tech
+# WEBSITE_CHANGES.md
 
-## Context
+# Website Redesign Philosophy
 
-Algorealm's architecture has changed. Previously the pitch was "100% offline,
-nothing ever leaves the site" (data sovereignty as the core differentiator).
+The current website explains **technology**.
 
-That claim is no longer true. The new architecture:
+It needs to explain **value**.
 
-- **Local / real-time layer** (detection, alerting, drone coordination) —
-  stays fully on-site, on the local radio mesh, no internet dependency.
-  This part of the old claim is STILL TRUE and should not be weakened.
-- **Cloud AI / "understanding" layer** (cross-site correlation, pattern
-  learning, the system getting smarter over time) — connects to the
-  internet. This is the new moat: AI that compounds across every
-  deployment instead of resetting to zero at each new site.
+Visitors should immediately understand:
 
-**The task:** find every place on the site that claims data/maps/logs
-"never leave the site," "stay completely offline," or "stay completely
-private," and rewrite it to reflect the split architecture — local
-detection is still offline and real-time; the intelligence layer syncs
-over the internet.
+* What Algorealm does
+* Why it matters
+* Whether it applies to them
+* What problems it solves
+* Why they should care
 
-Do NOT remove offline/no-internet-dependency language that refers
-specifically to detection, alerting, or drone operation — that part of
-the story is still accurate and is still a real differentiator (most
-competitors assume reliable connectivity; Algorealm doesn't).
+The website should be understandable by:
 
-Only remove/rewrite the specific claims that assert **zero data ever
-leaves the site** or **zero internet connectivity, full stop**.
+* a 15-year-old student
+* a CEO
+* an investor
+* a mine manager
+* a military officer
+* a factory supervisor
+
+If any sentence requires technical knowledge, rewrite it.
 
 ---
 
-## Task 1 — Meta descriptions (3 instances: `meta-og:description`,
-`meta-twitter:description`, and the general `meta-description` tag)
+# The Core Message
 
-**Find (appears verbatim or near-verbatim in multiple meta tags):**
-```
-Samaritan is the aerial intelligence layer that catches it before it happens — completely offline.
-```
+Everything on the website should revolve around one statement.
 
-**Replace with:**
-```
-Samaritan is the aerial intelligence layer that catches it before it happens — built for mines with no reliable internet connection.
-```
+> **Algorealm helps organizations make better decisions across complex physical operations.**
 
-Apply this same fix everywhere "completely offline" appears in a
-standalone marketing sentence describing the whole product (not the
-specific local-detection feature bullet — see Task 3).
+Everything else supports this.
 
----
+Do **not** lead with:
 
-## Task 2 — "The landscape" section, third gap card ("Data Leaks")
+* AI
+* Drones
+* Swarms
+* Edge Computing
+* Computer Vision
+* Reality Engines
+* Autonomous Systems
 
-This card needs to be **replaced entirely**, not reworded. It currently
-states the exact claim we're killing, in the most exposed, top-of-page
-position on the site.
+Those are implementation details.
 
-**Find:**
-```
-Security gap
-
-Data Leaks
-
-Sending your proprietary mine maps, concession layouts, and high-value transport schedules to foreign cloud servers leaves your business vulnerable to corporate espionage.
-```
-
-**Replace with:**
-```
-Memory gap
-
-No Institutional Memory
-
-Every incident is treated like the first time. Without a system that learns your site's specific patterns over time, your team re-learns the same lessons after every breach.
-```
-
-This reframes the third gap around what the new cloud AI layer actually
-solves (pattern memory / correlation), instead of a claim the product
-no longer makes.
+Customers buy outcomes.
 
 ---
 
-## Task 3 — "Five simple reasons it works" — Pillar 02
+# Tone
 
-This is the most detailed, most exposed version of the old claim.
-Full rewrite of both the heading and body copy.
+The website should feel:
 
-**Find:**
-```
-02
+Simple.
 
-100% Offline (Zero-Bandwidth)
+Confident.
 
-Samaritan works completely without the internet. Every byte of security data is processed right at the mine site on local, rugged hardware you control. Your high-value maps and vulnerability logs stay completely private and offline.
-```
+Practical.
 
-**Replace with:**
-```
-02
+Clear.
 
-Real-Time Detection, Fully Local
+Human.
 
-Every drone, every alert, every second-by-second decision happens on hardware at the mine site — detection and response never depend on a live internet connection. The intelligence layer that gets sharper over time syncs securely when connectivity allows.
-```
+Avoid buzzwords.
+
+Avoid corporate jargon.
+
+Avoid explaining technology before explaining value.
 
 ---
 
-## Task 4 — Hero subhead (minor, optional precision fix)
+# The Customer Problem
 
-**Find:**
-```
-...even in remote, offline environments.
-```
+Customers already know they have cameras.
 
-**Replace with:**
-```
-...even where there's no reliable connection.
-```
+They already have sensors.
 
-Low priority — this line doesn't make a data-sovereignty claim, it's
-describing operating conditions, which is still accurate. Fix only for
-consistency of language across the page.
+They already have software.
 
----
+Their problem is that they still struggle to answer questions like:
 
-## What NOT to touch
+* Why did production fall yesterday?
+* Why are trucks delayed?
+* What caused this incident?
+* Where are we losing time?
+* Why is this site becoming less efficient?
+* What happened before the alarm?
+* What changed?
 
-These claims remain true under the new architecture and should be left
-as-is:
-
-- "Cloud-dependent cameras and standard commercial drones stop working
-  the moment local cellular or internet networks drop out in the bush."
-  (still true — competitors' products still fail this way)
-- "The drones fly as a team and communicate natively with each other
-  via an encrypted, peer-to-peer local radio network." (still true —
-  this is the local mesh, unaffected by the cloud AI layer)
-- "<5 min / Alert to dispatch" stat and similar real-time performance
-  claims (still true — local detection path is unchanged)
-- Any language about the drone swarm, patrol randomization, or hardware
-  ruggedness (unaffected by this change)
+The website should repeatedly reinforce that Algorealm answers these questions.
 
 ---
 
-## Verification checklist after edits
+# Homepage Structure
 
-- [ ] Search the full site source for the string "offline" and confirm
-      every remaining instance refers to *connectivity/detection*, not
-      *data storage/privacy*.
-- [ ] Search for "private," "never leave," "stays on," "foreign cloud,"
-      and "espionage" — confirm none of these describe the whole
-      product anymore, only (if applicable) the local detection layer.
-- [ ] Confirm the three "landscape" gap cards still read as three
-      distinct, non-overlapping problems after the Task 2 replacement.
-- [ ] Re-read Pillar 02 next to Pillar 03 ("Drones That Work Together")
-      to make sure the local-mesh language isn't now duplicated between
-      them.
-- [ ] Do a final pass on OG/Twitter meta tags specifically — these are
-      what gets pulled into link previews on LinkedIn/Twitter and are
-      easy to miss since they're not visible on the rendered page.
+## Hero
+
+Headline:
+
+A clear outcome.
+
+Examples:
+
+> Make better decisions across your physical operations.
+
+or
+
+> Understand what's happening. Know why. Decide faster.
+
+Subheading:
+
+Explain the company in one sentence.
+
+Example:
+
+Algorealm helps organizations understand what is happening across their operations, uncover why problems occur, and make faster, better operational decisions.
+
+Primary CTA
+
+Request a Demo
+
+Secondary CTA
+
+See How It Works
+
+---
+
+# Section 2
+
+## The Problem
+
+Title
+
+Running a large operation shouldn't feel like guesswork.
+
+Explain that every operation generates thousands of events every day.
+
+Examples:
+
+People move.
+
+Machines stop.
+
+Vehicles travel.
+
+Equipment fails.
+
+Weather changes.
+
+Incidents happen.
+
+Most organizations never connect these events together.
+
+Finding out what actually happened often takes hours, days, or never happens at all.
+
+---
+
+# Section 3
+
+## The Solution
+
+Title
+
+We turn operational events into operational understanding.
+
+Explain:
+
+We do not collect more data.
+
+We connect existing events into understanding.
+
+Instead of dashboards, we answer operational questions.
+
+Example questions:
+
+Why did production drop yesterday?
+
+Why are trucks waiting?
+
+Why is efficiency falling?
+
+What happened before the incident?
+
+Where should we investigate first?
+
+---
+
+# Section 4
+
+## Industries
+
+The website must communicate that Algorealm is industry agnostic.
+
+Do not make mining the homepage.
+
+Instead show industries such as:
+
+Mining
+
+Manufacturing
+
+Energy
+
+Utilities
+
+Agriculture
+
+Logistics
+
+Ports
+
+Airports
+
+Security
+
+Defence
+
+Industrial Facilities
+
+Smart Infrastructure
+
+Every industry should have exactly one sentence describing how Algorealm helps.
+
+---
+
+# Section 5
+
+## Outcomes
+
+Do not describe features.
+
+Describe outcomes.
+
+Cards:
+
+Improve Operational Efficiency
+
+Reduce Downtime
+
+Improve Safety
+
+Improve Security
+
+Improve Asset Utilisation
+
+Investigate Incidents Faster
+
+Increase Operational Awareness
+
+Make Better Decisions
+
+---
+
+# Section 6
+
+## How It Works
+
+Keep this extremely simple.
+
+Observe
+
+↓
+
+Understand
+
+↓
+
+Investigate
+
+↓
+
+Decide
+
+Each step should have one short explanation.
+
+No architecture diagrams.
+
+No technical jargon.
+
+---
+
+# Section 7
+
+## Products
+
+Only after visitors understand the problem.
+
+Samaritan
+
+Describe Samaritan as:
+
+The operational investigation platform.
+
+Explain that Samaritan investigates operations, explains what happened, uncovers why, and supports decision making.
+
+Meredith
+
+Describe Meredith as:
+
+The reality engine behind Samaritan.
+
+Explain that Meredith continuously understands the physical world and provides the operational context Samaritan needs.
+
+Do not overemphasize Meredith.
+
+Customers buy Samaritan.
+
+Meredith is supporting technology.
+
+---
+
+# Section 8
+
+## Why Algorealm
+
+Focus on differentiation.
+
+Examples:
+
+Built for complex physical operations.
+
+Works with existing infrastructure.
+
+Explains why—not just what.
+
+Understands operations continuously.
+
+Supports faster operational decisions.
+
+Avoid listing technologies.
+
+---
+
+# Section 9
+
+## Call To Action
+
+End with a strong CTA.
+
+Examples:
+
+See your operations differently.
+
+Request a Demo.
+
+Book a Discovery Call.
+
+---
+
+# Writing Rules
+
+Every sentence must pass this test:
+
+Could a 15-year-old understand this?
+
+If not:
+
+Rewrite it.
+
+Prefer:
+
+understand
+
+instead of
+
+derive operational intelligence
+
+Prefer:
+
+find out why
+
+instead of
+
+perform root cause analysis
+
+Prefer:
+
+what happened
+
+instead of
+
+event reconstruction
+
+Prefer:
+
+make better decisions
+
+instead of
+
+optimize operational workflows
+
+---
+
+# Things To Remove
+
+Remove or heavily reduce:
+
+AI-first language
+
+Drone-first language
+
+Swarm-first language
+
+Computer Vision
+
+Edge Computing
+
+Machine Learning
+
+Buzzwords
+
+Feature lists
+
+Technical architecture
+
+The website should not read like documentation.
+
+---
+
+# Design Direction
+
+Minimal.
+
+Large typography.
+
+Lots of whitespace.
+
+Simple illustrations.
+
+Operational photography.
+
+Large questions.
+
+Very little text per section.
+
+One clear message per screen.
+
+---
+
+# Final Goal
+
+A visitor should leave the homepage understanding three things:
+
+1.
+
+Algorealm helps organizations understand what is happening across their operations.
+
+2.
+
+Algorealm helps organizations understand why it is happening.
+
+3.
+
+Algorealm helps organizations make better operational decisions because of that understanding.
+
+If those three ideas are clear, the website has succeeded.

@@ -9,19 +9,20 @@ export function Closing() {
     }}>
       <Reveal>
         <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--gold)", letterSpacing: ".14em", textTransform: "uppercase", marginBottom: 20 }}>
-          Vision
+          The point
         </div>
         <p style={{
           fontFamily: "var(--font-display)",
-          fontSize: "clamp(24px, 3.5vw, 44px)",
+          fontSize: "clamp(26px, 3.8vw, 48px)",
           fontWeight: 700,
           letterSpacing: "-.025em",
           lineHeight: 1.2,
           color: "var(--text)",
-          maxWidth: 760,
-          margin: "0 auto 24px",
+          maxWidth: 780,
+          margin: "0 auto 28px",
         }}>
-          <span style={{ color: "var(--gold)" }}>One Platform. Every Operation.</span>
+          The future of large operations isn&apos;t collecting more data.{" "}
+          <span style={{ color: "var(--text-2)", fontWeight: 300 }}>It&apos;s understanding it.</span>
         </p>
         <p style={{
           fontFamily: "var(--font-body)",
@@ -29,14 +30,31 @@ export function Closing() {
           color: "var(--text-2)",
           lineHeight: 1.75,
           fontWeight: 300,
-          maxWidth: 680,
-          margin: "0 auto",
+          maxWidth: 620,
+          margin: "0 auto 40px",
         }}>
-          The same intelligence layer that observes, understands, and
-          recommends applies to any environment where organizations must
-          continuously understand complex, distributed operations — energy,
-          ports, utilities, and beyond.
+          See your operation the way Algorealm does — what is happening, why
+          it is happening, and what to do about it.
         </p>
+        <a
+          href="#contact"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 8,
+            background: "var(--gold)",
+            color: "#000000",
+            fontFamily: "var(--font-body)",
+            fontSize: 13,
+            fontWeight: 600,
+            padding: "12px 28px",
+            borderRadius: 4,
+            textDecoration: "none",
+            letterSpacing: ".04em",
+          }}
+        >
+          Request a Demo
+        </a>
       </Reveal>
     </div>
   );

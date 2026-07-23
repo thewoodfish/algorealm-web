@@ -1,12 +1,13 @@
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
-import { HeroBridge } from "@/components/HeroBridge";
-import { Numbers } from "@/components/Numbers";
+import { Problem } from "@/components/Problem";
+import { Solution } from "@/components/Solution";
+import { Industries } from "@/components/Industries";
+import { Outcomes } from "@/components/Outcomes";
+import { Flow } from "@/components/Flow";
 import { What } from "@/components/What";
 import { Intelligence } from "@/components/Intelligence";
-import { Flow } from "@/components/Flow";
-import { How } from "@/components/How";
-import { Industries } from "@/components/Industries";
+import { Why } from "@/components/Why";
 import { Closing } from "@/components/Closing";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
@@ -17,13 +18,14 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <HeroBridge />
-        <Numbers />
+        <Problem />
+        <Solution />
+        <Industries />
+        <Outcomes />
+        <Flow />
         <What />
         <Intelligence />
-        <Flow />
-        <How />
-        <Industries />
+        <Why />
         <Closing />
         <Contact />
       </main>
