@@ -23,11 +23,11 @@ const shareTechMono = Share_Tech_Mono({
 export const metadata: Metadata = {
   title: "Algorealm — Understand what's happening across your operations",
   description:
-    "Algorealm helps organizations understand what is happening across their operations, uncover why problems occur, and make faster, better decisions. Samaritan, our operational investigation platform, explains what happened and why.",
+    "A big operation is hard to keep track of. Algorealm helps you see what's happening across yours, understand why problems happen, and decide what to do — without waiting hours for an answer.",
   openGraph: {
     title: "Algorealm — Understand what's happening across your operations",
     description:
-      "Every operation generates thousands of events a day, and most are never connected. Algorealm turns those events into clear answers — what happened, why, and what to do next.",
+      "A lot happens across a site every day, and most of it never gets connected. Algorealm helps you see what's happening, work out why, and decide what to do next.",
     images: ["https://www.algorealm.tech/images/nigeria-threat-map.png"],
     url: "https://www.algorealm.ng",
     type: "website",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Algorealm — Understand what's happening across your operations",
     description:
-      "Every operation generates thousands of events a day, and most are never connected. Algorealm turns those events into clear answers — what happened, why, and what to do next.",
+      "A lot happens across a site every day, and most of it never gets connected. Algorealm helps you see what's happening, work out why, and decide what to do next.",
     images: ["https://www.algorealm.tech/images/nigeria-threat-map.png"],
   },
 };

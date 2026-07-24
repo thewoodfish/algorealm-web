@@ -27,15 +27,15 @@ export function Solution() {
             marginBottom: 28,
             maxWidth: 760,
           }}>
-            We turn operational events into operational understanding.
+            The answers already exist. They&apos;re just scattered.
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, maxWidth: 640, marginBottom: 12 }}>
-            We don&apos;t collect more data. We connect the events you already
-            have into a clear picture of what is happening.
+            You don&apos;t need more data. You need to understand what you
+            already have.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, maxWidth: 640, marginBottom: 56 }}>
-            Instead of another dashboard to watch, you get answers to the
-            questions that actually matter:
+            So instead of one more dashboard to watch, Algorealm answers the
+            questions you actually care about:
           </p>
         </Reveal>
 

@@ -34,12 +34,12 @@ export function Problem() {
             marginBottom: 28,
             maxWidth: 720,
           }}>
-            Running a large operation shouldn&apos;t feel like guesswork.
+            Running a big operation shouldn&apos;t feel like guesswork.
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, maxWidth: 640, marginBottom: 56 }}>
-            Every operation generates thousands of events a day. Most
-            organizations never connect them. Finding out what actually
-            happened takes hours, days — or never happens at all.
+            A lot happens across a site every day. Most of it never gets
+            connected. So when something goes wrong, working out what
+            actually happened takes hours — or never happens at all.
           </p>
         </Reveal>
 
@@ -79,7 +79,7 @@ export function Problem() {
           }}>
             You already have cameras, sensors, and software.{" "}
             <span style={{ color: "var(--text-2)", fontWeight: 300 }}>
-              What you don&apos;t have is a clear answer to what happened, and why.
+              What you&apos;re missing is a straight answer to what happened, and why.
             </span>
           </p>
         </Reveal>

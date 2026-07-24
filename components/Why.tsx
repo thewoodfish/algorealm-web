@@ -2,24 +2,24 @@ import { Reveal } from "./ui/Reveal";
 
 const reasons = [
   {
-    title: "Built for physical operations",
-    body: "Not an office analytics tool pointed at the field. Algorealm is made for large, messy, moving operations where the important things happen on the ground.",
+    title: "Built for the field, not the office",
+    body: "This isn't an office dashboard pointed at your site. It's built for big, messy, moving operations where the real work happens on the ground.",
   },
   {
     title: "Works with what you already have",
-    body: "Your cameras, sensors, and systems stay in place. Algorealm connects to them instead of asking you to rip anything out and start over.",
+    body: "Your cameras, sensors, and systems stay put. Algorealm plugs into them — no ripping anything out and starting over.",
   },
   {
-    title: "Explains why, not just what",
-    body: "Alerts tell you something happened. Algorealm tells you why it happened and what led to it — the part that actually helps you fix it.",
+    title: "Tells you why, not just what",
+    body: "An alert says something happened. Algorealm tells you why, and what led up to it. That's the part that actually helps you fix it.",
   },
   {
-    title: "Understands continuously",
-    body: "It doesn't wait to be asked. Algorealm keeps up a live account of your operation, so the answer is ready the moment you need it.",
+    title: "Always paying attention",
+    body: "It doesn't wait to be asked. Algorealm keeps a running picture of your operation, so the answer's ready the moment you need it.",
   },
   {
-    title: "Supports faster decisions",
-    body: "Less time reconstructing what happened means more time acting on it. Your team decides with a clear picture instead of a hunch.",
+    title: "Gets you to a decision faster",
+    body: "Less time working out what happened means more time acting on it. Your team decides with a clear picture, not a hunch.",
   },
 ];
 

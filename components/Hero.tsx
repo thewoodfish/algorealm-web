@@ -91,9 +91,9 @@ export function Hero() {
             fontWeight: 300,
           }}
         >
-          Algorealm helps organizations understand what is happening across
-          their operations, uncover why problems occur, and make faster,
-          better operational decisions.
+          A big operation is hard to keep track of. Algorealm helps you see
+          what&apos;s happening across yours, understand why problems happen,
+          and decide what to do — without waiting hours for an answer.
         </motion.p>
 
         {/* CTAs */}

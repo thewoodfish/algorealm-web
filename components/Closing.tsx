@@ -21,7 +21,7 @@ export function Closing() {
           maxWidth: 780,
           margin: "0 auto 28px",
         }}>
-          The future of large operations isn&apos;t collecting more data.{" "}
+          The future of big operations isn&apos;t collecting more data.{" "}
           <span style={{ color: "var(--text-2)", fontWeight: 300 }}>It&apos;s understanding it.</span>
         </p>
         <p style={{
@@ -33,8 +33,8 @@ export function Closing() {
           maxWidth: 620,
           margin: "0 auto 40px",
         }}>
-          See your operation the way Algorealm does — what is happening, why
-          it is happening, and what to do about it.
+          See your operation the way Algorealm does — what&apos;s happening,
+          why, and what to do next.
         </p>
         <a
           href="#contact"

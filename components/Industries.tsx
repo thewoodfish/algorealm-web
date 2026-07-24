@@ -43,9 +43,9 @@ export function Industries() {
             Any operation big enough to lose track of itself.
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 15, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 48, maxWidth: 640 }}>
-            The problem is the same everywhere: too much happening across too
-            much ground to keep in your head. Algorealm helps operators
-            understand it — whatever they run.
+            The problem is the same everywhere. Too much happening across too
+            much ground to hold in your head. Algorealm helps you make sense
+            of it — whatever you run.
           </p>
         </Reveal>
 

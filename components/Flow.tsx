@@ -4,22 +4,22 @@ const steps = [
   {
     num: "01",
     verb: "Observe",
-    body: "Algorealm draws on the cameras, sensors, and systems you already run — and, where you need more eyes, its own autonomous aircraft. Everything happening on the ground becomes one continuous stream of events.",
+    body: "Algorealm works with the cameras, sensors, and systems you already have — and can add more coverage where you're blind. Everything happening on the ground becomes one stream of events.",
   },
   {
     num: "02",
     verb: "Understand",
-    body: "It learns what normal looks like for your operation, then connects those events into a clear picture — what is happening, and what has changed.",
+    body: "It learns what a normal day looks like for you, then connects those events into a clear picture of what's happening and what's changed.",
   },
   {
     num: "03",
     verb: "Investigate",
-    body: "Ask a plain question and get a plain answer. Algorealm traces a problem back through the events that led to it and explains why it happened.",
+    body: "Ask a plain question, get a plain answer. It traces a problem back through the events that led to it and tells you why it happened.",
   },
   {
     num: "04",
     verb: "Decide",
-    body: "Your team acts on a clear account of the situation — where to look, what caused it, and what to do next — instead of guessing.",
+    body: "Your team acts on a clear account of the situation — where to look, what caused it, what to do next — instead of guessing.",
   },
 ];
 

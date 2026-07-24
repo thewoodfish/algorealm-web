@@ -1,460 +1,435 @@
-# WEBSITE_CHANGES.md
+# WEBSITE_COPY_GUIDE.md
 
-# Website Redesign Philosophy
+# Purpose
 
-The current website explains **technology**.
+The current website copy feels like it was written by AI.
 
-It needs to explain **value**.
+It is grammatically correct.
 
-Visitors should immediately understand:
+It is logically correct.
 
-* What Algorealm does
-* Why it matters
-* Whether it applies to them
-* What problems it solves
-* Why they should care
+But it is emotionally flat.
 
-The website should be understandable by:
+It sounds like every other B2B startup.
 
-* a 15-year-old student
-* a CEO
-* an investor
-* a mine manager
-* a military officer
-* a factory supervisor
-
-If any sentence requires technical knowledge, rewrite it.
+This document exists to make every piece of copy sound like it came from a founder who deeply understands the problem—not from ChatGPT.
 
 ---
 
-# The Core Message
+# The Feeling We Want
 
-Everything on the website should revolve around one statement.
+Every sentence should make a visitor think:
 
-> **Algorealm helps organizations make better decisions across complex physical operations.**
-
-Everything else supports this.
-
-Do **not** lead with:
-
-* AI
-* Drones
-* Swarms
-* Edge Computing
-* Computer Vision
-* Reality Engines
-* Autonomous Systems
-
-Those are implementation details.
-
-Customers buy outcomes.
-
----
-
-# Tone
-
-The website should feel:
-
-Simple.
-
-Confident.
-
-Practical.
-
-Clear.
-
-Human.
-
-Avoid buzzwords.
-
-Avoid corporate jargon.
-
-Avoid explaining technology before explaining value.
-
----
-
-# The Customer Problem
-
-Customers already know they have cameras.
-
-They already have sensors.
-
-They already have software.
-
-Their problem is that they still struggle to answer questions like:
-
-* Why did production fall yesterday?
-* Why are trucks delayed?
-* What caused this incident?
-* Where are we losing time?
-* Why is this site becoming less efficient?
-* What happened before the alarm?
-* What changed?
-
-The website should repeatedly reinforce that Algorealm answers these questions.
-
----
-
-# Homepage Structure
-
-## Hero
-
-Headline:
-
-A clear outcome.
-
-Examples:
-
-> Make better decisions across your physical operations.
+> "Exactly."
 
 or
 
-> Understand what's happening. Know why. Decide faster.
+> "That's our problem."
 
-Subheading:
+not
 
-Explain the company in one sentence.
+> "Nice marketing."
 
-Example:
+The website should sound:
 
-Algorealm helps organizations understand what is happening across their operations, uncover why problems occur, and make faster, better operational decisions.
+Human.
 
-Primary CTA
+Simple.
 
-Request a Demo
+Honest.
 
-Secondary CTA
+Direct.
 
-See How It Works
+Confident.
+
+Curious.
+
+Grounded.
+
+Never corporate.
+
+Never exaggerated.
+
+Never buzzword-heavy.
 
 ---
 
-# Section 2
+# Stop Writing Like A Startup
 
-## The Problem
+Avoid sentences like:
 
-Title
+> We leverage cutting-edge AI to deliver actionable insights.
 
-Running a large operation shouldn't feel like guesswork.
+> We enable organizations to unlock operational intelligence.
 
-Explain that every operation generates thousands of events every day.
+> Transforming data into decisions.
+
+> Empowering organizations.
+
+> Revolutionizing operations.
+
+> End-to-end platform.
+
+Nobody talks like this.
+
+---
+
+# Write Like A Human
+
+Write how an experienced operator would explain the problem.
 
 Examples:
 
-People move.
+Bad
 
-Machines stop.
+"We provide operational visibility."
 
-Vehicles travel.
+Good
 
-Equipment fails.
-
-Weather changes.
-
-Incidents happen.
-
-Most organizations never connect these events together.
-
-Finding out what actually happened often takes hours, days, or never happens at all.
+"It's hard to know what's really happening across a large operation."
 
 ---
 
-# Section 3
+Bad
 
-## The Solution
+"Our platform improves situational awareness."
 
-Title
+Good
 
-We turn operational events into operational understanding.
-
-Explain:
-
-We do not collect more data.
-
-We connect existing events into understanding.
-
-Instead of dashboards, we answer operational questions.
-
-Example questions:
-
-Why did production drop yesterday?
-
-Why are trucks waiting?
-
-Why is efficiency falling?
-
-What happened before the incident?
-
-Where should we investigate first?
+"When something goes wrong, finding out why shouldn't take hours."
 
 ---
 
-# Section 4
+Bad
 
-## Industries
+"We connect fragmented operational data."
 
-The website must communicate that Algorealm is industry agnostic.
+Good
 
-Do not make mining the homepage.
-
-Instead show industries such as:
-
-Mining
-
-Manufacturing
-
-Energy
-
-Utilities
-
-Agriculture
-
-Logistics
-
-Ports
-
-Airports
-
-Security
-
-Defence
-
-Industrial Facilities
-
-Smart Infrastructure
-
-Every industry should have exactly one sentence describing how Algorealm helps.
+"The information already exists. It's just scattered."
 
 ---
 
-# Section 5
+Bad
 
-## Outcomes
+"Operational intelligence."
 
-Do not describe features.
+Good
 
-Describe outcomes.
-
-Cards:
-
-Improve Operational Efficiency
-
-Reduce Downtime
-
-Improve Safety
-
-Improve Security
-
-Improve Asset Utilisation
-
-Investigate Incidents Faster
-
-Increase Operational Awareness
-
-Make Better Decisions
+"Understanding what's happening."
 
 ---
 
-# Section 6
+# Every Section Starts With The Customer
 
-## How It Works
+Never start by describing Algorealm.
 
-Keep this extremely simple.
+Start with the customer's world.
 
-Observe
+Instead of:
 
-↓
+> Algorealm is...
 
-Understand
+Start with:
 
-↓
+> Every day...
 
-Investigate
+> Running a large operation is difficult because...
 
-↓
+> Things happen across an operation all the time...
 
-Decide
+> Finding out why something happened usually takes too long...
 
-Each step should have one short explanation.
-
-No architecture diagrams.
-
-No technical jargon.
+Only then introduce Algorealm.
 
 ---
 
-# Section 7
+# Prefer Questions
 
-## Products
-
-Only after visitors understand the problem.
-
-Samaritan
-
-Describe Samaritan as:
-
-The operational investigation platform.
-
-Explain that Samaritan investigates operations, explains what happened, uncovers why, and supports decision making.
-
-Meredith
-
-Describe Meredith as:
-
-The reality engine behind Samaritan.
-
-Explain that Meredith continuously understands the physical world and provides the operational context Samaritan needs.
-
-Do not overemphasize Meredith.
-
-Customers buy Samaritan.
-
-Meredith is supporting technology.
-
----
-
-# Section 8
-
-## Why Algorealm
-
-Focus on differentiation.
+Questions are far more engaging than statements.
 
 Examples:
 
-Built for complex physical operations.
+Why did production slow down yesterday?
 
-Works with existing infrastructure.
+Why are trucks waiting longer?
 
-Explains why—not just what.
+Why did this incident happen?
 
-Understands operations continuously.
+What's happening across the site right now?
 
-Supports faster operational decisions.
+Where are we losing time?
 
-Avoid listing technologies.
-
----
-
-# Section 9
-
-## Call To Action
-
-End with a strong CTA.
-
-Examples:
-
-See your operations differently.
-
-Request a Demo.
-
-Book a Discovery Call.
+Visitors immediately relate.
 
 ---
 
-# Writing Rules
+# Talk About Real Things
 
-Every sentence must pass this test:
+Avoid abstract nouns.
 
-Could a 15-year-old understand this?
+Instead use concrete things.
 
-If not:
+People.
 
-Rewrite it.
+Machines.
 
-Prefer:
+Vehicles.
 
-understand
+Roads.
 
-instead of
+Equipment.
 
-derive operational intelligence
+Sites.
 
-Prefer:
+Incidents.
 
-find out why
+Delays.
 
-instead of
+Production.
 
-perform root cause analysis
+Weather.
 
-Prefer:
+Assets.
 
-what happened
+Operations.
 
-instead of
-
-event reconstruction
-
-Prefer:
-
-make better decisions
-
-instead of
-
-optimize operational workflows
+Visitors should picture their own operation while reading.
 
 ---
 
-# Things To Remove
+# Show, Don't Tell
 
-Remove or heavily reduce:
+Don't say:
 
-AI-first language
+"We improve operational efficiency."
 
-Drone-first language
+Say:
 
-Swarm-first language
+"We help teams find where time is being lost."
+
+---
+
+Don't say:
+
+"We improve safety."
+
+Say:
+
+"We help teams understand what happened before an incident."
+
+---
+
+Don't say:
+
+"We provide operational awareness."
+
+Say:
+
+"We help teams see what's really happening."
+
+---
+
+# Don't Try To Sound Smart
+
+Smart people usually write simply.
+
+If a sentence exists only to impress...
+
+Delete it.
+
+---
+
+# Every Sentence Must Earn Its Place
+
+If removing a sentence changes nothing...
+
+Delete it.
+
+Visitors skim.
+
+Make every sentence useful.
+
+---
+
+# One Idea Per Paragraph
+
+Never combine multiple ideas.
+
+Wrong:
+
+We help organizations understand operations through AI, drones, edge computing and operational intelligence.
+
+Right:
+
+Things happen across your operation every minute.
+
+Most organizations never see the full picture.
+
+We help them understand it.
+
+---
+
+# Don't Explain Technology
+
+The homepage should almost never mention:
+
+AI
 
 Computer Vision
 
 Edge Computing
 
-Machine Learning
+Reality Engine
 
-Buzzwords
+Graph Database
 
-Feature lists
+Swarm
 
-Technical architecture
+Autonomous Systems
 
-The website should not read like documentation.
+Drone Coordination
 
----
+Reasoning Engine
 
-# Design Direction
+Those belong in documentation.
 
-Minimal.
-
-Large typography.
-
-Lots of whitespace.
-
-Simple illustrations.
-
-Operational photography.
-
-Large questions.
-
-Very little text per section.
-
-One clear message per screen.
+Not in marketing.
 
 ---
 
-# Final Goal
+# Explain Outcomes
 
-A visitor should leave the homepage understanding three things:
+Visitors care about outcomes.
 
-1.
+Not implementation.
 
-Algorealm helps organizations understand what is happening across their operations.
+Examples:
 
-2.
+Understand what happened.
 
-Algorealm helps organizations understand why it is happening.
+Find out why.
 
-3.
+Respond faster.
 
-Algorealm helps organizations make better operational decisions because of that understanding.
+Reduce downtime.
 
-If those three ideas are clear, the website has succeeded.
+Improve efficiency.
+
+Protect assets.
+
+Make better decisions.
+
+---
+
+# Sound Like A Founder
+
+The website should read like this:
+
+"I've seen this problem.
+
+I understand why it exists.
+
+Here's how we're fixing it."
+
+Not:
+
+"We are a next-generation operational intelligence platform..."
+
+---
+
+# Avoid Empty Claims
+
+Never write:
+
+World-class
+
+Best-in-class
+
+Industry-leading
+
+Cutting-edge
+
+Innovative
+
+Game-changing
+
+Unless you immediately prove it.
+
+---
+
+# Short Beats Clever
+
+Short sentences.
+
+Simple words.
+
+Less punctuation.
+
+Less jargon.
+
+Example:
+
+Instead of
+
+"Every operational event contributes to a wider context."
+
+Write
+
+"Nothing happens in isolation."
+
+---
+
+# Write For Curiosity
+
+Good copy creates curiosity.
+
+Instead of explaining everything...
+
+Leave visitors wanting to know more.
+
+Example:
+
+"We help organizations answer questions they've never been able to answer before."
+
+Much better than explaining Meredith.
+
+---
+
+# Company Before Product
+
+Always sell Algorealm first.
+
+Only introduce Samaritan later.
+
+Visitors buy the mission before they buy the software.
+
+---
+
+# Final Test
+
+Every piece of copy must pass this test.
+
+A mine manager should understand it.
+
+A military officer should understand it.
+
+A CEO should understand it.
+
+A 15-year-old should understand it.
+
+If any one of them wouldn't...
+
+Rewrite it.
+
+---
+
+# The Standard
+
+If the copy sounds like it came from a marketing agency...
+
+Rewrite it.
+
+If it sounds like it came from a founder obsessed with solving a real problem...
+
+Ship it.

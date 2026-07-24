@@ -1,14 +1,14 @@
 import { Reveal } from "./ui/Reveal";
 
 const outcomes = [
-  { title: "Improve operational efficiency", body: "Find where time and output are lost, and fix the cause instead of the symptom." },
-  { title: "Reduce downtime", body: "Catch the conditions that lead to stoppages before they take equipment offline." },
-  { title: "Improve safety", body: "See risky situations as they develop, not in the report written after." },
-  { title: "Improve security", body: "Know the moment something is out of place across the whole site." },
-  { title: "Improve asset utilisation", body: "Understand how vehicles, equipment, and people are actually being used." },
-  { title: "Investigate incidents faster", body: "Reconstruct what happened in minutes instead of piecing footage together for days." },
-  { title: "Increase operational awareness", body: "Keep a clear, current picture of everything happening across your operation." },
-  { title: "Make better decisions", body: "Act on what is actually happening and why — not on a hunch." },
+  { title: "Find where time is lost", body: "See where output and hours are slipping away, and fix the cause instead of the symptom." },
+  { title: "Cut downtime", body: "Catch the conditions that lead to a stoppage before they take a machine offline." },
+  { title: "Catch safety issues sooner", body: "Spot a risky situation while it's happening, not in the report written afterward." },
+  { title: "Know when something's off", body: "See the moment something is out of place, anywhere on the site." },
+  { title: "Get more out of your assets", body: "Understand how your vehicles, equipment, and people are actually being used." },
+  { title: "Investigate in minutes, not days", body: "Piece together what happened without scrubbing through hours of footage." },
+  { title: "See the whole picture", body: "Keep a clear, current view of everything happening across the operation." },
+  { title: "Make the call with confidence", body: "Decide on what's actually happening and why — not on a hunch." },
 ];
 
 export function Outcomes() {
@@ -28,7 +28,7 @@ export function Outcomes() {
             marginBottom: 48,
             maxWidth: 640,
           }}>
-            What understanding your operation actually gets you.
+            What that actually gets you.
           </h2>
         </Reveal>
 
