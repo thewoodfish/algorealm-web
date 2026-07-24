@@ -75,7 +75,7 @@ export function Hero() {
           textAlign: "center",
           color: "#fff",
         }}>
-          Know what&apos;s happening across your operation.<br />And why.
+          Know what&apos;s happening across your physical operations.<br />And why.
         </motion.h1>
 
         {/* sub */}
@@ -93,7 +93,7 @@ export function Hero() {
         >
           Algorealm helps organizations understand what&apos;s happening
           across their physical operations, uncover why it happened, and
-          make better decisions.
+          make the best decisions.
         </motion.p>
 
         {/* CTAs */}
