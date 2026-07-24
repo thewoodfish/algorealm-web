@@ -75,7 +75,7 @@ export function Hero() {
           textAlign: "center",
           color: "#fff",
         }}>
-          Understand what&apos;s happening.<br />Know why. Decide faster.
+          Know what&apos;s happening across your operation.<br />And why.
         </motion.h1>
 
         {/* sub */}
@@ -91,9 +91,9 @@ export function Hero() {
             fontWeight: 300,
           }}
         >
-          A big operation is hard to keep track of. Algorealm helps you see
-          what&apos;s happening across yours, understand why problems happen,
-          and decide what to do — without waiting hours for an answer.
+          Algorealm helps organizations understand what&apos;s happening
+          across their physical operations, uncover why it happened, and
+          make better decisions.
         </motion.p>
 
         {/* CTAs */}
