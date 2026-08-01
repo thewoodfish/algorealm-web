@@ -11,6 +11,10 @@ import { useEffect, useRef, useState } from "react";
    immediately and the faststart MP4 streams progressively — never blank.
    ──────────────────────────────────────────────────────────────────────── */
 
+// Flip to true when a proper recording lands in /public/videos.
+const SHOW_VIDEO = false;
+const STILL_SRC = "/images/samaritan-still.jpg";
+
 const HEADLINE_VISIBLE_SECONDS = 7;
 
 const FOCUS_OPTIONS = [
@@ -28,6 +32,7 @@ export function VideoScene() {
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
+    if (!SHOW_VIDEO) return;
     const video = videoRef.current;
     if (!video) return;
 
@@ -100,21 +105,34 @@ export function VideoScene() {
       `}</style>
 
       {/* the operation */}
-      <video
-        ref={videoRef}
-        muted
-        loop
-        playsInline
-        autoPlay
-        preload="auto"
-        poster="/videos/samaritan-poster.jpg"
-        src="/videos/samaritan-demo.mp4"
-        style={{
-          position: "absolute", inset: 0,
-          width: "100%", height: "100%",
-          objectFit: "cover",
-        }}
-      />
+      {SHOW_VIDEO ? (
+        <video
+          ref={videoRef}
+          muted
+          loop
+          playsInline
+          autoPlay
+          preload="auto"
+          poster="/videos/samaritan-poster.jpg"
+          src="/videos/samaritan-demo.mp4"
+          style={{
+            position: "absolute", inset: 0,
+            width: "100%", height: "100%",
+            objectFit: "cover",
+          }}
+        />
+      ) : (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={STILL_SRC}
+          alt="Samaritan investigating a mining operation"
+          style={{
+            position: "absolute", inset: 0,
+            width: "100%", height: "100%",
+            objectFit: "cover",
+          }}
+        />
+      )}
 
       {/* edge scrims so chrome reads over any frame */}
       <div style={{
