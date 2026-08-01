@@ -41,7 +41,7 @@ export function Hero() {
         position: "absolute",
         bottom: 0, left: 0, right: 0,
         height: "25%",
-        background: "linear-gradient(to bottom, transparent, #000000)",
+        background: "linear-gradient(to bottom, transparent, #ffffff)",
         zIndex: 5,
         pointerEvents: "none",
       }} />
@@ -75,7 +75,7 @@ export function Hero() {
           textAlign: "center",
           color: "#fff",
         }}>
-          Know what&apos;s happening across your physical operations.<br />And why.
+          See what. Understand why.<br />Act with confidence.
         </motion.h1>
 
         {/* sub */}
@@ -91,9 +91,9 @@ export function Hero() {
             fontWeight: 300,
           }}
         >
-          Algorealm helps organizations understand what&apos;s happening
-          across their physical operations, uncover why it happened, and
-          make the best decisions.
+          Algorealm helps organizations understand everything happening
+          across their physical operations, and make the best decisions
+          about it.
         </motion.p>
 
         {/* CTAs */}
@@ -104,8 +104,8 @@ export function Hero() {
               display: "inline-flex",
               alignItems: "center",
               gap: 8,
-              background: "var(--gold)",
-              color: "#000000",
+              background: "#ffffff",
+              color: "#141414",
               fontFamily: "var(--font-body)",
               fontSize: 13,
               fontWeight: 600,
@@ -115,8 +115,8 @@ export function Hero() {
               letterSpacing: ".04em",
               transition: "background .2s",
             }}
-            onMouseEnter={e => (e.currentTarget.style.background = "var(--gold-2)")}
-            onMouseLeave={e => (e.currentTarget.style.background = "var(--gold)")}
+            onMouseEnter={e => (e.currentTarget.style.background = "#e5e5e5")}
+            onMouseLeave={e => (e.currentTarget.style.background = "#ffffff")}
           >
             Request a Demo
           </a>

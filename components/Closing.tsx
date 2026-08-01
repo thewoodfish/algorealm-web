@@ -43,7 +43,7 @@ export function Closing() {
             alignItems: "center",
             gap: 8,
             background: "var(--gold)",
-            color: "#000000",
+            color: "#ffffff",
             fontFamily: "var(--font-body)",
             fontSize: 13,
             fontWeight: 600,

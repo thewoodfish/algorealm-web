@@ -2,27 +2,27 @@
 
 @layer base {
   :root {
-    --bg:         #000000;
-    --bg-2:       #050505;
-    --surface:    #0a0a0a;
-    --surface-2:  #141414;
-    --border:     #262626;
-    --border-2:   #333333;
+    --bg:         #ffffff;
+    --bg-2:       #fafafa;
+    --surface:    #f6f6f4;
+    --surface-2:  #eeeeeb;
+    --border:     #e6e6e2;
+    --border-2:   #d4d4cf;
 
-    --gold:       #ffffff;
-    --gold-2:     #d4d4d4;
-    --gold-dim:   rgba(255,255,255,.16);
-    --gold-glow:  rgba(255,255,255,.06);
+    --gold:       #141414;
+    --gold-2:     #333333;
+    --gold-dim:   rgba(0,0,0,.18);
+    --gold-glow:  rgba(0,0,0,.04);
 
-    --text:       #ffffff;
-    --text-2:     #a3a3a3;
-    --text-3:     #525252;
+    --text:       #141414;
+    --text-2:     #5a5a5a;
+    --text-3:     #9a9a9a;
 
-    --red:        #ef4444;
-    --green:      #4ade80;
-    --amber:      #f59e0b;
-    --blue:       #3b82f6;
-    --purple:     #a78bfa;
+    --red:        #dc2626;
+    --green:      #16a34a;
+    --amber:      #d97706;
+    --blue:       #2563eb;
+    --purple:     #7c3aed;
   }
 
   *, *::before, *::after {
@@ -33,25 +33,25 @@
 
   html {
     scroll-behavior: smooth;
-    background: #000000;
+    background: #ffffff;
   }
 
   body {
-    background: #000000;
-    color: #ffffff;
+    background: #ffffff;
+    color: #141414;
     overflow-x: hidden;
     cursor: default;
     font-family: var(--font-body, sans-serif);
   }
 
   ::selection {
-    background: rgba(255,255,255,.16);
-    color: #ffffff;
+    background: rgba(0,0,0,.1);
+    color: #141414;
   }
 
   ::-webkit-scrollbar { width: 4px; }
-  ::-webkit-scrollbar-track { background: #000000; }
-  ::-webkit-scrollbar-thumb { background: #333333; border-radius: 2px; }
+  ::-webkit-scrollbar-track { background: #ffffff; }
+  ::-webkit-scrollbar-thumb { background: #d4d4cf; border-radius: 2px; }
 }
 
 /* noise overlay */
@@ -62,7 +62,7 @@ body::before {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
   pointer-events: none;
   z-index: 9999;
-  opacity: .35;
+  opacity: .18;
 }
 
 /* ── Responsive layout helpers ───────────────────────────────────────────── */
@@ -107,8 +107,8 @@ body::after {
     0deg,
     transparent,
     transparent 2px,
-    rgba(0,0,0,.03) 2px,
-    rgba(0,0,0,.03) 4px
+    rgba(0,0,0,.012) 2px,
+    rgba(0,0,0,.012) 4px
   );
   pointer-events: none;
   z-index: 9998;

@@ -34,12 +34,16 @@ export function Problem() {
             marginBottom: 28,
             maxWidth: 720,
           }}>
-            Running a big operation shouldn&apos;t feel like guesswork.
+            Operational losses, across every part of a physical operation.
           </h2>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, maxWidth: 640, marginBottom: 20 }}>
+            Money, time, product, efficiency, assets, and underused manpower
+            are lost across your operations every day.
+          </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, maxWidth: 640, marginBottom: 56 }}>
-            A lot happens across a site every day. Most of it never gets
-            connected. So when something goes wrong, working out what
-            actually happened takes hours — or never happens at all.
+            Not understanding the events happening simultaneously across your
+            site — their effects, and the specific actions to take — directly
+            affects whether your operation succeeds or fails.
           </p>
         </Reveal>
 
@@ -77,7 +81,7 @@ export function Problem() {
             color: "var(--text)",
             maxWidth: 760,
           }}>
-            You already have cameras, sensors, and software.{" "}
+            You already have people, cameras, sensors, and software.{" "}
             <span style={{ color: "var(--text-2)", fontWeight: 300 }}>
               What you&apos;re missing is a straight answer to what happened, and why.
             </span>

@@ -1,12 +1,30 @@
 import { Reveal } from "./ui/Reveal";
 
-const questions = [
-  "Why did production drop yesterday?",
-  "Why are trucks waiting?",
-  "Why is efficiency falling?",
-  "What happened before the incident?",
-  "Where should we investigate first?",
-  "What changed this week?",
+const groups = [
+  {
+    industry: "Mining",
+    questions: [
+      "Why did production drop yesterday?",
+      "Why are trucks waiting?",
+      "Why is efficiency falling?",
+    ],
+  },
+  {
+    industry: "Agriculture",
+    questions: [
+      "Why is this field underperforming?",
+      "What changed this week?",
+      "Where should we deploy resources first?",
+    ],
+  },
+  {
+    industry: "Defence & Security",
+    questions: [
+      "What happened before the incident?",
+      "Where should we investigate first?",
+      "What changed across the operational area?",
+    ],
+  },
 ];
 
 export function Solution() {
@@ -27,53 +45,79 @@ export function Solution() {
             marginBottom: 28,
             maxWidth: 760,
           }}>
-            The answers already exist. They&apos;re just scattered.
+            A complete understanding of your operation, guiding every decision.
           </h2>
-          <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, maxWidth: 640, marginBottom: 12 }}>
-            You don&apos;t need more data. You need to understand what you
-            already have.
+          <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, maxWidth: 660, marginBottom: 20 }}>
+            Samaritan helps you understand all of your physical operational
+            events as they happen. By bringing together thousands of
+            fragmented event signals, it shows you what is happening across
+            your operational theatre, why it is happening, and what it means
+            for you — so you can make the best decisions.
           </p>
-          <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, maxWidth: 640, marginBottom: 56 }}>
-            So instead of one more dashboard to watch, Algorealm answers the
+          <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, maxWidth: 660, marginBottom: 56 }}>
+            Instead of one more dashboard to watch, Samaritan answers the
             questions you actually care about:
           </p>
         </Reveal>
 
         <Reveal delay={0.1}>
           <div className="three-col" style={{ gap: 1, background: "var(--border)" }}>
-            {questions.map((q, i) => (
+            {groups.map((g) => (
               <div
-                key={q}
+                key={g.industry}
                 style={{
                   background: "var(--surface)",
-                  padding: "40px 32px",
-                  display: "flex",
-                  alignItems: "flex-start",
-                  gap: 16,
+                  padding: "36px 32px",
                 }}
               >
-                <span style={{
+                <div style={{
                   fontFamily: "var(--font-mono)",
-                  fontSize: 11,
-                  color: "var(--text-3)",
-                  letterSpacing: ".1em",
-                  paddingTop: 4,
+                  fontSize: 10,
+                  color: "var(--gold)",
+                  letterSpacing: ".14em",
+                  textTransform: "uppercase",
+                  marginBottom: 24,
                 }}>
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <p style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: 18,
-                  fontWeight: 700,
-                  color: "var(--text)",
-                  letterSpacing: "-.01em",
-                  lineHeight: 1.35,
-                }}>
-                  {q}
-                </p>
+                  {g.industry}
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
+                  {g.questions.map((q) => (
+                    <p
+                      key={q}
+                      style={{
+                        fontFamily: "var(--font-display)",
+                        fontSize: 18,
+                        fontWeight: 700,
+                        color: "var(--text)",
+                        letterSpacing: "-.01em",
+                        lineHeight: 1.35,
+                      }}
+                    >
+                      {q}
+                    </p>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
+        </Reveal>
+
+        <Reveal delay={0.2}>
+          <p style={{
+            fontFamily: "var(--font-display)",
+            fontSize: "clamp(20px, 2.4vw, 30px)",
+            fontWeight: 700,
+            letterSpacing: "-.02em",
+            lineHeight: 1.3,
+            color: "var(--text)",
+            maxWidth: 760,
+            marginTop: 48,
+          }}>
+            Samaritan investigates, explains,{" "}
+            <span style={{ color: "var(--text-2)", fontWeight: 300 }}>
+              and shows you the answer.
+            </span>
+          </p>
         </Reveal>
       </div>
     </section>

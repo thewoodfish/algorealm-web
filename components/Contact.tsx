@@ -89,8 +89,8 @@ export function Contact() {
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--text-2)", lineHeight: 1.7, fontWeight: 300, marginBottom: 32 }}>
             Tell us a bit about your operation and we&apos;ll set up a demo.
-            No generic slide deck — we&apos;ll walk through a real situation
-            from your site and the questions you actually want answered.
+            We&apos;ll walk through a real situation from your site and the
+            questions you actually want answered.
           </p>
 
           {submitted ? (
@@ -146,7 +146,7 @@ export function Contact() {
                 disabled={loading}
                 style={{
                   background: "var(--gold)",
-                  color: "#000000",
+                  color: "#ffffff",
                   fontFamily: "var(--font-body)",
                   fontSize: 13,
                   fontWeight: 600,
@@ -183,10 +183,10 @@ export function Contact() {
               Let us prove it on your operation.
             </h3>
             <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--text-2)", lineHeight: 1.75, fontWeight: 300, marginBottom: 36 }}>
-              We don&apos;t expect you to commit off a slide deck. We&apos;ll
-              take a real part of your operation, run Algorealm on it, and
-              show you exactly what it can tell you — what happened, why, and
-              what you&apos;d do next.
+              We don&apos;t expect you to commit off a pitch. We&apos;ll take
+              a real part of your operation, run Samaritan on it, and show you
+              exactly what it can tell you — what happened, why, and what
+              you&apos;d do next.
             </p>
 
             {/* channels */}

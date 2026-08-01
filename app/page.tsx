@@ -7,7 +7,7 @@ import { Outcomes } from "@/components/Outcomes";
 import { Flow } from "@/components/Flow";
 // import { What } from "@/components/What";              // Samaritan product — hidden for now
 // import { Intelligence } from "@/components/Intelligence"; // Samaritan in action — hidden for now
-import { Why } from "@/components/Why";
+// import { Why } from "@/components/Why";                // "Why Algorealm" section — removed
 import { Closing } from "@/components/Closing";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
@@ -26,7 +26,7 @@ export default function Home() {
         {/* Samaritan sections hidden for now */}
         {/* <What /> */}
         {/* <Intelligence /> */}
-        <Why />
+        {/* <Why /> — "Why Algorealm" section removed */}
         <Closing />
         <Contact />
       </main>
