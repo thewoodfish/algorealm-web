@@ -1,13 +1,5 @@
-"use client";
-
-import dynamic from "next/dynamic";
-
-// Cesium is client-only and heavy — never render it on the server.
-const OperationScene = dynamic(
-  () => import("@/components/immersive/OperationScene").then((m) => m.OperationScene),
-  { ssr: false },
-);
+import { VideoScene } from "@/components/immersive/VideoScene";
 
 export default function ImmersivePage() {
-  return <OperationScene />;
+  return <VideoScene />;
 }

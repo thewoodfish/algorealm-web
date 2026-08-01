@@ -17,9 +17,6 @@
 /.next/
 /out/
 
-# cesium runtime assets (regenerated from node_modules via postinstall)
-/public/cesium/
-
 # production
 /build
 
